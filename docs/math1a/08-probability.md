@@ -14,7 +14,7 @@ title: 第8章 概率
 - 本章配套讲义 PDF：[点击查看](/files/1a8.pdf)
 
 ## 例题
-这里以后放例题。
+- 本章配套例题 PDF：[点击查看](/files/1a8.1.pdf)
 
 ## 练习
 - 本章配套日本教辅 PDF：[点击查看](/files/chart1a8.pdf)
