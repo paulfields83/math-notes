@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ## 已完成
 
-- [第1讲　式的结构与高次变形](./math1a-advanced/01-expression-structure.md)
-- [第2讲　不等式・绝对值与范围](./math1a-advanced/02-inequality-absolute-range.md)
+- [第1讲　式的结构与高次变形](./math1a-advanced/expression-structure)
+- [第2讲　不等式・绝对值与范围](./math1a-advanced/inequality-absolute-range)
 
 第3讲以后将在确认前两讲的页面结构与内容密度后继续制作。
