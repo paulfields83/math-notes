@@ -23,7 +23,11 @@ const sidebars = {
       type: 'category',
       label: '数学 1A 进阶',
       collapsed: false,
-      items: ['math1a-advanced'],
+      items: [
+        'math1a-advanced',
+        'math1a-advanced/01-expression-structure',
+        'math1a-advanced/02-inequality-absolute-range',
+      ],
     },
     {
       type: 'category',
