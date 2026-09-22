@@ -5,7 +5,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
-      label: '数学 1A｜课程讲义',
+      label: '数学 1A 基础',
       collapsed: false,
       items: [
         'math1a-basic',
@@ -18,6 +18,12 @@ const sidebars = {
         'math1a/counting',
         'math1a/probability',
       ],
+    },
+    {
+      type: 'category',
+      label: '数学 1A 进阶',
+      collapsed: false,
+      items: ['math1a-advanced'],
     },
     {
       type: 'category',

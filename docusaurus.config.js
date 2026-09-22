@@ -69,7 +69,7 @@ const config = {
           position: 'left',
         },
         {
-          to: '/docs/math1a/set-and-proposition',
+          to: '/docs/math1a-advanced',
           label: '数学 1A 进阶',
           position: 'left',
         },
