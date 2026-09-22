@@ -1,10 +1,12 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '日本共通考试数学讲义',
-  tagline: '1A、2BC 上课与备考材料',
+  tagline: '数学 1A、1A 进阶与 2BC 课程材料',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -32,10 +34,15 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+            './node_modules/katex/dist/katex.min.css',
+          ],
         },
       },
     ],
@@ -52,18 +59,23 @@ const config = {
     navbar: {
       title: '日本共通考试数学讲义',
       logo: {
-        alt: '日本共通考试数学讲义 Logo',
+        alt: '日本共通考试数学讲义',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: '/docs/category/%E6%95%B0%E5%AD%A61a',
-          label: '数学1A',
+          to: '/docs/math1a-basic',
+          label: '数学 1A',
+          position: 'left',
+        },
+        {
+          to: '/docs/math1a/set-and-proposition',
+          label: '数学 1A 进阶',
           position: 'left',
         },
         {
           to: '/docs/math2bc-intro',
-          label: '数学2BC',
+          label: '数学 2BC',
           position: 'left',
         },
       ],

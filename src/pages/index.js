@@ -1,33 +1,31 @@
 import React from 'react';
 import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+
+const courses = [
+  ['数学 1A', '课程讲义、配套例题与日本教辅 PDF，按八章进入。', '/docs/math1a-basic'],
+  ['数学 1A 进阶', '八章中文概念集：定义、公式、图像说明、易错点与判断框架。', '/docs/math1a/set-and-proposition'],
+  ['数学 2BC', '数学 2BC 课程目录与讲义。', '/docs/math2bc-intro'],
+];
 
 export default function Home() {
   return (
-    <Layout title="日本共通考试数学讲义" description="1A・2BC 上课与备考材料">
-      <main style={{ maxWidth: '1000px', margin: '0 auto', padding: '60px 20px' }}>
+    <Layout title="日本共通考试数学讲义" description="数学 1A、1A 进阶与 2BC 课程材料">
+      <main className="concept-home">
+        <p className="concept-home__eyebrow">JAPANESE COMMON TEST MATHEMATICS</p>
         <h1>日本共通考试数学讲义</h1>
-        <p>1A、2BC 上课与备考材料</p>
-
-        <div style={{ marginTop: '24px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-          <a className="button button--primary button--lg" href="/math-notes/docs/category/%E6%95%B0%E5%AD%A61a">
-  进入数学1A
-</a>
-           <a
-    className="button button--secondary button--lg"
-    href="/math-notes/docs/math2bc"
-  >
-    进入数学2BC
-  </a>
+        <p className="concept-home__lead">
+          数学 1A、数学 1A 进阶和数学 2BC 的课程材料集中在这里。进阶部分按知识体系整理，只保留概念、公式、图像说明、易错点和判断框架。
+        </p>
+        <div className="concept-card-grid">
+          {courses.map(([title, description, to]) => (
+            <Link className="concept-card" key={title} to={to}>
+              <p className="concept-card__number">课程入口</p>
+              <h2>{title}</h2>
+              <p>{description}</p>
+            </Link>
+          ))}
         </div>
-
-        <section style={{ marginTop: '48px' }}>
-          <h2>网站内容</h2>
-          <ul>
-            <li>数学1A 讲义</li>
-            <li>数学2BC 讲义</li>
-            <li>配套 PDF、例题、练习</li>
-          </ul>
-        </section>
       </main>
     </Layout>
   );

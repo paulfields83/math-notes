@@ -6,25 +6,143 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #245b7c;
+  --ifm-color-primary-dark: #215270;
+  --ifm-color-primary-darker: #1f4e6a;
+  --ifm-color-primary-darkest: #1a4057;
+  --ifm-color-primary-light: #29648a;
+  --ifm-color-primary-lighter: #2b688e;
+  --ifm-color-primary-lightest: #31759f;
+  --ifm-background-color: #fcfbf8;
+  --ifm-font-family-base: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --ifm-heading-font-family: "Noto Serif CJK SC", "Songti SC", serif;
+  --ifm-code-font-size: 92%;
+  --ifm-global-radius: 10px;
+  --docusaurus-highlighted-code-line-bg: rgba(36, 91, 124, 0.08);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #77b8df;
+  --ifm-color-primary-dark: #5ea8d3;
+  --ifm-color-primary-darker: #4fa0cf;
+  --ifm-color-primary-darkest: #2b87b8;
+  --ifm-background-color: #17212b;
+  --docusaurus-highlighted-code-line-bg: rgba(119, 184, 223, 0.14);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  box-shadow: none;
+}
+
+.theme-doc-markdown {
+  max-width: 860px;
+}
+
+.theme-doc-markdown h1 {
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.theme-doc-markdown h3 {
+  margin-top: 2rem;
+}
+
+.theme-doc-markdown li {
+  margin: 0.4rem 0;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.55rem 0;
+}
+
+.concept-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.concept-card {
+  display: block;
+  min-height: 150px;
+  padding: 1.35rem;
+  color: inherit;
+  text-decoration: none;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 12px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.concept-card:hover {
+  color: inherit;
+  border-color: var(--ifm-color-primary);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.concept-card__number {
+  margin: 0 0 0.45rem;
+  color: var(--ifm-color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.concept-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.concept-card p:last-child {
+  margin: 0.75rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+.concept-home {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 4.5rem 1.25rem 5rem;
+}
+
+.concept-home__eyebrow {
+  margin: 0;
+  color: var(--ifm-color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.concept-home h1 {
+  max-width: 720px;
+  margin: 0.75rem 0 1rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.concept-home__lead {
+  max-width: 680px;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.1rem;
+  line-height: 1.9;
+}
+
+@media screen and (max-width: 600px) {
+  .concept-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-home {
+    padding-top: 3rem;
+  }
 }
