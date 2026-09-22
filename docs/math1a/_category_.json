@@ -1,9 +1,9 @@
 {
-  "label": "数学 I・A｜八章概念集",
+  "label": "数学 1A｜课程讲义",
   "position": 1,
   "link": {
     "type": "generated-index",
-    "title": "数学 I・A 概念集",
-    "description": "按照知识体系整理的八章中文概念、公式、图像说明与判断框架。"
+    "title": "数学 1A 课程讲义",
+    "description": "按照八章知识体系整理的中文文字讲义，包含概念、公式、图像说明与判断框架。"
   }
 }

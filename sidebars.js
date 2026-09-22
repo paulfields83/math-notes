@@ -7,13 +7,8 @@ const sidebars = {
       type: 'category',
       label: '数学 1A｜课程讲义',
       collapsed: false,
-      items: ['math1a-basic'],
-    },
-    {
-      type: 'category',
-      label: '数学 1A 进阶｜八章概念集',
-      collapsed: false,
       items: [
+        'math1a-basic',
         'math1a/set-and-proposition',
         'math1a/number-and-expression',
         'math1a/quadratic-function',
