@@ -25,8 +25,8 @@ const sidebars = {
       collapsed: false,
       items: [
         'math1a-advanced',
-        'math1a-advanced/01-expression-structure',
-        'math1a-advanced/02-inequality-absolute-range',
+        'math1a-advanced/expression-structure',
+        'math1a-advanced/inequality-absolute-range',
       ],
     },
     {
