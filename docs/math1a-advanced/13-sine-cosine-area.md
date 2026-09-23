@@ -38,7 +38,7 @@ $$
 $$
 S=\frac12bc\sin A.
 $$
-没有夹角时，可先用余弦定理求 $cos A$，再求 $sin A$。
+没有夹角时，可先用余弦定理求 $\cos A$，再求 $\sin A$。
 :::info[High Level 讲义题]
 对应 **第9講 PART3**。
 :::
