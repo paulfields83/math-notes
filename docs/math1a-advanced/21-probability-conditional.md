@@ -7,9 +7,9 @@ sidebar_position: 21
 对应 **High Level 数学A 第4講 PART1・PART2、第5講 PART2**。
 
 ## 本讲课前回顾
-[
+$$
 P(A)=\frac{n(A)}{n(U)}
-]
+$$
 的前提是根元事象等可能。
 
 ## 1 場合の数与概率
@@ -22,10 +22,10 @@ P(A)=\frac{n(A)}{n(U)}
 :::
 
 ## 2 和事件与余事件
-[
-P(A\cup B)=P(A)+P(B)-P(A\cap B),qquad
+$$
+P(A\cup B)=P(A)+P(B)-P(A\cap B),\q\quad
 P(\bar A)=1-P(A).
-]
+$$
 “至少一个”“不全是”“一个也没有”常优先用余事件。
 :::info[High Level 讲义题]
 对应 **第4講 PART2**。
@@ -35,9 +35,9 @@ P(\bar A)=1-P(A).
 :::
 
 ## 3 条件概率
-[
+$$
 P(B|A)=\frac{P(A\cap B)}{P(A)}.
-]
+$$
 ### 解题技巧
 条件发生后，样本空间已经缩小。先重新确定分母。
 :::info[High Level 讲义题]
