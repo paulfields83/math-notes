@@ -12,14 +12,14 @@ sidebar_position: 9
 完整概念见 **数学1A基础 → 第6章 数据分析**。
 
 ## 本讲课前回顾
-[
-\bar x=\frac1n\sum x_i,qquad
+$$
+\bar x=\frac1n\sum x_i,\q\quad
 s^2=\frac1n\sum(x_i-\bar x)^2.
-]
+$$
 
 ## 1 变量的线性变换
 ### 知识点
-若 (y=ax+b)，则 (ar y=aar x+b)。标准差只受 (|a|) 影响，平移不改变散布。
+若 $y=ax+b$，则 $ar y=aar x+b$。标准差只受 $|a|$ 影响，平移不改变散布。
 ### 解题技巧
 全体加同一数：平均数平移，标准差不变；全体乘同一数：平均数同倍变化，标准差乘绝对值。
 :::info[High Level 讲义题]
@@ -33,7 +33,7 @@ s^2=\frac1n\sum(x_i-\bar x)^2.
 ### 知识点
 个别数据修正时，用总和和平方和的变化比全部重算更快。
 ### 解题技巧
-利用 (s^2=\overline{x^2}-\bar x^2)。
+利用 $s^2=\overline{x^2}-\bar x^2$。
 :::info[High Level 讲义题]
 对应 **第11講 PART3「データの修正による変化」**。
 :::
