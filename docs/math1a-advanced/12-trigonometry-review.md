@@ -12,11 +12,11 @@ sidebar_position: 12
 完整概念见 **数学1A基础 → 第4章 图形与计量**。
 
 ## 本讲课前回顾
-[
-sin A=\frac{\text{对边}}{\text{斜边}},quad
-cos A=\frac{\text{邻边}}{\text{斜边}},quad
-	an A=\frac{\text{对边}}{\text{邻边}}.
-]
+$$
+\sin A=\frac{\text{对边}}{\text{斜边}},\quad
+\cos A=\frac{\text{邻边}}{\text{斜边}},\quad
+\tan A=\frac{\text{对边}}{\text{邻边}}.
+$$
 
 ## 1 直角三角形中的三角比
 ### 解题技巧
@@ -33,17 +33,17 @@ cos A=\frac{\text{邻边}}{\text{斜边}},quad
 :::
 
 ## 2 三角比之间的关系
-[
-	an\theta=\frac{\sin\theta}{\cos\theta},qquad
-sin^2\theta+cos^2\theta=1.
-]
+$$
+\tan\theta=\frac{\sin\theta}{\cos\theta},\q\quad
+\sin^2\theta+\cos^2\theta=1.
+$$
 开平方后用角的范围决定符号。
 :::info[High Level 讲义题]
 对应 **第8講 PART2**。
 :::
 
 ## 3 钝角三角比
-当 (90^\circ<\theta<180^\circ) 时，(sin>0,cos<0,	an<0)。
+当 $90^\circ<\theta<180^\circ$ 时，$sin>0,cos<0,\tan<0$。
 :::info[High Level 讲义题]
 对应 **第8講 PART3「鈍角の三角比」**。
 :::
