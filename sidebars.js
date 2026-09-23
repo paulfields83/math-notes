@@ -1,5 +1,4 @@
 // @ts-check
-
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
@@ -27,6 +26,28 @@ const sidebars = {
         'math1a-advanced',
         'math1a-advanced/expression-structure',
         'math1a-advanced/inequality-absolute-range',
+        'math1a-advanced/set-proposition',
+        'math1a-advanced/graph-parameter',
+        'math1a-advanced/max-min-domain',
+        'math1a-advanced/equation-inequality-graph',
+        'math1a-advanced/root-placement-parameter',
+        'math1a-advanced/quadratic-comprehensive',
+        'math1a-advanced/statistics-variance',
+        'math1a-advanced/boxplot-correlation',
+        'math1a-advanced/data-comprehensive',
+        'math1a-advanced/trigonometry-review',
+        'math1a-advanced/sine-cosine-area',
+        'math1a-advanced/composite-geometry',
+        'math1a-advanced/measurement-comprehensive',
+        'math1a-advanced/triangle-properties',
+        'math1a-advanced/circle-properties',
+        'math1a-advanced/geometry-properties-comprehensive',
+        'math1a-advanced/counting-permutation',
+        'math1a-advanced/combination-selection',
+        'math1a-advanced/probability-conditional',
+        'math1a-advanced/probability-comprehensive',
+        'math1a-advanced/cross-field-1',
+        'math1a-advanced/cross-field-2',
       ],
     },
     {
@@ -37,5 +58,4 @@ const sidebars = {
     },
   ],
 };
-
 export default sidebars;
