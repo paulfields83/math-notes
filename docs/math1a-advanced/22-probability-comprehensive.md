@@ -33,9 +33,9 @@ sidebar_position: 22
 :::
 
 ## 3 期待值
-[
-E(X)=\sum x_ip_i,qquad E(X+Y)=E(X)+E(Y).
-]
+$$
+E(X)=\sum x_ip_i,\q\quad E(X+Y)=E(X)+E(Y).
+$$
 能拆成简单随机变量时，先分别求期待值再相加。
 :::info[High Level 讲义题]
 对应 **第5講 PART3「期待値」**。
