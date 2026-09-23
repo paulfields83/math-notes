@@ -43,7 +43,7 @@ $$
 :::
 
 ## 3 钝角三角比
-当 $90^\circ<\theta<180^\circ$ 时，$sin>0,cos<0,\tan<0$。
+当 $90^\circ<\theta<180^\circ$ 时，$\sin\theta>0,\ \cos\theta<0,\ \tan\theta<0$。
 :::info[High Level 讲义题]
 对应 **第8講 PART3「鈍角の三角比」**。
 :::
