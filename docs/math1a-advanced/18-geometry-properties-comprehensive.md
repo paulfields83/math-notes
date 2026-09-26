@@ -49,6 +49,82 @@ $$
 【图片占位符：点 O 与 P、Q、R】
 :::
 
+<details className="solution-details">
+<summary>查看答案</summary>
+
+在教材图形中，对 $\triangle OQC$ 与横截线 $B-A-R$ 应用梅涅劳斯定理：
+
+$$
+\frac{BQ}{OB}
+\cdot
+\frac{AC}{QA}
+\cdot
+\frac{RO}{CR}
+=1.
+$$
+
+由
+
+$$
+BQ:QO=7:2
+$$
+
+得
+
+$$
+BQ:OB=7:9.
+$$
+
+由
+
+$$
+CO:OR=3:4
+$$
+
+得
+
+$$
+RO:CR=4:7.
+$$
+
+代入：
+
+$$
+\frac79
+\cdot
+\frac{AC}{QA}
+\cdot
+\frac47
+=1.
+$$
+
+所以
+
+$$
+\frac{AC}{QA}=\frac94.
+$$
+
+即
+
+$$
+QA:AC=4:9.
+$$
+
+因为
+
+$$
+AC=AQ+QC,
+$$
+
+所以
+
+$$
+\boxed{AQ:QC=4:5}.
+$$
+
+</details>
+
+
 ---
 
 ## 2　圆与切线综合证明
@@ -72,6 +148,44 @@ $$
 
 【图片占位符：三角形 ABC、点 D、E 与两个圆】
 :::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+因为
+
+$$
+AB=AC,
+$$
+
+所以
+
+$$
+\angle ABC=\angle ACB.
+$$
+
+又 $A,B,C,E$ 共圆，所以
+
+$$
+\angle AEB=\angle ACB.
+$$
+
+由于 $A,D,E$ 共线、$B,C,D$ 共线，
+
+$$
+\angle DEB=\angle ABD.
+$$
+
+因此直线 $AB$ 与弦 $BD$ 所成的角，等于圆周角 $\angle DEB$。
+
+由接弦定理的逆定理：
+
+$$
+\boxed{AB\text{ 与经过 }B,D,E\text{ 的圆在 }B\text{ 点相切}}.
+$$
+
+</details>
+
 
 ---
 
