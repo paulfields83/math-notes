@@ -65,7 +65,7 @@ const config = {
       items: [
         {
           to: '/docs/math1a-basic',
-          label: '数学 1A',
+          label: '数学 1A 基础',
           position: 'left',
         },
         {
