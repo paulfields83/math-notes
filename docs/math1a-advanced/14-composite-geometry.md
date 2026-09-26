@@ -62,6 +62,88 @@ $$
 【图片占位符：角平分线题示意图】
 :::
 
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+设 $AD=x$。角 $A=60^\circ$ 被平分，所以两边均为 $30^\circ$。
+
+用面积分割：
+
+$$
+[ABC]=[ABD]+[ACD].
+$$
+
+因此
+
+$$
+\frac12\cdot5\cdot4\sin60^\circ
+=
+\frac12\cdot5x\sin30^\circ
++
+\frac12\cdot4x\sin30^\circ.
+$$
+
+整理：
+
+$$
+5\cdot4\cdot\frac{\sqrt3}{2}
+=
+\frac92x.
+$$
+
+所以
+
+$$
+\boxed{AD=\frac{20\sqrt3}{9}}.
+$$
+
+### 2.
+
+$CD$ 是 $\angle C$ 的角平分线，所以
+
+$$
+AD:DB=AC:CB=4:5.
+$$
+
+由 $AB=6$：
+
+$$
+AD=\frac{4}{9}\cdot6=\frac83.
+$$
+
+在 $\triangle ABC$ 中由余弦定理：
+
+$$
+\cos A
+=
+\frac{AC^2+AB^2-BC^2}{2AC\cdot AB}
+=
+\frac{16+36-25}{48}
+=\frac9{16}.
+$$
+
+在 $\triangle ACD$ 中：
+
+$$
+CD^2
+=
+4^2+\left(\frac83\right)^2
+-2\cdot4\cdot\frac83\cdot\frac9{16}
+=
+\frac{100}{9}.
+$$
+
+故
+
+$$
+\boxed{CD=\frac{10}{3}}.
+$$
+
+</details>
+
+
 :::note[同类型练习｜第10講 PART1 確認問題]
 **1.**
 
@@ -81,6 +163,68 @@ $\angle C$ 的角平分线交 $AB$ 于 $D$，求 $CD$。
 
 【图片占位符：確認問題角平分线图】
 :::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+设 $AD=x$。同样利用面积：
+
+$$
+\frac12\cdot3\cdot2\sin60^\circ
+=
+\frac12\cdot3x\sin30^\circ
++
+\frac12\cdot2x\sin30^\circ.
+$$
+
+解得
+
+$$
+\boxed{AD=\frac{6\sqrt3}{5}}.
+$$
+
+### 2.
+
+角平分线定理：
+
+$$
+AD:DB=AC:CB=6:8=3:4.
+$$
+
+所以
+
+$$
+AD=\frac37\cdot7=3.
+$$
+
+余弦定理求得
+
+$$
+\cos A
+=
+\frac{6^2+7^2-8^2}{2\cdot6\cdot7}
+=\frac14.
+$$
+
+在 $\triangle ACD$ 中：
+
+$$
+CD^2
+=
+6^2+3^2-2\cdot6\cdot3\cdot\frac14
+=36.
+$$
+
+所以
+
+$$
+\boxed{CD=6}.
+$$
+
+</details>
+
 
 ---
 
@@ -121,6 +265,87 @@ $$
 2. 四边形 $ABCD$ 的面积
 :::
 
+<details className="solution-details">
+<summary>查看答案</summary>
+
+设 $\angle ABC=B$。因为四边形 $ABCD$ 内接于圆，
+
+$$
+\angle ADC=180^\circ-B.
+$$
+
+令 $AC=x$。
+
+在 $\triangle ABC$ 中：
+
+$$
+x^2=3^2+3^2-2\cdot3\cdot3\cos B
+=18-18\cos B.
+$$
+
+在 $\triangle ADC$ 中：
+
+$$
+x^2
+=
+8^2+5^2-2\cdot8\cdot5\cos(180^\circ-B)
+=
+89+80\cos B.
+$$
+
+联立：
+
+$$
+18-18\cos B=89+80\cos B,
+$$
+
+得到
+
+$$
+\cos B=-\frac{71}{98}.
+$$
+
+于是
+
+$$
+x^2=\frac{1521}{49},
+$$
+
+所以
+
+$$
+\boxed{AC=\frac{39}{7}}.
+$$
+
+又
+
+$$
+\sin B
+=
+\sqrt{1-\left(\frac{71}{98}\right)^2}
+=
+\frac{39\sqrt3}{98}.
+$$
+
+四边形面积为两三角形面积之和：
+
+$$
+S
+=
+\frac12(3\cdot3+8\cdot5)\sin B
+=
+\frac{49}{2}\cdot\frac{39\sqrt3}{98}.
+$$
+
+故
+
+$$
+\boxed{S=\frac{39\sqrt3}{4}}.
+$$
+
+</details>
+
+
 :::note[同类型练习｜第10講 PART2 確認問題]
 四边形 $ABCD$ 内接于圆，且
 
@@ -141,6 +366,68 @@ $$
 
 【图片占位符：圆内接四边形】
 :::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+设 $\angle ABC=B$，则
+
+$$
+\angle ADC=180^\circ-B.
+$$
+
+令 $AC=x$。
+
+由两次余弦定理：
+
+$$
+x^2=2^2+3^2-2\cdot2\cdot3\cos B
+=13-12\cos B,
+$$
+
+$$
+x^2=5^2+6^2+2\cdot5\cdot6\cos B
+=61+60\cos B.
+$$
+
+联立得
+
+$$
+\cos B=-\frac23.
+$$
+
+所以
+
+$$
+AC^2=21,
+$$
+
+即
+
+$$
+\boxed{AC=\sqrt{21}}.
+$$
+
+又
+
+$$
+\sin B=\frac{\sqrt5}{3}.
+$$
+
+因此
+
+$$
+S
+=
+\frac12(2\cdot3+5\cdot6)\sin B
+=
+18\cdot\frac{\sqrt5}{3}
+=
+\boxed{6\sqrt5}.
+$$
+
+</details>
+
 
 ---
 
