@@ -103,15 +103,14 @@ $$
 :::note[同类型练习｜PART1 確認問題]
 1. $y=ax+b\;(-2\le x\le1)$ の最大値が4、最小値が$-2$ であるとき、$a,b$ を求めよ。
 2. $y=|x-3|$ のグラフとして正しいものを選べ。
-3. $y=|x+3|+|x-2|$ のグラフとして正しいものを選べ。
+3. 次の関数のグラフをかけ。
+   $
+   y=|x+3|+|x-2|
+   $
 
 **確認問題2 图像选项（按教材重绘）**
 
 ![第3講 PART1 確認問題2 图像选项](/img/math1a-advanced/lesson04/confirm-part1-q2-problem.svg)
-
-**確認問題3**
-
-【图片占位符：確認問題3的8个图像选项｜manual_review_required】
 :::
 
 <details className="solution-details">
@@ -163,21 +162,7 @@ $$
 
 ### 3.
 
-$$
-y=|x+3|+|x-2|
-=
-\begin{cases}
--2x-1,&x<-3,\\
-5,&-3\le x<2,\\
-2x+1,&x\ge2.
-\end{cases}
-$$
-
-教材选项中为
-
-$$
-\boxed{\text{②}}.
-$$
+答案略。课堂上直接手画图像。
 
 </details>
 
