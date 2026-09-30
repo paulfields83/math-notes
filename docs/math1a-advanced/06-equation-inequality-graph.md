@@ -12,6 +12,10 @@ sidebar_position: 6
 ## 1 二次函数与 $x$ 轴交点
 ### 解题技巧
 交两点、相切、不相交分别对应 $D>0,D=0,D<0$。
+
+**解说图**
+
+![判别式与x轴交点](/img/math1a-advanced/lesson06/discriminant-intersections.svg)
 :::info[High Level 讲义题｜第5講 PART1]
 1. 次の二次関数のグラフと $x$ 軸の共有点の座標を求めよ。
    - $y=-x^2+2x+3$

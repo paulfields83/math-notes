@@ -14,6 +14,10 @@ sidebar_position: 5
 轴在区间内时，顶点可能给出最小/最大；轴在区间外时，比较端点与轴的远近。
 ### 解题技巧
 先画数轴，标出**左端点、右端点、对称轴**，再分类。
+
+**解说图**
+
+![定义域与对称轴的位置关系](/img/math1a-advanced/lesson05/domain-axis-cases.svg)
 :::info[High Level 讲义题｜第4講 PART1]
 関数
 $$

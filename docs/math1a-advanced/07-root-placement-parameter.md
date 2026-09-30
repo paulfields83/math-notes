@@ -14,6 +14,10 @@ sidebar_position: 7
 只看 $D>0$ 不够，还要结合轴和端点函数值。
 ### 解题技巧
 典型组合：**判别式 + 轴的位置 + 两端点符号**。
+
+**解说图**
+
+![二次方程根的位置关系](/img/math1a-advanced/lesson07/root-placement.svg)
 :::info[High Level 讲义题｜第6講 PART3]
 二次方程式
 $$

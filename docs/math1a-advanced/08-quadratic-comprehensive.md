@@ -173,7 +173,7 @@ $$
 |x^2+2x-3|=-2x+k
 $$
 
-【图片占位符：解の個数を判断するためのグラフ】
+![第7講 PART2 講義問題 解的个数判断图](/img/math1a-advanced/lesson08/hl-part2-solution-graphs.svg)
 :::
 
 <details className="solution-details">
@@ -255,7 +255,7 @@ $k$ を定数とする。次の方程式の異なる実数解の個数を、$k$ 
 1. $|x^2-4x+3|=k$
 2. $|x^2-3x|=|x-3|+k$
 
-【图片占位符：確認問題のグラフ整理】
+![第7講 PART2 確認問題 图像整理](/img/math1a-advanced/lesson08/confirm-part2-solution-graphs.svg)
 :::
 
 <details className="solution-details">
