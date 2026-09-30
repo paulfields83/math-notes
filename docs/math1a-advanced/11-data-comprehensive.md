@@ -33,7 +33,7 @@ A组、B组、C组各有38名学生参加数学考试。教材给出三组成绩
 2. 60分以下的学生，A组有19人以上，而B组不足18人。
 3. 40分以下的学生，B组比C组少。
 
-【图片占位符：第11講 PART1 確認問題的三组箱线图】
+![第11講 PART1 確認問題2 三组箱线图](/img/math1a-advanced/lesson11/confirm-part1-q2-three-boxplots.svg)
 :::
 
 <details className="solution-details">
@@ -79,14 +79,14 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\qquad
+\q\quad
 s_x^2=a^2s_u^2
 $$
 
 求
 
 $$
-\bar u,quad \bar x,quad s_u^2,quad s_x^2.
+\bar u,\quad \bar x,\quad s_u^2,\quad s_x^2.
 $$
 :::
 
@@ -158,7 +158,7 @@ $$
 并且
 
 $$
-\bar x=60,qquad \bar y=45.
+\bar x=60,q\quad \bar y=45.
 $$
 
 回答：

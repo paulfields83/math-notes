@@ -12,7 +12,7 @@ sidebar_position: 10
 ## 本讲课前回顾
 
 $$
-Q_1,quad Q_2,quad Q_3
+Q_1,\quad Q_2,\quad Q_3
 $$
 
 分别表示第一四分位数、中位数、第三四分位数。
@@ -50,7 +50,7 @@ $$
 
 直方图各组区间均为“包含左端点、不包含右端点”。
 
-【图片占位符：原题箱线图＋直方图①②③】
+![第11講 PART1 講義問題1(1) 箱线图与直方图](/img/math1a-advanced/lesson10/hl-part1-q1-boxplot-histograms.svg)
 :::
 
 <details className="solution-details">
@@ -84,7 +84,7 @@ $$
 
 分别判断 A、B、C 是否可能由该箱线图对应的数据画出。
 
-【图片占位符：確認問題箱线图＋直方图A/B/C】
+![第11講 PART1 確認問題1 箱线图与直方图](/img/math1a-advanced/lesson10/confirm-part1-q1-boxplot-histograms.svg)
 :::
 
 <details className="solution-details">
@@ -93,8 +93,8 @@ $$
 由箱线图可读出：
 
 $$
-Q_1\in[10,20),\qquad
-Q_2\in[30,40),\qquad
+Q_1\in[10,20),\q\quad
+Q_2\in[30,40),\q\quad
 Q_3\in[40,50).
 $$
 
@@ -143,7 +143,7 @@ $$
 2. 60分以上的学生，英语不超过25人，而国语不少于25人。
 3. 80分以上的学生，数学比国语更多。
 
-【图片占位符：英语・数学・国语三组箱线图】
+![第11講 PART1 講義問題1(2) 三科箱线图](/img/math1a-advanced/lesson10/hl-part1-q2-three-boxplots.svg)
 :::
 
 <details className="solution-details">
@@ -201,7 +201,7 @@ A组、B组、C组各有38名学生参加数学考试。教材给出三组成绩
 2. 60分以下的学生，A组有19人以上，而B组不足18人。
 3. 40分以下的学生，B组比C组少。
 
-【图片占位符：A组・B组・C组三组箱线图】
+![第11講 PART1 確認問題2 三组箱线图](/img/math1a-advanced/lesson10/confirm-part1-q2-three-boxplots.svg)
 :::
 
 <details className="solution-details">
@@ -255,7 +255,7 @@ $$
 
 先看方向，再看点是否集中在一条直线附近。
 
-【图片占位符：散点图】
+> 当前 High Level 第11講没有独立的散点图原题图，因此这里不伪造教材图片。
 
 > 当前 High Level 第11講没有独立的散点图讲义题，本节暂不自编题。
 

@@ -22,7 +22,7 @@ sidebar_position: 9
 
 $$
 \bar x=\frac1n\sum x_i,
-\qquad
+\\qquad
 s^2=\frac1n\sum (x_i-\bar x)^2.
 $$
 
@@ -42,13 +42,17 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\qquad
+\\qquad
 s_x^2=a^2s_u^2.
 $$
 
 ### 解题技巧
 
 数据的数值很大时，可以先做平移和缩放，把计算变小，再从新变量还原。
+
+**解说图（由教材数据重绘）**
+
+![变量变换示意](/img/math1a-advanced/lesson09/part2-transform-numberline.svg)
 
 :::info[High Level 讲义题｜第11講 PART2]
 设 $a,b$ 为常数。变量 $u$ 与由
@@ -63,7 +67,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\qquad
+\\qquad
 s_x^2=a^2s_u^2,
 $$
 
@@ -164,7 +168,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\qquad
+\\qquad
 s_x^2=a^2s_u^2
 $$
 
@@ -254,7 +258,7 @@ $$
 有如下两变量 $x,y$ 的5组数据，平均值分别为
 
 $$
-\bar x=25,qquad \bar y=14.
+\bar x=25,\qquad \bar y=14.
 $$
 
 | 编号 | ① | ② | ③ | ④ | ⑤ |
@@ -286,7 +290,7 @@ $$
 原平均值为 $14$。将
 
 $$
-11\to13,\qquad 20\to18
+11\to13,\\qquad 20\to18
 $$
 
 后，总和不变，因此平均值仍为 $14$。
@@ -336,7 +340,7 @@ $$
 有如下6组数据，原来的平均值分别为
 
 $$
-\bar x=60,qquad \bar y=45.
+\bar x=60,\qquad \bar y=45.
 $$
 
 | 编号 | 1 | 2 | 3 | 4 | 5 | 6 |
@@ -368,7 +372,7 @@ $$
 $y$ 的平均值原为 $45$。修正
 
 $$
-50\to53,\qquad 44\to41
+50\to53,\\qquad 44\to41
 $$
 
 后，总和不变，所以平均值仍为 $45$。
