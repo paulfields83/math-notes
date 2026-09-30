@@ -141,7 +141,7 @@ $$
 1. 投3次后，$P$ 位于 $D$ 的概率；
 2. 投6次后，$P$ 位于 $E$ 的概率。
 
-【图片占位符：正六边形 ABCDEF】
+![第5講 PART1 正六边形移动点](/img/math1a-advanced/lesson22/hl-part1-hexagon.svg)
 :::
 
 <details className="solution-details">
@@ -235,7 +235,7 @@ $$
 1. 投4次后，$P$ 位于 $B$ 的概率；
 2. 投7次后，$P$ 位于 $E$ 的概率。
 
-【图片占位符：確認問題正六边形】
+![第5講 PART1 確認問題 正六边形移动点](/img/math1a-advanced/lesson22/confirm-part1-hexagon.svg)
 :::
 
 <details className="solution-details">

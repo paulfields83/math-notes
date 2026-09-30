@@ -46,7 +46,7 @@ $$
 AQ:QC.
 $$
 
-【图片占位符：点 O 与 P、Q、R】
+![第6講 PART3 点O与P/Q/R](/img/math1a-advanced/lesson16/hl-part3-ceva-exterior.svg)
 :::
 
 <details className="solution-details">
@@ -146,7 +146,7 @@ $$
 
 证明直线 $AB$ 与经过 $B,D,E$ 三点的圆相切。
 
-【图片占位符：三角形 ABC、点 D、E 与两个圆】
+![第7講 PART3 等腰三角形与两个圆](/img/math1a-advanced/lesson17/confirm-part3-isosceles-two-circles.svg)
 :::
 
 <details className="solution-details">

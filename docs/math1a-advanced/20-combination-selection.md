@@ -208,7 +208,7 @@ $$
 2. 经过点 $B$ 的路线数；
 3. 全部最短路线数。
 
-【图片占位符：P、Q、A、B 的格点路线图】
+【教材格点图：manual_review_required｜格点与不可通行边的精确拓扑不能仅由题干唯一恢复，因此暂不重画】
 :::
 
 <details className="solution-details">
@@ -282,7 +282,7 @@ $$
 2. 经过点 $B$ 的路线数；
 3. 全部最短路线数。
 
-【图片占位符：確認問題格点路线图】
+【教材格点图：manual_review_required｜格点与不可通行边的精确拓扑不能仅由题干唯一恢复，因此暂不重画】
 :::
 
 <details className="solution-details">

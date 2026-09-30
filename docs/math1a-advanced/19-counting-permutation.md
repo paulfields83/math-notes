@@ -530,7 +530,7 @@ $$
 
 各有多少种？
 
-【图片占位符：立方体涂色示意】
+![第2講 PART2 立方体涂色示意](/img/math1a-advanced/lesson19/hl-part2-cube-coloring.svg)
 :::
 
 <details className="solution-details">
@@ -579,7 +579,7 @@ $$
 
 分别求涂法数。
 
-【图片占位符：正三角锥、正三角柱】
+![第2講 PART2 確認問題 立体涂色](/img/math1a-advanced/lesson19/confirm-part2-solids-coloring.svg)
 :::
 
 <details className="solution-details">
