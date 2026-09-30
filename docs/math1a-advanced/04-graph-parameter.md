@@ -105,7 +105,13 @@ $$
 2. $y=|x-3|$ のグラフとして正しいものを選べ。
 3. $y=|x+3|+|x-2|$ のグラフとして正しいものを選べ。
 
-【图片占位符：確認問題2・3的图像选项】
+**確認問題2 图像选项（按教材重绘）**
+
+![第3講 PART1 確認問題2 图像选项](/img/math1a-advanced/lesson04/confirm-part1-q2-problem.svg)
+
+**確認問題3**
+
+【图片占位符：確認問題3的8个图像选项｜manual_review_required】
 :::
 
 <details className="solution-details">
@@ -355,7 +361,7 @@ $$
 4. $b^2-4ac$
 5. $a+b+c$
 
-【图片占位符：High Level 第3講 PART3 原题抛物线】
+![第3講 PART3 講義問題 图像](/img/math1a-advanced/lesson04/hl-part3-q1-problem.svg)
 :::
 
 <details className="solution-details">
@@ -390,7 +396,7 @@ a,\quad b,\quad c,\quad b^2-4ac,\quad a+b+c
 $$
 の符号を調べよ。
 
-【图片占位符：確認問題的抛物线图】
+![第3講 PART3 確認問題 图像](/img/math1a-advanced/lesson04/confirm-part3-q1-problem.svg)
 :::
 
 <details className="solution-details">
