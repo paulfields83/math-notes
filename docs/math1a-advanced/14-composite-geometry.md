@@ -38,7 +38,7 @@ sidebar_position: 14
 **1.** 在 $\triangle ABC$ 中，
 
 $$
-AB=5,qquad AC=4,qquad \angle A=60^\circ.
+AB=5,\qquad AC=4,\qquad \angle A=60^\circ.
 $$
 
 $\angle A$ 的角平分线与边 $BC$ 交于 $D$。求
@@ -50,7 +50,7 @@ $$
 **2.** 在 $\triangle ABC$ 中，
 
 $$
-AB=6,qquad BC=5,qquad CA=4.
+AB=6,\qquad BC=5,\qquad CA=4.
 $$
 
 $\angle C$ 的角平分线与边 $AB$ 交于 $D$。求
@@ -59,7 +59,7 @@ $$
 CD.
 $$
 
-【图片占位符：角平分线题示意图】
+![第10講 PART1 講義問題 角平分线](/img/math1a-advanced/lesson14/hl-part1-angle-bisectors.svg)
 :::
 
 <details className="solution-details">
@@ -148,7 +148,7 @@ $$
 **1.**
 
 $$
-AB=3,qquad AC=2,qquad \angle A=60^\circ.
+AB=3,\qquad AC=2,\qquad \angle A=60^\circ.
 $$
 
 $\angle A$ 的角平分线交 $BC$ 于 $D$，求 $AD$。
@@ -156,12 +156,12 @@ $\angle A$ 的角平分线交 $BC$ 于 $D$，求 $AD$。
 **2.**
 
 $$
-AB=7,qquad BC=8,qquad CA=6.
+AB=7,\qquad BC=8,\qquad CA=6.
 $$
 
 $\angle C$ 的角平分线交 $AB$ 于 $D$，求 $CD$。
 
-【图片占位符：確認問題角平分线图】
+![第10講 PART1 確認問題 角平分线](/img/math1a-advanced/lesson14/confirm-part1-angle-bisectors.svg)
 :::
 
 <details className="solution-details">
@@ -254,8 +254,8 @@ $$
 四边形 $ABCD$ 内接于圆，且
 
 $$
-AB=BC=3,qquad
-CD=5,qquad
+AB=BC=3,\qquad
+CD=5,\qquad
 DA=8.
 $$
 
@@ -350,9 +350,9 @@ $$
 四边形 $ABCD$ 内接于圆，且
 
 $$
-AB=2,qquad
-BC=3,qquad
-CD=6,qquad
+AB=2,\qquad
+BC=3,\qquad
+CD=6,\qquad
 DA=5.
 $$
 
@@ -364,7 +364,7 @@ $$
 
 以及四边形 $ABCD$ 的面积 $S$。
 
-【图片占位符：圆内接四边形】
+![第10講 PART2 確認問題 圆内接四边形](/img/math1a-advanced/lesson14/confirm-part2-cyclic-quadrilateral.svg)
 :::
 
 <details className="solution-details">

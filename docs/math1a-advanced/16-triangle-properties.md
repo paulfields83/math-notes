@@ -46,7 +46,7 @@ $$
 在
 
 $$
-AB=4,qquad BC=10,qquad CA=7
+AB=4,\qquad BC=10,\qquad CA=7
 $$
 
 的 $\triangle ABC$ 中，内心为 $I$。
@@ -59,7 +59,7 @@ $$
 2. $\triangle AIC:\triangle ABC$
 3. $\triangle CID:\triangle ABC$
 
-【图片占位符：内心 I 与交点 D】
+![第6講 PART1 講義問題 内心](/img/math1a-advanced/lesson16/hl-part1-incenter.svg)
 :::
 
 <details className="solution-details">
@@ -137,7 +137,7 @@ $$
 在
 
 $$
-AB=4,qquad BC=8,qquad CA=9
+AB=4,\qquad BC=8,\qquad CA=9
 $$
 
 的 $\triangle ABC$ 中，内心为 $I$，直线 $BI$ 与边 $AC$ 交于 $D$。
@@ -148,7 +148,7 @@ $$
 2. $\triangle AIC:\triangle ABC$
 3. $\triangle AID:\triangle ABC$
 
-【图片占位符：確認問題内心图】
+![第6講 PART1 確認問題 内心](/img/math1a-advanced/lesson16/confirm-part1-incenter.svg)
 :::
 
 <details className="solution-details">
@@ -251,7 +251,7 @@ $$
 3. 证明 $AD,BE,CF$ 分别是 $\triangle PQR$ 三边的垂直平分线；
 4. 因而三线在 $\triangle PQR$ 的外心处相交。
 
-【图片占位符：教材构造的三角形 PQR 与 AD、BE、CF】
+![第6講 PART2 三条高共点的构造](/img/math1a-advanced/lesson16/part2-orthocenter-construction.svg)
 :::
 
 <details className="solution-details">
@@ -308,7 +308,7 @@ $$
 - $AD,BE,CF$ 分别是哪条边的垂直平分线；
 - 三线最终交于 $\triangle PQR$ 的哪个中心。
 
-【图片占位符：確認問題证明图】
+![第6講 PART2 確認問題构造图](/img/math1a-advanced/lesson16/part2-orthocenter-construction.svg)
 :::
 
 <details className="solution-details">
@@ -372,7 +372,7 @@ $$
 
 其中直线 $l$ 不通过 $\triangle ABC$ 的顶点。
 
-【图片占位符：直线 l 与 P、Q、R】
+![第6講 PART3 Menelaus 配置](/img/math1a-advanced/lesson16/hl-part3-menelaus.svg)
 
 **2.** $\triangle ABC$ 外有一点 $O$。
 
@@ -394,7 +394,7 @@ $$
 BQ:QO.
 $$
 
-【图片占位符：点 O 与 P、Q、R】
+![第6講 PART3 点O与三条截线](/img/math1a-advanced/lesson16/hl-part3-ceva-exterior.svg)
 :::
 
 <details className="solution-details">
@@ -482,7 +482,7 @@ $$
 
 教材的提示是：过点 $C$ 作直线平行于 $l$，与直线 $AB$ 交于 $D$，再利用平行线比例逐步补全证明。
 
-【图片占位符：確認問題的辅助线 CD】
+![第6講 PART3 確認問題 辅助线CD](/img/math1a-advanced/lesson16/confirm-part3-menelaus-parallel.svg)
 :::
 
 <details className="solution-details">

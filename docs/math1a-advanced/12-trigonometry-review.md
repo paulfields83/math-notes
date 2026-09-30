@@ -42,16 +42,16 @@ $$
 已知
 
 $$
-AB>AC,qquad BC=5,qquad AD=2.
+AB>AC,\qquad BC=5,\qquad AD=2.
 $$
 
 求
 
 $$
-\sin B,qquad \cos B.
+\sin B,\qquad \cos B.
 $$
 
-【图片占位符：直角三角形 ABC 与垂足 D】
+![第8講 PART1 講義問題 直角三角形](/img/math1a-advanced/lesson12/hl-part1-right-triangle.svg)
 
 **［2］** 在
 
@@ -68,7 +68,7 @@ $$
 求：
 
 1. $\cos A,	an A$
-2. $\sin B,cos B,	an B$
+2. $\sin B,\cos B,	an B$
 :::
 
 <details className="solution-details">
@@ -148,16 +148,16 @@ $$
 **1.** 在同样的直角三角形结构中，
 
 $$
-AB>AC,qquad BC=10,qquad AD=3.
+AB>AC,\qquad BC=10,\qquad AD=3.
 $$
 
 求
 
 $$
-\sin B,qquad \cos B.
+\sin B,\qquad \cos B.
 $$
 
-【图片占位符：確認問題直角三角形】
+![第8講 PART1 確認問題 直角三角形](/img/math1a-advanced/lesson12/confirm-part1-right-triangle.svg)
 
 **2.** 在 $\angle ACB=90^\circ$ 的直角三角形中，
 
@@ -461,7 +461,7 @@ $$
    $$
    \tan\theta=\frac12,
    $$
-   求 $\sin\theta,cos\theta$。
+   求 $\sin\theta,\cos\theta$。
 
 **［2］** 若
 
@@ -476,7 +476,7 @@ $$
 1. $\sin\theta\cos\theta$
 2. $\sin^3\theta+\cos^3\theta$
 3. $\sin\theta-\cos\theta$
-4. $\sin\theta,cos\theta$
+4. $\sin\theta,\cos\theta$
 :::
 
 <details className="solution-details">
@@ -610,7 +610,7 @@ $$
 \tan\theta=\frac5{12},
 $$
 
-判断可能的 $\sin\theta,cos\theta$。
+判断可能的 $\sin\theta,\cos\theta$。
 
 **3.** 若
 
@@ -623,7 +623,7 @@ $$
 求
 
 $$
-\sin\theta\cos\theta,qquad
+\sin\theta\cos\theta,\qquad
 \sin^3\theta+\cos^3\theta.
 $$
 
@@ -631,9 +631,9 @@ $$
 
 $$
 \sin\theta-\cos\theta,
-qquad
+\qquad
 \sin\theta,
-qquad
+\qquad
 \cos\theta.
 $$
 :::

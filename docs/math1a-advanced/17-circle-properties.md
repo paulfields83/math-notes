@@ -39,7 +39,7 @@ $$
 圆内接四边形 $ABCD$ 满足
 
 $$
-AD=5,qquad BC=2.
+AD=5,\qquad BC=2.
 $$
 
 直线 $AD$ 与直线 $BC$ 交于 $E$，直线 $AB$ 与直线 $CD$ 交于 $F$。
@@ -47,19 +47,19 @@ $$
 又知
 
 $$
-AE=3,qquad CF=2.
+AE=3,\qquad CF=2.
 $$
 
 求：
 
 1. $BE$
 2. $CD$
-3. $angle E$ 的角平分线与直线 $CD$ 交于 $G$；$angle F$ 的角平分线与直线 $EG$ 交于 $H$，与直线 $AD$ 交于 $I$。求
+3. $\angle E$ 的角平分线与直线 $CD$ 交于 $G$；$\angle F$ 的角平分线与直线 $EG$ 交于 $H$，与直线 $AD$ 交于 $I$。求
    $$
    FH:HI.
    $$
 
-【图片占位符：圆内接四边形 ABCD、点 E、F、G、H、I】
+![第7講 PART1 圆与外部交点](/img/math1a-advanced/lesson17/part1-cyclic-external.svg)
 :::
 
 <details className="solution-details">
@@ -192,7 +192,7 @@ $$
 圆内接四边形 $ABCD$ 满足
 
 $$
-AD=4,qquad CD=5.
+AD=4,\qquad CD=5.
 $$
 
 直线 $AD$ 与直线 $BC$ 交于 $E$，直线 $AB$ 与直线 $CD$ 交于 $F$。
@@ -200,19 +200,19 @@ $$
 又知
 
 $$
-AE=2,qquad BE=3.
+AE=2,\qquad BE=3.
 $$
 
 求：
 
 1. $BC$
 2. $CF$
-3. $angle E$ 的角平分线与直线 $CD$ 交于 $G$；$angle F$ 的角平分线与直线 $EG$ 交于 $H$，与直线 $AD$ 交于 $I$。用最简整数比求
+3. $\angle E$ 的角平分线与直线 $CD$ 交于 $G$；$\angle F$ 的角平分线与直线 $EG$ 交于 $H$，与直线 $AD$ 交于 $I$。用最简整数比求
    $$
    FI:HI.
    $$
 
-【图片占位符：確認問題圆图】
+![第7講 PART1 確認問題 圆与外部交点](/img/math1a-advanced/lesson17/part1-cyclic-external.svg)
 :::
 
 <details className="solution-details">
@@ -336,7 +336,7 @@ $$
 目标式出现“长度乘积”时，优先寻找相似或方幂。
 
 :::info[High Level 讲义题｜第7講 PART2]
-**1.** 在 $\triangle ABC$ 中，$angle A$ 的角平分线与边 $BC$ 交于 $D$。
+**1.** 在 $\triangle ABC$ 中，$\angle A$ 的角平分线与边 $BC$ 交于 $D$。
 
 证明
 
@@ -346,9 +346,9 @@ $$
 
 必要时可令直线 $AD$ 与 $\triangle ABC$ 的外接圆再次交于 $E$，并利用相似三角形。
 
-【图片占位符：内角平分线与外接圆】
+![第7講 PART2 内角平分线与外接圆](/img/math1a-advanced/lesson17/part2-internal-bisector-circle.svg)
 
-**2.** 在 $\triangle ABC$ 中，$angle A$ 的外角平分线与边 $BC$ 的延长线交于 $P$。
+**2.** 在 $\triangle ABC$ 中，$\angle A$ 的外角平分线与边 $BC$ 的延长线交于 $P$。
 
 证明
 
@@ -356,7 +356,7 @@ $$
 AP^2=BP\cdot PC-AB\cdot AC.
 $$
 
-【图片占位符：外角平分线】
+![第7講 PART2 外角平分线](/img/math1a-advanced/lesson17/part2-external-bisector.svg)
 :::
 
 <details className="solution-details">
@@ -440,7 +440,7 @@ $$
 
 
 :::note[同类型练习｜第7講 PART2 確認問題]
-在 $\triangle ABC$ 中，$angle A$ 的角平分线与边 $BC$ 交于 $D$。
+在 $\triangle ABC$ 中，$\angle A$ 的角平分线与边 $BC$ 交于 $D$。
 
 证明
 
@@ -459,7 +459,7 @@ $$
    $$
    消去 $E$。
 
-【图片占位符：確認問題证明图】
+![第7講 PART2 確認問題证明图](/img/math1a-advanced/lesson17/part2-internal-bisector-circle.svg)
 :::
 
 <details className="solution-details">
@@ -529,7 +529,7 @@ $$
 
 证明直线 $AQ$ 与 $\triangle ABP$ 的外接圆相切。
 
-【图片占位符：A、B、P、Q 与外接圆】
+![第7講 PART3 接弦定理的逆](/img/math1a-advanced/lesson17/part3-tangent-converse.svg)
 
 **2.** 四边形 $ABCD$ 的两条对角线 $AC,BD$ 在点 $P$ 垂直相交，并且
 
@@ -539,7 +539,7 @@ $$
 
 证明 $\triangle PAB$ 与 $\triangle PCD$ 的外接圆互相外切。
 
-【图片占位符：四边形 ABCD 与两个外接圆】
+![第7講 PART3 两个外接圆外切](/img/math1a-advanced/lesson17/part3-two-circles-tangent.svg)
 :::
 
 <details className="solution-details">
@@ -625,7 +625,7 @@ $$
 
 教材提示：先在外接圆的点 $A$ 处作切线，再利用接弦定理与已知角相等关系证明该切线与 $AQ$ 重合。
 
-【图片占位符：確認問題切线证明图】
+![第7講 PART3 確認問題切线证明](/img/math1a-advanced/lesson17/part3-tangent-converse.svg)
 
 **2.** 在 $\triangle ABC$ 的边 $BC$ 上取点 $D$，直线 $AD$ 与 $\triangle ABC$ 的外接圆再次交于 $E$。
 
@@ -637,7 +637,7 @@ $$
 
 证明直线 $AB$ 与经过 $B,D,E$ 三点的圆相切。
 
-【图片占位符：等腰三角形与两个圆】
+![第7講 PART3 確認問題 等腰三角形与两个圆](/img/math1a-advanced/lesson17/confirm-part3-isosceles-two-circles.svg)
 :::
 
 <details className="solution-details">

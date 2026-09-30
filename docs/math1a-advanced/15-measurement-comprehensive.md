@@ -40,7 +40,7 @@ $$
 
 求四面体 $PABC$ 的体积 $V$。
 
-【图片占位符：四面体 PABC 与高】
+![第10講 PART3 講義問題 四面体](/img/math1a-advanced/lesson15/hl-part3-tetrahedron.svg)
 :::
 
 <details className="solution-details">
@@ -119,7 +119,7 @@ $$
 1. 高 $h$
 2. 体积 $V$
 
-【图片占位符：確認問題四面体】
+![第10講 PART3 確認問題 四面体](/img/math1a-advanced/lesson15/confirm-part3-tetrahedron.svg)
 :::
 
 <details className="solution-details">
@@ -199,7 +199,7 @@ $$
 :::note[综合练习]
 本讲综合复习时，使用第8～10講前面已经文本化的講義問題与確認問題。
 
-其中所有必须依赖原图的信息继续保留图片占位符，不另外自编图形条件。
+需要图形的题已使用题意一致的示意图；图均不按比例绘制，不额外添加题目条件。
 :::
 
 ---
