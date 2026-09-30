@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="650" height="450" viewBox="0 0 650 450">
 <rect width="100%" height="100%" fill="white"/>
 <text x="18" y="26" font-size="17" font-weight="600">第7講 PART3 接弦定理的逆</text>
-<text x="500" y="438" font-size="11">示意图（不按比例）</text><circle cx="300" cy="235" r="125" fill="none" stroke="#777" stroke-width="1.5"/><polyline points="190,175 385,145 360,330 190,175" fill="none" stroke="#111" stroke-width="2"/><line x1="190" y1="175" x2="80" y2="90" stroke="#111" stroke-width="2"/><text x="198" y="183" font-size="14">A</text><text x="393" y="153" font-size="14">B</text><text x="368" y="338" font-size="14">P</text><text x="88" y="82" font-size="14">Q</text><text x="95" y="115" font-size="12">AQ：A点的切线</text></svg>
+<circle cx="315" cy="235" r="125" fill="none" stroke="#777" stroke-width="1.5"/><polyline points="201.71152662041874,182.17271728241258 423.2531754730548,172.49999999999994 347.3523806378151,355.74072828613356 201.71152662041874,182.17271728241258" fill="none" stroke="#111" stroke-width="2"/><line x1="201.71152662041874" y1="182.17271728241258" x2="277.7828137337446" y2="19.037315615815572" stroke="#111" stroke-width="2"/><text x="208.71152662041874" y="188.17271728241258" font-size="14">A</text><text x="430.2531754730548" y="178.49999999999994" font-size="14">B</text><text x="354.3523806378151" y="361.74072828613356" font-size="14">P</text><text x="284.7828137337446" y="11.037315615815572" font-size="14">Q</text>
+<text x="500" y="438" font-size="11">示意图（不按比例）</text>
+</svg>

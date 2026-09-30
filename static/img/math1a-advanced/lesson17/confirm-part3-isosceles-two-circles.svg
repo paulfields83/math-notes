@@ -1,5 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
 <rect width="100%" height="100%" fill="white"/>
 <text x="18" y="26" font-size="17" font-weight="600">第7講 PART3 確認問題</text>
-<text x="610" y="508" font-size="11">示意图（不按比例）</text><circle cx="370" cy="255" r="210" fill="none" stroke="#777" stroke-width="1.5"/>
-      <circle cx="310" cy="390" r="145" fill="none" stroke="#999" stroke-width="1.5"/><polyline points="370,70 170,360 570,360 370,70" fill="none" stroke="#111" stroke-width="2"/><line x1="370" y1="70" x2="455" y2="430" stroke="#111" stroke-width="2"/><line x1="170" y1="360" x2="430" y2="360" stroke="#111" stroke-width="2"/><text x="378" y="62" font-size="14">A</text><text x="178" y="368" font-size="14">B</text><text x="578" y="368" font-size="14">C</text><text x="438" y="368" font-size="14">D</text><text x="463" y="438" font-size="14">E</text><text x="245" y="160" font-size="12">AB = AC</text><text x="120" y="380" font-size="12">AB 为圆(BDE)的切线</text></svg>
+<circle cx="360" cy="275.6132075471698" r="200.6132075471698" fill="none" stroke="#777" stroke-width="1.5"/>
+<circle cx="299.99999999999994" cy="433.2075471698115" r="159.96139174629803" fill="none" stroke="#999" stroke-width="1.5"/><polyline points="360,75 170,340 550,340 360,75" fill="none" stroke="#111" stroke-width="2"/><line x1="360" y1="75" x2="459.07154742096503" y2="450.05657237936765" stroke="#111" stroke-width="2"/><text x="367" y="67" font-size="14">A</text><text x="177" y="346" font-size="14">B</text><text x="557" y="346" font-size="14">C</text><text x="437" y="346" font-size="14">D</text><text x="466.07154742096503" y="456.05657237936765" font-size="14">E</text><text x="225" y="150" font-size="12">AB = AC</text>
+<text x="610" y="508" font-size="11">示意图（不按比例）</text>
+</svg>
