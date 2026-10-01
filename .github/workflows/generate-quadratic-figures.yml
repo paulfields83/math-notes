@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   generate:
@@ -20,13 +21,19 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+
       - name: Install LaTeX and SVG tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends             texlive-xetex texlive-latex-extra texlive-pictures texlive-lang-chinese             fonts-noto-cjk inkscape
+          sudo apt-get install -y --no-install-recommends \
+            texlive-xetex texlive-latex-extra texlive-pictures texlive-lang-chinese \
+            fonts-noto-cjk inkscape
+
       - name: Build SVGs from LaTeX
         run: bash .github/scripts/build-quadratic-figures.sh
+
       - name: Commit generated SVGs
+        id: generated
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -37,8 +44,16 @@ jobs:
           git add static/img/math1a-advanced/lesson07/signs-0-1-2.svg
           git add static/img/math1a-advanced/lesson08/tool-selection-flow.svg
           if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No generated figure changes."
           else
             git commit -m "Generate quadratic SVGs from LaTeX"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Deploy site with generated figures
+        if: steps.generated.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
