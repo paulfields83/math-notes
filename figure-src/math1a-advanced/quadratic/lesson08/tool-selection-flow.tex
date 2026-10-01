@@ -1,28 +1,27 @@
-\documentclass[tikz,border=4pt]{standalone}
-\usepackage{ctex}
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 \begin{document}
 \begin{tikzpicture}[
   >=Latex,
-  node distance=7mm and 9mm,
-  box/.style={draw,rounded corners,align=center,minimum width=3.4cm,minimum height=0.95cm,font=\small},
-  start/.style={draw,rounded corners,very thick,align=center,minimum width=3.8cm,minimum height=1cm,font=\small}
+  sig/.style={draw,rounded corners,minimum width=5.0cm,minimum height=.9cm,align=center},
+  tool/.style={draw,rounded corners,minimum width=5.6cm,minimum height=.9cm,align=center}
 ]
-\node[start] (q) {先判断题面信号};
-\node[box,below left=10mm and 30mm of q] (a) {最大・最小＋区间};
-\node[box,below=10mm of q] (b) {两个实根 / 相切};
-\node[box,below right=10mm and 30mm of q] (c) {根的位置};
-\node[box,below=of a] (a2) {对称轴＋定义域};
-\node[box,below=of b] (b2) {判别式 $D$};
-\node[box,below=of c] (c2) {$D+$轴+$f(p)$};
-\node[box,below=18mm of a2] (d) {$|f(x)|=k$};
-\node[box,below=18mm of b2] (e) {恒成立};
-\node[box,below=18mm of c2] (f) {二变量 / $x^4,x^2$};
-\node[box,below=of d] (d2) {绝对值图像＋水平线};
-\node[box,below=of e] (e2) {全实数：全局最值/判别式\\有限区间：区间最值};
-\node[box,below=of f] (f2) {消元 或 $t=x^2$\\并重写定义域};
-\foreach \u/\v in {q/a,q/b,q/c,a/a2,b/b2,c/c2,a2/d,b2/e,c2/f,d/d2,e/e2,f/f2}
-  \draw[->] (\u)--(\v);
+  \node[font=\large] (title) {二次函数综合题：先看题面信号，再选工具};
+  \node[sig,below=10mm of title,xshift=-3.4cm] (s1) {最大・最小＋区间};
+  \node[tool,right=16mm of s1] (t1) {对称轴＋定义域};
+  \node[sig,below=5mm of s1] (s2) {两个实根 / 相切};
+  \node[tool,right=16mm of s2] (t2) {判别式 $D$};
+  \node[sig,below=5mm of s2] (s3) {根在某侧 / 某区间};
+  \node[tool,right=16mm of s3] (t3) {$D+$ 对称轴 $+f(p)$};
+  \node[sig,below=5mm of s3] (s4) {$|f(x)|=k$};
+  \node[tool,right=16mm of s4] (t4) {绝对值图像＋水平线};
+  \node[sig,below=5mm of s4] (s5) {恒成立};
+  \node[tool,right=16mm of s5] (t5) {全实数：全局最值 / 判别式\\有限区间：区间最值};
+  \node[sig,below=5mm of s5] (s6) {二变量约束 / $x^4,x^2$};
+  \node[tool,right=16mm of s6] (t6) {消元，或令 $t=x^2$ 后重写定义域};
+  \foreach \a/\b in {s1/t1,s2/t2,s3/t3,s4/t4,s5/t5,s6/t6} \draw[->,thick] (\a)--(\b);
 \end{tikzpicture}
 \end{document}

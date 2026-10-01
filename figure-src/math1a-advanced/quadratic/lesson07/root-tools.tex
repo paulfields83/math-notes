@@ -1,40 +1,39 @@
-\documentclass[tikz,border=4pt]{standalone}
-\usepackage{ctex}
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
 \usepackage{amsmath}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
+\usepackage{tikz}
 \begin{document}
-\begin{tikzpicture}
-  \node[font=\small] at (2.45,4.25) {① 判别式 $D$：先确认根的个数};
+\begin{tikzpicture}[font=\small]
   \begin{scope}[shift={(0,0)}]
-    \draw[->] (0,1.6)--(1.4,1.6);
-    \draw[->] (0.7,0.55)--(0.7,2.65);
-    \draw[very thick] (0.15,2.4) parabola bend (0.7,1.05) (1.25,2.4);
-    \draw (1.65,1.6)--(3.05,1.6); \draw[->] (2.35,0.55)--(2.35,2.65);
-    \draw[very thick] (1.8,2.25) parabola bend (2.35,1.6) (2.9,2.25);
-    \draw (3.3,1.6)--(4.7,1.6); \draw[->] (4.0,0.55)--(4.0,2.65);
-    \draw[very thick] (3.45,2.15) parabola bend (4.0,0.9) (4.55,2.15);
-    \node at (0.7,0.25) {$D<0$}; \node at (2.35,0.25) {$D=0$}; \node at (4.0,0.25) {$D>0$};
+    \node[font=\normalsize] at (2.55,4.35) {① 判别式 $D$：先确认根的个数};
+    \foreach \x/\lab/\bend in {0/{$D<0$}/1.0,1.7/{$D=0$}/1.55,3.4/{$D>0$}/0.75} {
+      \draw[->] (\x,1.65)--(\x+1.35,1.65);
+      \draw[->] (\x+0.68,0.5)--(\x+0.68,2.9);
+      \draw[very thick] (\x+0.12,2.55) parabola bend (\x+0.68,\bend) (\x+1.24,2.55);
+      \node at (\x+0.68,0.15) {\lab};
+    }
   \end{scope}
-  \begin{scope}[shift={(5.7,0)}]
-    \node[font=\small] at (2.2,4.25) {② 对称轴：两个根的中心};
-    \draw[->] (0,1.6)--(4.5,1.6) node[right] {$x$};
-    \draw[->] (1.0,0.35)--(1.0,3.25) node[above] {$y$};
-    \draw[very thick] plot[smooth] coordinates {(0.3,3.0) (1.0,1.85) (1.9,0.75) (2.4,0.5) (2.9,0.75) (3.8,1.85) (4.45,3.0)};
-    \draw[dashed,gray] (2.4,0.35)--(2.4,3.2);
-    \fill (1.55,1.6) circle (1.8pt) node[above left] {$\alpha$};
-    \fill (3.25,1.6) circle (1.8pt) node[above right] {$\beta$};
-    \node[below] at (2.4,0.28) {$x=-\frac{b}{2a}=\frac{\alpha+\beta}{2}$};
+  \begin{scope}[shift={(6.0,0)}]
+    \node[font=\normalsize] at (2.3,4.35) {② 对称轴：两个根的中心};
+    \draw[->] (0,1.65)--(4.7,1.65) node[right] {$x$};
+    \draw[->] (0.9,0.4)--(0.9,3.25) node[above] {$y$};
+    \draw[very thick] (0.25,3.0) parabola bend (2.35,0.55) (4.45,3.0);
+    \draw[dashed,gray] (2.35,0.4)--(2.35,3.15);
+    \fill (1.40,1.65) circle (2pt) node[above left] {$\alpha$};
+    \fill (3.30,1.65) circle (2pt) node[above right] {$\beta$};
+    \node at (2.35,0.08) {$x=-\dfrac{b}{2a}=\dfrac{\alpha+\beta}{2}$};
   \end{scope}
-  \begin{scope}[shift={(11.2,0)}]
-    \node[font=\small] at (2.35,4.25) {③ $f(p)$：点 $p$ 在根内还是根外};
-    \draw[->] (0,1.6)--(4.8,1.6) node[right] {$x$};
-    \draw[->] (1.0,0.35)--(1.0,3.25) node[above] {$y$};
-    \draw[very thick] plot[smooth] coordinates {(0.3,3.0) (1.0,1.85) (1.8,0.65) (2.4,0.35) (3.0,0.65) (3.8,1.85) (4.5,3.0)};
-    \fill (1.5,1.6) circle (1.8pt); \fill (3.3,1.6) circle (1.8pt);
-    \draw[dashed,gray] (2.4,1.6)--(2.4,0.35);
-    \node[above] at (2.4,1.6) {$p$};
-    \node[below] at (2.4,0.2) {开口向上时：$f(p)<0$ 表示 $p$ 在两根之间};
+  \begin{scope}[shift={(12.0,0)}]
+    \node[font=\normalsize] at (2.45,4.35) {③ $f(p)$：$p$ 在两根之间还是外侧};
+    \draw[->] (0,1.65)--(4.9,1.65) node[right] {$x$};
+    \draw[->] (0.9,0.4)--(0.9,3.25) node[above] {$y$};
+    \draw[very thick] (0.25,3.0) parabola bend (2.45,0.45) (4.65,3.0);
+    \fill (1.42,1.65) circle (2pt);
+    \fill (3.47,1.65) circle (2pt);
+    \draw[dashed,gray] (2.45,1.65)--(2.45,0.45);
+    \node[above] at (2.45,1.65) {$p$};
+    \node[align=center] at (2.45,-0.05) {开口向上时\\$f(p)<0\Rightarrow p$ 在两根之间};
   \end{scope}
 \end{tikzpicture}
 \end{document}

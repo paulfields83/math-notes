@@ -1,21 +1,22 @@
-\documentclass[tikz,border=4pt]{standalone}
-\usepackage{ctex}
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \begin{document}
 \begin{tikzpicture}
 \begin{axis}[
-  width=8cm,height=5.8cm,
-  axis lines=middle,xmin=-0.5,xmax=4.5,ymin=-0.5,ymax=9.8,
+  width=8.4cm,height=5.8cm,
+  axis lines=middle,xmin=-0.45,xmax=4.55,ymin=-0.55,ymax=9.8,
   xtick={0,3,4},ytick={8,9},xlabel={$x$},ylabel={$y$},clip=false,
-  title={$g(x)=-x^2+6x\quad(0<x\le4)$},title style={font=\small}]
+  title={$g(x)=-x^2+6x\quad(0<x\le4)$},title style={font=\small,yshift=-2pt}]
   \addplot[very thick,domain=0:4,samples=180] {-x^2+6*x};
-  \addplot[only marks,mark=o,mark size=2.2pt] coordinates {(0,0)};
+  \addplot[only marks,mark=o,mark size=2.4pt] coordinates {(0,0)};
   \addplot[only marks,mark=*,mark size=2.0pt] coordinates {(3,9) (4,8)};
   \addplot[dashed,gray] coordinates {(3,0) (3,9)};
   \node[anchor=west,font=\small] at (axis cs:3.08,9.0) {最大值 $9$};
-  \node[anchor=west,font=\small] at (axis cs:0.08,0.7) {$x=0$ 不可取};
-  \node[anchor=west,font=\small] at (axis cs:0.08,1.6) {可趋近 $0$，但无最小值};
+  \node[anchor=west,font=\small] at (axis cs:0.08,1.30) {$x=0$ 不可取};
+  \node[anchor=west,font=\small] at (axis cs:0.08,0.45) {函数值趋近 $0$，但最小值不存在};
 \end{axis}
 \end{tikzpicture}
 \end{document}

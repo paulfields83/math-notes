@@ -1,38 +1,39 @@
-\documentclass[tikz,border=4pt]{standalone}
-\usepackage{ctex}
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
 \usepackage{amsmath}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \begin{document}
 \begin{tikzpicture}
   \begin{axis}[
-    width=7.2cm,height=5.4cm,
+    width=7.0cm,height=5.2cm,
     axis lines=middle,
-    xmin=-3,xmax=2.3,ymin=-3.1,ymax=3.2,
+    xmin=-3,xmax=2.3,ymin=-3.05,ymax=3.15,
     xtick={-2,1},ytick={-2.25},
     xticklabels={$-2$,$1$},yticklabels={$-\frac94$},
     xlabel={$x$},ylabel={$y$},clip=false,
-    title={$y=f(x)=x^2+x-2$},title style={font=\small}]
-    \addplot[very thick,domain=-3:2,samples=180] {x^2+x-2};
-    \addplot[dashed,gray] coordinates {(-0.5,-3.0) (-0.5,3.0)};
+    title={$y=f(x)=x^2+x-2$},title style={font=\small,yshift=-2pt}]
+    \addplot[very thick,domain=-3:2.15,samples=180] {x^2+x-2};
+    \addplot[dashed,gray] coordinates {(-0.5,-2.85) (-0.5,2.9)};
     \addplot[only marks,mark=*,mark size=1.8pt] coordinates {(-2,0) (1,0) (-0.5,-2.25)};
   \end{axis}
   \begin{axis}[
-    at={(8.2cm,0)},anchor=south west,
-    width=7.2cm,height=5.4cm,
+    at={(8.0cm,0)},anchor=south west,
+    width=7.0cm,height=5.2cm,
     axis lines=middle,
-    xmin=-3,xmax=2.3,ymin=-0.5,ymax=3.2,
+    xmin=-3,xmax=2.3,ymin=-0.45,ymax=3.15,
     xtick={-2,1},ytick={2.25},
     xticklabels={$-2$,$1$},yticklabels={$\frac94$},
     xlabel={$x$},ylabel={$y$},clip=false,
-    title={$y=|f(x)|$},title style={font=\small}]
-    \addplot[very thick,domain=-3:-2,samples=70] {x^2+x-2};
+    title={$y=|f(x)|$},title style={font=\small,yshift=-2pt}]
+    \addplot[very thick,domain=-3:-2,samples=80] {x^2+x-2};
     \addplot[very thick,domain=-2:1,samples=120] {-(x^2+x-2)};
-    \addplot[very thick,domain=1:2,samples=70] {x^2+x-2};
-    \addplot[dashed,gray] coordinates {(-0.5,-0.4) (-0.5,3.0)};
+    \addplot[very thick,domain=1:2.15,samples=80] {x^2+x-2};
+    \addplot[dashed,gray] coordinates {(-0.5,-0.35) (-0.5,2.95)};
     \addplot[only marks,mark=*,mark size=1.8pt] coordinates {(-2,0) (1,0) (-0.5,2.25)};
   \end{axis}
-  \draw[->,thick] (6.7,2.4) -- (8.0,2.4);
-  \node[font=\small,align=center] at (7.35,2.9) {$x$轴下方\\关于$x$轴翻折};
+  \draw[->,thick] (6.55,2.45) -- (7.75,2.45);
+  \node[font=\small,align=center] at (7.15,3.0) {$x$ 轴下方的部分\\关于 $x$ 轴翻折};
 \end{tikzpicture}
 \end{document}

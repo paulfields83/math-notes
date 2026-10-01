@@ -1,18 +1,19 @@
-\documentclass[tikz,border=4pt]{standalone}
-\usepackage{ctex}
+\documentclass[tikz,border=5pt]{standalone}
+\usepackage{xeCJK}
+\setCJKmainfont{Noto Sans CJK SC}
 \usepackage{tikz}
 \usetikzlibrary{decorations.pathreplacing}
 \begin{document}
 \begin{tikzpicture}[font=\small]
-  \node[font=\normalsize] at (2.2,1.15) {定义域固定，对称轴随参数移动};
-  \foreach \y/\lab/\pos in {0/{$a<0$}/-0.8,-2.35/{$0\le a\le3$}/1.6,-4.7/{$a>3$}/4.5} {
+  \node[font=\normalsize] at (2.3,1.0) {定义域固定，对称轴 $x=a$ 移动};
+  \foreach \y/\lab/\pos in {0/{$a<0$}/-0.8,-2.2/{$0\le a\le3$}/1.7,-4.4/{$a>3$}/4.75} {
     \node[anchor=east] at (-0.35,\y) {\lab};
-    \draw[very thick] (0,\y)--(4.2,\y);
-    \fill (0,\y) circle (2pt) node[below=4pt] {$0$};
-    \fill (4.2,\y) circle (2pt) node[below=4pt] {$3$};
-    \draw[dashed,gray] (\pos,\y-0.58)--(\pos,\y+0.58) node[above] {$x=a$};
+    \draw[very thick] (0,\y)--(4.4,\y);
+    \fill (0,\y) circle (2.2pt) node[below=4pt] {$0$};
+    \fill (4.4,\y) circle (2.2pt) node[below=4pt] {$3$};
+    \draw[dashed,gray] (\pos,\y-0.62)--(\pos,\y+0.62) node[above] {$x=a$};
   }
-  \draw[decorate,decoration={brace,amplitude=5pt}] (0,-5.4)--(4.2,-5.4)
-    node[midway,below=7pt] {固定定义域 $0\le x\le3$};
+  \draw[decorate,decoration={brace,amplitude=5pt}] (0,-5.15)--(4.4,-5.15)
+    node[midway,below=8pt] {固定定义域 $0\le x\le3$};
 \end{tikzpicture}
 \end{document}
