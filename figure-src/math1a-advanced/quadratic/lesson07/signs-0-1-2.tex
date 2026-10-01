@@ -1,0 +1,4 @@
+\documentclass[tikz,border=4pt]{standalone}\usepackage{ctex}\usepackage{pgfplots}\pgfplotsset{compat=1.18}
+\begin{document}\begin{tikzpicture}\begin{axis}[axis lines=middle,xmin=-.35,xmax=2.35,ymin=-.75,ymax=2.8,xtick={0,1,2},ytick=\empty]
+\addplot[very thick,domain=-.15:2.2,samples=180]{2*x^2-3*x+.5};\addplot[only marks,mark=*]coordinates{(0,.5)(1,-.5)(2,2.5)};
+\end{axis}\end{tikzpicture}\end{document}

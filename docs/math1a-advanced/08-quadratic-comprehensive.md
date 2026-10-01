@@ -186,7 +186,7 @@ $$
 |x^2+2x-3|=-2x+k
 $$
 
-[图占位：第7講 PART2 講義問題 解的个数判断图]
+![第7講 PART2 講義問題 解的个数判断图](/img/math1a-advanced/lesson08/hl-part2-solution-graphs.svg)
 :::
 
 <details className="solution-details">
@@ -268,7 +268,7 @@ $k$ を定数とする。次の方程式の異なる実数解の個数を、$k$ 
 1. $|x^2-4x+3|=k$
 2. $|x^2-3x|=|x-3|+k$
 
-[图占位：第7講 PART2 確認問題 图像整理]
+![第7講 PART2 確認問題 图像整理](/img/math1a-advanced/lesson08/confirm-part2-solution-graphs.svg)
 :::
 
 <details className="solution-details">
@@ -362,7 +362,7 @@ $$
 | 二变量约束 | 消元 |
 | $x^4,x^2$ | $t=x^2$ 并重写定义域 |
 
-[图占位：二次函数综合题的工具选择流程]
+![二次函数综合题工具选择流程](/img/math1a-advanced/lesson08/tool-selection-flow.svg)
 
 :::note[二次函数综合追加练习]
 第4～7講の確認問題を横断して使用する。参数・最值・根的位置・绝对值の4类を混合して復習する。

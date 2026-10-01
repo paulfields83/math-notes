@@ -15,7 +15,7 @@ sidebar_position: 6
 
 **解说图**
 
-[图占位：判别式与x轴交点]
+![判别式与x轴交点](/img/math1a-advanced/lesson06/discriminant-intersections.svg)
 :::info[High Level 讲义题｜第5講 PART1]
 1. 次の二次関数のグラフと $x$ 軸の共有点の座標を求めよ。
    - $y=-x^2+2x+3$

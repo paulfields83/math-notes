@@ -1,0 +1,5 @@
+\documentclass[tikz,border=4pt]{standalone}\usepackage{ctex}
+\begin{document}\begin{tikzpicture}[font=\small]
+\foreach \y/\lab/\pos in {0/{$a<0$}/-0.8,-2.3/{$0\le a\le3$}/1.6,-4.6/{$a>3$}/4.5}{
+\node[anchor=east] at (-.3,\y){\lab};\draw[very thick](0,\y)--(4.2,\y);\draw[dashed,gray](\pos,\y-.6)--(\pos,\y+.6)node[above]{$x=a$};}
+\end{tikzpicture}\end{document}

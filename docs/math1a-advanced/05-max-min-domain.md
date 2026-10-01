@@ -33,7 +33,7 @@ $
 a=0,\qquad a=3.
 $
 
-[图占位：固定区间 $[0,3]$ 与移动对称轴 $x=a$ 的三种位置]
+![固定区间与移动对称轴](/img/math1a-advanced/lesson05/fixed-domain-moving-axis.svg)
 
 :::info[追加例题｜固定定义域・轴移动]
 函数
@@ -84,7 +84,7 @@ $
 
 **解说图**
 
-[图占位：定义域与对称轴的位置关系]
+![定义域与对称轴的位置关系](/img/math1a-advanced/lesson05/domain-axis-cases.svg)
 :::info[High Level 讲义题｜第4講 PART1]
 関数
 $$
@@ -216,7 +216,7 @@ $
 $
 时，$x=2$ 不能代入。
 
-[图占位：闭端点与开端点在图像上的区别]
+![开端点与最值存在性](/img/math1a-advanced/lesson05/open-closed-extrema.svg)
 
 :::info[追加例题｜最值是否存在]
 函数

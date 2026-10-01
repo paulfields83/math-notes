@@ -118,7 +118,7 @@ $$
 
 **確認問題2 图像选项（按教材重绘）**
 
-[图占位：第3講 PART1 確認問題2 图像选项]
+![第3講 PART1 確認問題2 图像选项](/img/math1a-advanced/lesson04/confirm-part1-q2-problem.svg)
 :::
 
 <details className="solution-details">
@@ -184,7 +184,7 @@ $$
 
 因此画 $y=|f(x)|$ 时，先画 $y=f(x)$，再把 $x$ 轴下方的部分翻折。
 
-[图占位：$y=f(x)$ 与 $y=|f(x)|$ 的翻折关系]
+![绝对值函数图像翻折](/img/math1a-advanced/lesson04/abs-transform.svg)
 
 :::info[追加例题｜二次函数的绝对值图像]
 画出
@@ -403,7 +403,7 @@ $$
 4. $b^2-4ac$
 5. $a+b+c$
 
-[图占位：第3講 PART3 講義問題 图像]
+![第3講 PART3 講義問題 图像](/img/math1a-advanced/lesson04/hl-part3-q1-problem.svg)
 :::
 
 <details className="solution-details">
@@ -438,7 +438,7 @@ a,\quad b,\quad c,\quad b^2-4ac,\quad a+b+c
 $$
 の符号を調べよ。
 
-[图占位：第3講 PART3 確認問題 图像]
+![第3講 PART3 確認問題 图像](/img/math1a-advanced/lesson04/confirm-part3-q1-problem.svg)
 :::
 
 <details className="solution-details">
