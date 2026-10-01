@@ -1,4 +1,28 @@
-\documentclass[tikz,border=4pt]{standalone}\usepackage{ctex}\usetikzlibrary{positioning,arrows.meta}
-\begin{document}\begin{tikzpicture}[box/.style={draw,rounded corners,align=center,minimum width=3cm,minimum height=.8cm}]
-\node[box](q){先判断题面信号};\node[box,below left=of q]{最大・最小＋区间};\node[box,below=of q]{两个实根 / 相切};\node[box,below right=of q]{根的位置};
-\end{tikzpicture}\end{document}
+\documentclass[tikz,border=4pt]{standalone}
+\usepackage{ctex}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\begin{document}
+\begin{tikzpicture}[
+  >=Latex,
+  node distance=7mm and 9mm,
+  box/.style={draw,rounded corners,align=center,minimum width=3.4cm,minimum height=0.95cm,font=\small},
+  start/.style={draw,rounded corners,very thick,align=center,minimum width=3.8cm,minimum height=1cm,font=\small}
+]
+\node[start] (q) {先判断题面信号};
+\node[box,below left=10mm and 30mm of q] (a) {最大・最小＋区间};
+\node[box,below=10mm of q] (b) {两个实根 / 相切};
+\node[box,below right=10mm and 30mm of q] (c) {根的位置};
+\node[box,below=of a] (a2) {对称轴＋定义域};
+\node[box,below=of b] (b2) {判别式 $D$};
+\node[box,below=of c] (c2) {$D+$轴+$f(p)$};
+\node[box,below=18mm of a2] (d) {$|f(x)|=k$};
+\node[box,below=18mm of b2] (e) {恒成立};
+\node[box,below=18mm of c2] (f) {二变量 / $x^4,x^2$};
+\node[box,below=of d] (d2) {绝对值图像＋水平线};
+\node[box,below=of e] (e2) {全实数：全局最值/判别式\\有限区间：区间最值};
+\node[box,below=of f] (f2) {消元 或 $t=x^2$\\并重写定义域};
+\foreach \u/\v in {q/a,q/b,q/c,a/a2,b/b2,c/c2,a2/d,b2/e,c2/f,d/d2,e/e2,f/f2}
+  \draw[->] (\u)--(\v);
+\end{tikzpicture}
+\end{document}
