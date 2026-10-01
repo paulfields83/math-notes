@@ -6,22 +6,35 @@
 \pgfplotsset{compat=1.18}
 \begin{document}
 \begin{tikzpicture}
+  \pgfmathsetmacro{\rootA}{(3-sqrt(5))/4}
+  \pgfmathsetmacro{\rootB}{(3+sqrt(5))/4}
   \begin{axis}[
-    width=9cm,height=5.8cm,
-    axis lines=middle,xmin=-0.35,xmax=2.35,ymin=-0.75,ymax=2.85,
+    width=10cm,height=6.3cm,
+    axis lines=middle,
+    xmin=-0.35,xmax=2.35,ymin=-1.65,ymax=2.85,
     xtick={0,1,2},ytick=\empty,xlabel={$x$},ylabel={$y$},clip=false,
     title={$f(x)=2x^2-3x+\frac12$：端点函数值判断根所在区间},
-    title style={font=\small,yshift=-2pt}]
-    \addplot[very thick,domain=-0.15:2.2,samples=180] {2*x^2-3*x+0.5};
-    \addplot[only marks,mark=*,mark size=2pt] coordinates {(0,0.5) (1,-0.5) (2,2.5)};
-    \addplot[dashed,gray] coordinates {(0,0) (0,0.5)};
-    \addplot[dashed,gray] coordinates {(1,0) (1,-0.5)};
-    \addplot[dashed,gray] coordinates {(2,0) (2,2.5)};
+    title style={font=\small,yshift=-2pt}
+  ]
+    \addplot[very thick,domain=-0.15:2.2,samples=220]{2*x^2-3*x+0.5};
+
+    % 根点严格由 f(x)=0 的解析解生成
+    \addplot[only marks,mark=*,mark size=2.2pt] coordinates {(\rootA,0) (\rootB,0)};
+    \node[above left,font=\small] at (axis cs:\rootA,0) {$\alpha$};
+    \node[above right,font=\small] at (axis cs:\rootB,0) {$\beta$};
+
+    % 三个端点处的函数值
+    \addplot[only marks,mark=*,mark size=1.8pt] coordinates {(0,0.5) (1,-0.5) (2,2.5)};
+    \draw[dashed,gray] (axis cs:0,0) -- (axis cs:0,0.5);
+    \draw[dashed,gray] (axis cs:1,0) -- (axis cs:1,-0.5);
+    \draw[dashed,gray] (axis cs:2,0) -- (axis cs:2,2.5);
     \node[anchor=west,font=\small] at (axis cs:0.04,0.72) {$f(0)>0$};
-    \node[anchor=west,font=\small] at (axis cs:1.03,-0.58) {$f(1)<0$};
+    \node[anchor=west,font=\small] at (axis cs:1.04,-0.72) {$f(1)<0$};
     \node[anchor=east,font=\small] at (axis cs:1.96,2.58) {$f(2)>0$};
-    \node[font=\small] at (axis cs:0.48,-0.45) {一根在 $(0,1)$};
-    \node[font=\small] at (axis cs:1.56,0.32) {一根在 $(1,2)$};
+
+    % 结论放到图像下方，避免遮挡曲线
+    \node[font=\small,align=center] at (axis cs:0.48,-1.25) {$f(0)$ 与 $f(1)$ 异号\\$\Rightarrow$ 一根在 $(0,1)$};
+    \node[font=\small,align=center] at (axis cs:1.56,-1.25) {$f(1)$ 与 $f(2)$ 异号\\$\Rightarrow$ 一根在 $(1,2)$};
   \end{axis}
 \end{tikzpicture}
 \end{document}

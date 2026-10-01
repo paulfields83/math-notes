@@ -2,38 +2,54 @@
 \usepackage{xeCJK}
 \setCJKmainfont{Noto Sans CJK SC}
 \usepackage{amsmath}
-\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \begin{document}
-\begin{tikzpicture}[font=\small]
-  \begin{scope}[shift={(0,0)}]
-    \node[font=\normalsize] at (2.55,4.35) {① 判别式 $D$：先确认根的个数};
-    \foreach \x/\lab/\bend in {0/{$D<0$}/1.0,1.7/{$D=0$}/1.55,3.4/{$D>0$}/0.75} {
-      \draw[->] (\x,1.65)--(\x+1.35,1.65);
-      \draw[->] (\x+0.68,0.5)--(\x+0.68,2.9);
-      \draw[very thick] (\x+0.12,2.55) parabola bend (\x+0.68,\bend) (\x+1.24,2.55);
-      \node at (\x+0.68,0.15) {\lab};
-    }
-  \end{scope}
-  \begin{scope}[shift={(6.0,0)}]
-    \node[font=\normalsize] at (2.3,4.35) {② 对称轴：两个根的中心};
-    \draw[->] (0,1.65)--(4.7,1.65) node[right] {$x$};
-    \draw[->] (0.9,0.4)--(0.9,3.25) node[above] {$y$};
-    \draw[very thick] (0.25,3.0) parabola bend (2.35,0.55) (4.45,3.0);
-    \draw[dashed,gray] (2.35,0.4)--(2.35,3.15);
-    \fill (1.40,1.65) circle (2pt) node[above left] {$\alpha$};
-    \fill (3.30,1.65) circle (2pt) node[above right] {$\beta$};
-    \node at (2.35,0.08) {$x=-\dfrac{b}{2a}=\dfrac{\alpha+\beta}{2}$};
-  \end{scope}
-  \begin{scope}[shift={(12.0,0)}]
-    \node[font=\normalsize] at (2.45,4.35) {③ $f(p)$：$p$ 在两根之间还是外侧};
-    \draw[->] (0,1.65)--(4.9,1.65) node[right] {$x$};
-    \draw[->] (0.9,0.4)--(0.9,3.25) node[above] {$y$};
-    \draw[very thick] (0.25,3.0) parabola bend (2.45,0.45) (4.65,3.0);
-    \fill (1.42,1.65) circle (2pt);
-    \fill (3.47,1.65) circle (2pt);
-    \draw[dashed,gray] (2.45,1.65)--(2.45,0.45);
-    \node[above] at (2.45,1.65) {$p$};
-    \node[align=center] at (2.45,-0.05) {开口向上时\\$f(p)<0\Rightarrow p$ 在两根之间};
-  \end{scope}
+\begin{tikzpicture}
+  % ① 判别式：三个明确函数的示意图
+  \node[font=\normalsize] at (2.7,4.6) {① 判别式 $D$：先确认根的个数};
+  \foreach \sx/\offset/\lab in {0/0.35/{$D<0$},1.8/0/{$D=0$},3.6/-0.45/{$D>0$}} {
+    \begin{scope}[shift={(\sx,1.4)}]
+      \draw[->] (-0.78,0)--(0.82,0);
+      \draw[->] (0,-0.75)--(0,1.35);
+      \draw[very thick,domain=-0.72:0.72,smooth,variable=\x]
+        plot ({\x},{1.55*\x*\x+\offset});
+      \node[font=\small] at (0,-1.05) {\lab};
+    \end{scope}
+  }
+
+  % ② 对称轴：函数 y=(x-1)(x-3)，根点由公式直接生成
+  \begin{axis}[
+    at={(6.1cm,0)},anchor=south west,
+    width=5.7cm,height=4.5cm,
+    axis lines=middle,
+    xmin=-0.5,xmax=4.5,ymin=-1.5,ymax=4.0,
+    xtick=\empty,ytick=\empty,clip=false,
+    title={② 对称轴：两个根的中心},title style={font=\normalsize,yshift=2pt}
+  ]
+    \addplot[very thick,domain=-0.3:4.3,samples=180]{(x-1)*(x-3)};
+    \addplot[only marks,mark=*,mark size=2.2pt] coordinates {(1,0) (3,0)};
+    \draw[dashed,gray] (axis cs:2,-1.35) -- (axis cs:2,3.8);
+    \node[above left,font=\small] at (axis cs:1,0) {$\alpha$};
+    \node[above right,font=\small] at (axis cs:3,0) {$\beta$};
+    \node[below,font=\small] at (axis cs:2,-1.35) {$x=-\dfrac{b}{2a}=\dfrac{\alpha+\beta}{2}$};
+  \end{axis}
+
+  % ③ f(p)：函数 y=(x-1)(x-4)，两个根与 p 的函数值均由同一公式生成
+  \begin{axis}[
+    at={(12.0cm,0)},anchor=south west,
+    width=5.7cm,height=4.5cm,
+    axis lines=middle,
+    xmin=-0.2,xmax=5.2,ymin=-2.7,ymax=4.3,
+    xtick=\empty,ytick=\empty,clip=false,
+    title={③ $f(p)$：$p$ 在两根之间还是外侧},title style={font=\normalsize,yshift=2pt}
+  ]
+    \addplot[very thick,domain=0:5,samples=200]{(x-1)*(x-4)};
+    \addplot[only marks,mark=*,mark size=2.2pt] coordinates {(1,0) (4,0)};
+    \addplot[only marks,mark=*,mark size=1.8pt] coordinates {(2.5,-2.25)};
+    \draw[dashed,gray] (axis cs:2.5,0) -- (axis cs:2.5,-2.25);
+    \node[above,font=\small] at (axis cs:2.5,0) {$p$};
+    \node[below,font=\small,align=center] at (axis cs:2.5,-2.42) {开口向上时：$f(p)<0$\\$\Rightarrow p$ 在两根之间};
+  \end{axis}
 \end{tikzpicture}
 \end{document}
