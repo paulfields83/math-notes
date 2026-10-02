@@ -71,7 +71,7 @@ $$
 所以交点为
 
 $$
-\boxed{\left(1-\frac{\sqrt5}{2},0\right),\
+\boxed{\left(1-\frac{\sqrt5}{2},0\right),\\
 \left(1+\frac{\sqrt5}{2},0\right)}.
 $$
 
@@ -159,7 +159,7 @@ $$
 所以
 
 $$
-\boxed{\left(2-\frac{\sqrt2}{3},0\right),\
+\boxed{\left(2-\frac{\sqrt2}{3},0\right),\\
 \left(2+\frac{\sqrt2}{3},0\right)}.
 $$
 
