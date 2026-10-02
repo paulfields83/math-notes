@@ -18,53 +18,53 @@ sidebar_position: 5
 - 参数使对称轴的位置移动。
 
 典型形式：
-$
+$$
 f(x)=x^2-2ax,\qquad 0\le x\le3.
-$
+$$
 
 配方：
-$
+$$
 f(x)=(x-a)^2-a^2,
-$
+$$
 所以轴为 $x=a$。
 
 分类点来自轴与区间端点的位置关系：
-$
+$$
 a=0,\qquad a=3.
-$
+$$
 
 ![固定区间与移动对称轴](/img/math1a-advanced/lesson05/fixed-domain-moving-axis.svg)
 
 :::info[追加例题｜固定定义域・轴移动]
 函数
-$
+$$
 f(x)=x^2-2ax\qquad(0\le x\le3)
-$
+$$
 的最小値を $a$ の範囲で場合分けして求めよ。
 :::
 
 <details className="solution-details">
 <summary>查看答案</summary>
 
-$
+$$
 f(x)=(x-a)^2-a^2.
-$
+$$
 
 - $a<0$：轴在区间左侧，最小值在 $x=0$：
-  $
+  $$
   f(0)=0.
-  $
+  $$
 - $0\le a\le3$：轴在区间内，最小值在 $x=a$：
-  $
+  $$
   f(a)=-a^2.
-  $
+  $$
 - $a>3$：轴在区间右侧，最小值在 $x=3$：
-  $
+  $$
   f(3)=9-6a.
-  $
+  $$
 
 所以
-$
+$$
 \boxed{
 m(a)=
 \begin{cases}
@@ -72,7 +72,7 @@ m(a)=
 -a^2,&0\le a\le3,\\
 9-6a,&a>3.
 \end{cases}}
-$
+$$
 
 </details>
 
@@ -211,73 +211,73 @@ $$
 > 函数值“无限接近某个数”不等于“取得这个数”。
 
 例如定义域为
-$
+$$
 -1\le x<2
-$
+$$
 时，$x=2$ 不能代入。
 
 ![开端点与最值存在性](/img/math1a-advanced/lesson05/open-closed-extrema.svg)
 
 :::info[追加例题｜最值是否存在]
 函数
-$
+$$
 f(x)=x^2-2x+3\qquad(-1\le x<2)
-$
+$$
 の最大値・最小値を調べよ。
 :::
 
 <details className="solution-details">
 <summary>查看答案</summary>
 
-$
+$$
 f(x)=(x-1)^2+2.
-$
+$$
 
 顶点 $x=1$ 属于定义域，所以
-$
+$$
 \boxed{\text{最小值 }2}.
-$
+$$
 
 左端点 $x=-1$ 可以取到：
-$
+$$
 f(-1)=6.
-$
+$$
 
 右端点 $x=2$ 不能取，而且接近 $x=2$ 时函数值只接近 $3$。因此最大值仍在左端点取得：
 
-$
+$$
 \boxed{\text{最大值 }6}.
-$
+$$
 
 </details>
 
 :::note[当堂练习｜开区间]
 函数
-$
+$$
 g(x)=-x^2+6x\qquad(0<x\le4)
-$
+$$
 の最大値・最小値の有無を調べよ。
 :::
 
 <details className="solution-details">
 <summary>查看答案</summary>
 
-$
+$$
 g(x)=-(x-3)^2+9.
-$
+$$
 
 顶点 $x=3$ 在定义域内，所以
-$
+$$
 \boxed{\text{最大值 }9}.
-$
+$$
 
 当 $x\to0^+$ 时，$g(x)\to0$，但 $x=0$ 不能取；另一方面 $g(4)=8$。
 
 因此函数值可以任意接近 $0$，但不能取得 $0$，所以
 
-$
+$$
 \boxed{\text{最小值不存在}}.
-$
+$$
 
 </details>
 
