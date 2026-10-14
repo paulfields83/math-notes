@@ -79,7 +79,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\q\quad
+\qquad
 s_x^2=a^2s_u^2
 $$
 
@@ -108,7 +108,7 @@ $$
 因此
 
 $$
-\bar u=\boxed2,
+\bar u=\boxed{2},
 $$
 
 $$
@@ -158,7 +158,7 @@ $$
 并且
 
 $$
-\bar x=60,q\quad \bar y=45.
+\bar x=60,\qquad \bar y=45.
 $$
 
 回答：
