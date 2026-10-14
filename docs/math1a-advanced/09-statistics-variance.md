@@ -22,7 +22,7 @@ sidebar_position: 9
 
 $$
 \bar x=\frac1n\sum x_i,
-\\qquad
+\qquad
 s^2=\frac1n\sum (x_i-\bar x)^2.
 $$
 
@@ -42,7 +42,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\\qquad
+\qquad
 s_x^2=a^2s_u^2.
 $$
 
@@ -67,7 +67,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\\qquad
+\qquad
 s_x^2=a^2s_u^2,
 $$
 
@@ -168,7 +168,7 @@ $$
 
 $$
 \bar x=a\bar u+b,
-\\qquad
+\qquad
 s_x^2=a^2s_u^2
 $$
 
@@ -290,7 +290,7 @@ $$
 原平均值为 $14$。将
 
 $$
-11\to13,\\qquad 20\to18
+11\to13,\qquad 20\to18
 $$
 
 后，总和不变，因此平均值仍为 $14$。
@@ -372,7 +372,7 @@ $$
 $y$ 的平均值原为 $45$。修正
 
 $$
-50\to53,\\qquad 44\to41
+50\to53,\qquad 44\to41
 $$
 
 后，总和不变，所以平均值仍为 $45$。
