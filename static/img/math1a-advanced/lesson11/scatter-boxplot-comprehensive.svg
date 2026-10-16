@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="30" font-size="18" font-weight="600">数学・理科｜散布図と箱ひげ図の総合判断</text>
+<!-- scatterplot -->
+<text x="55" y="68" font-size="14" font-weight="600">散布図</text>
+<line x1="100" y1="390" x2="540" y2="390" stroke="#111" stroke-width="1.5"/>
+<line x1="100" y1="90" x2="100" y2="390" stroke="#111" stroke-width="1.5"/>
+<g stroke="#e2e2e2" stroke-width="1">
+<line x1="100" y1="90" x2="100" y2="390"/><text x="92" y="410" font-size="10" fill="#555">30</text><line x1="155" y1="90" x2="155" y2="390"/><text x="147" y="410" font-size="10" fill="#555">40</text><line x1="210" y1="90" x2="210" y2="390"/><text x="202" y="410" font-size="10" fill="#555">50</text><line x1="265" y1="90" x2="265" y2="390"/><text x="257" y="410" font-size="10" fill="#555">60</text><line x1="320" y1="90" x2="320" y2="390"/><text x="312" y="410" font-size="10" fill="#555">70</text><line x1="375" y1="90" x2="375" y2="390"/><text x="367" y="410" font-size="10" fill="#555">80</text><line x1="430" y1="90" x2="430" y2="390"/><text x="422" y="410" font-size="10" fill="#555">90</text><line x1="485" y1="90" x2="485" y2="390"/><text x="477" y="410" font-size="10" fill="#555">100</text>
+<line x1="100" y1="390" x2="540" y2="390"/><text x="72" y="394" font-size="10" fill="#555">20</text><line x1="100" y1="352.5" x2="540" y2="352.5"/><text x="72" y="356.5" font-size="10" fill="#555">30</text><line x1="100" y1="315" x2="540" y2="315"/><text x="72" y="319" font-size="10" fill="#555">40</text><line x1="100" y1="277.5" x2="540" y2="277.5"/><text x="72" y="281.5" font-size="10" fill="#555">50</text><line x1="100" y1="240" x2="540" y2="240"/><text x="72" y="244" font-size="10" fill="#555">60</text><line x1="100" y1="202.5" x2="540" y2="202.5"/><text x="72" y="206.5" font-size="10" fill="#555">70</text><line x1="100" y1="165" x2="540" y2="165"/><text x="72" y="169" font-size="10" fill="#555">80</text><line x1="100" y1="127.5" x2="540" y2="127.5"/><text x="72" y="131.5" font-size="10" fill="#555">90</text><line x1="100" y1="90" x2="540" y2="90"/><text x="72" y="94" font-size="10" fill="#555">100</text>
+</g>
+<g fill="#333">
+<circle cx="127.5" cy="277.5" r="4.5"/><circle cx="155" cy="296.25" r="4.5"/><circle cx="182.5" cy="333.75" r="4.5"/><circle cx="221" cy="232.5" r="4.5"/><circle cx="243" cy="221.25" r="4.5"/><circle cx="265" cy="210" r="4.5"/><circle cx="287" cy="195" r="4.5"/><circle cx="309" cy="187.5" r="4.5"/><circle cx="331" cy="172.5" r="4.5"/><circle cx="347.5" cy="258.75" r="4.5"/><circle cx="353" cy="157.5" r="4.5"/><circle cx="375" cy="165" r="4.5"/><circle cx="386" cy="142.5" r="4.5"/><circle cx="402.5" cy="135" r="4.5"/><circle cx="419" cy="150" r="4.5"/><circle cx="430" cy="131.25" r="4.5"/><circle cx="441" cy="112.5" r="4.5"/><circle cx="452" cy="138.75" r="4.5"/><circle cx="463" cy="123.75" r="4.5"/><circle cx="474" cy="105" r="4.5"/>
+</g>
+<text x="465" y="434" font-size="12">数学（点）</text>
+<text x="35" y="105" font-size="12">理科（点）</text>
+
+<!-- boxplots -->
+<text x="620" y="68" font-size="14" font-weight="600">箱ひげ図</text>
+<g stroke="#ddd" stroke-width="1">
+<line x1="630" y1="100" x2="630" y2="315"/><text x="622" y="335" font-size="10" fill="#555">30</text><line x1="670" y1="100" x2="670" y2="315"/><text x="662" y="335" font-size="10" fill="#555">40</text><line x1="710" y1="100" x2="710" y2="315"/><text x="702" y="335" font-size="10" fill="#555">50</text><line x1="750" y1="100" x2="750" y2="315"/><text x="742" y="335" font-size="10" fill="#555">60</text><line x1="790" y1="100" x2="790" y2="315"/><text x="782" y="335" font-size="10" fill="#555">70</text><line x1="830" y1="100" x2="830" y2="315"/><text x="822" y="335" font-size="10" fill="#555">80</text><line x1="870" y1="100" x2="870" y2="315"/><text x="862" y="335" font-size="10" fill="#555">90</text><line x1="910" y1="100" x2="910" y2="315"/><text x="902" y="335" font-size="10" fill="#555">100</text>
+</g>
+<text x="575" y="150" font-size="13">数学</text>
+<line x1="650" y1="145" x2="710" y2="145" stroke="#111" stroke-width="2"/>
+<line x1="822" y1="145" x2="894" y2="145" stroke="#111" stroke-width="2"/>
+<line x1="650" y1="132" x2="650" y2="158" stroke="#111" stroke-width="2"/>
+<line x1="894" y1="132" x2="894" y2="158" stroke="#111" stroke-width="2"/>
+<rect x="710" y="125" width="112" height="40" fill="white" stroke="#111" stroke-width="2"/>
+<line x1="770" y1="125" x2="770" y2="165" stroke="#111" stroke-width="2"/>
+
+<text x="575" y="245" font-size="13">理科</text>
+<line x1="650" y1="240" x2="730" y2="240" stroke="#111" stroke-width="2"/>
+<line x1="850" y1="240" x2="886" y2="240" stroke="#111" stroke-width="2"/>
+<line x1="650" y1="227" x2="650" y2="253" stroke="#111" stroke-width="2"/>
+<line x1="886" y1="227" x2="886" y2="253" stroke="#111" stroke-width="2"/>
+<rect x="730" y="220" width="120" height="40" fill="white" stroke="#111" stroke-width="2"/>
+<line x1="790" y1="220" x2="790" y2="260" stroke="#111" stroke-width="2"/>
+<text x="620" y="370" font-size="12" fill="#555">複数の情報源を切り替えて判断する練習用。</text>
+<text x="24" y="600" font-size="12" fill="#555">4STEP総合問題型をもとに、判断関係が保たれるよう見やすく再構成。</text>
+</svg>
