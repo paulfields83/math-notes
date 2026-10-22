@@ -431,6 +431,92 @@ $$
 
 ---
 
+## 3　两条对角线直接求四边形面积
+
+复合图形不一定每次都要分别求四个小三角形。
+
+若四边形两条对角线长度为
+
+$$
+p,\qquad q,
+$$
+
+夹角为 $\theta$，则面积为
+
+$$
+\boxed{
+S=\frac12pq\sin\theta
+}.
+$$
+
+本质仍然是把四边形沿两条对角线分成四个三角形，再把面积相加。
+
+:::info[4STEP 教材题型｜対角線と面積]
+四边形 $ABCD$ 的对角线 $AC,BD$ 交于 $O$。
+
+已知
+
+$$
+AC=4,\qquad
+BD=7,\qquad
+\angle AOB=45^\circ.
+$$
+
+求四边形面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+直接使用
+
+$$
+S=\frac12AC\cdot BD\sin\angle AOB.
+$$
+
+因此
+
+$$
+S
+=
+\frac12\cdot4\cdot7\cdot\frac{\sqrt2}{2}
+=
+\boxed{7\sqrt2}.
+$$
+
+</details>
+
+:::note[確認問題｜対角線の面積公式]
+某四边形两条对角线长分别为
+
+$$
+6,\qquad8,
+$$
+
+夹角为
+
+$$
+30^\circ.
+$$
+
+求面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+$$
+S
+=
+\frac12\cdot6\cdot8\cdot\sin30^\circ
+=
+\boxed{12}.
+$$
+
+</details>
+
+---
+
 ## 本讲整理
 
 复合图形题不要整体硬算。
