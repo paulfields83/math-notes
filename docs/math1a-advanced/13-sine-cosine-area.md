@@ -453,6 +453,110 @@ $$
 
 ---
 
+:::note[提高演习｜角的关系式 → 边的关系式]
+在 $\triangle ABC$ 中，
+
+$$
+\sin C
+=
+2\cos A\sin B.
+$$
+
+判断 $\triangle ABC$ 的形状。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+设外接圆半径为 $R$。
+
+由正弦定理，
+
+$$
+\sin C=\frac{c}{2R},
+\qquad
+\sin B=\frac{b}{2R}.
+$$
+
+原条件变为
+
+$$
+\frac{c}{2R}
+=
+2\cos A\cdot\frac{b}{2R}.
+$$
+
+因此
+
+$$
+c=2b\cos A.
+$$
+
+再由余弦定理，
+
+$$
+\cos A
+=
+\frac{b^2+c^2-a^2}{2bc}.
+$$
+
+代入：
+
+$$
+c
+=
+2b\cdot
+\frac{b^2+c^2-a^2}{2bc}
+=
+\frac{b^2+c^2-a^2}{c}.
+$$
+
+所以
+
+$$
+c^2
+=
+b^2+c^2-a^2,
+$$
+
+即
+
+$$
+a^2=b^2.
+$$
+
+边长为正，因此
+
+$$
+a=b.
+$$
+
+故
+
+$$
+\boxed{BC=CA}
+$$
+
+即 $\triangle ABC$ 为以 $C$ 为顶角的等腰三角形。
+
+> 这一类题的主线是：
+>
+> \[
+> \boxed{
+> \text{角的式子}
+> \rightarrow
+> \text{正弦/余弦定理}
+> \rightarrow
+> \text{边的式子}
+> \rightarrow
+> \text{判断形状}
+> }
+> \]
+
+</details>
+
+---
+
 ## 3　正弦・余弦定理的测量应用
 
 第12讲的测量主要落到直角三角形；当目标点与基线不能组成直角结构时，就要进入正弦定理、余弦定理。
@@ -541,6 +645,177 @@ BP
 $$
 
 > 重点不是“测量题一定用 $\operatorname{tan}$”，而是先看图形是否有直角。没有直角时，正弦定理往往更自然。
+
+</details>
+
+---
+
+:::info[4STEP 提高题｜多地点测量]
+为了求两个不能直接测量地点 $P,Q$ 之间的距离，在同一直线上取三个地点 $A,B,C$。
+
+已知
+
+$$
+AB=400\text{ m},
+\qquad
+BC=100\sqrt3\text{ m},
+$$
+
+并且
+
+$$
+\angle QAB=30^\circ,
+$$
+
+$$
+\angle PBA=\angle QBC=75^\circ,
+$$
+
+$$
+\angle PCB=45^\circ.
+$$
+
+![多地点测量](/img/math1a-advanced/lesson13/survey-pq-distance.svg)
+
+求
+
+$$
+PQ.
+$$
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+这题不能一步求 $PQ$，要先分别求 $BP,BQ$。
+
+### 1. 求 $BP$
+
+在 $\triangle PBC$ 中，
+
+$$
+\angle PBC
+=
+180^\circ-75^\circ
+=
+105^\circ.
+$$
+
+所以
+
+$$
+\angle BPC
+=
+180^\circ-105^\circ-45^\circ
+=
+30^\circ.
+$$
+
+由正弦定理：
+
+$$
+\frac{BP}{\sin45^\circ}
+=
+\frac{BC}{\sin30^\circ}.
+$$
+
+因此
+
+$$
+BP
+=
+100\sqrt3\cdot
+\frac{\sin45^\circ}{\sin30^\circ}
+=
+\boxed{100\sqrt6}.
+$$
+
+### 2. 求 $BQ$
+
+在 $\triangle QAB$ 中，
+
+$$
+\angle QBA
+=
+180^\circ-75^\circ
+=
+105^\circ.
+$$
+
+所以
+
+$$
+\angle AQB
+=
+45^\circ.
+$$
+
+由正弦定理：
+
+$$
+\frac{BQ}{\sin30^\circ}
+=
+\frac{AB}{\sin45^\circ}.
+$$
+
+因此
+
+$$
+BQ
+=
+400\cdot
+\frac{\sin30^\circ}{\sin45^\circ}
+=
+\boxed{200\sqrt2}.
+$$
+
+### 3. 求 $PQ$
+
+从点 $B$ 看，
+
+$$
+\angle PBQ
+=
+105^\circ-75^\circ
+=
+30^\circ.
+$$
+
+在 $\triangle PBQ$ 中用余弦定理：
+
+$$
+PQ^2
+=
+(100\sqrt6)^2
++
+(200\sqrt2)^2
+-
+2\cdot100\sqrt6\cdot200\sqrt2\cos30^\circ.
+$$
+
+整理得
+
+$$
+PQ^2=20000.
+$$
+
+所以
+
+$$
+\boxed{PQ=100\sqrt2\text{ m}}.
+$$
+
+> 这是一道典型的“不能直接套一个公式”的题：
+>
+> \[
+> \boxed{
+> \text{正弦定理}
+> \rightarrow
+> \text{正弦定理}
+> \rightarrow
+> \text{余弦定理}
+> }
+> \]
 
 </details>
 
@@ -729,6 +1004,135 @@ $$
 
 </details>
 
+
+---
+
+### 提高演习：把多个公式串成一个新公式
+
+在 $\triangle ABC$ 中，已知
+
+$$
+AB=c,
+\qquad
+\angle A=A,
+\qquad
+\angle B=B.
+$$
+
+设面积为 $S$。
+
+证明：
+
+$$
+\boxed{
+S
+=
+\frac{c^2\sin A\sin B}
+{2\sin(A+B)}
+}
+$$
+
+其中 $A+B<180^\circ$。
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+因为
+
+$$
+C=180^\circ-(A+B),
+$$
+
+所以
+
+$$
+\sin C
+=
+\sin(A+B).
+$$
+
+由正弦定理：
+
+$$
+\frac{a}{\sin A}
+=
+\frac{c}{\sin C},
+$$
+
+因此
+
+$$
+a
+=
+\frac{c\sin A}{\sin C}.
+$$
+
+同理，
+
+$$
+b
+=
+\frac{c\sin B}{\sin C}.
+$$
+
+面积公式：
+
+$$
+S
+=
+\frac12ab\sin C.
+$$
+
+代入：
+
+$$
+S
+=
+\frac12
+\cdot
+\frac{c\sin A}{\sin C}
+\cdot
+\frac{c\sin B}{\sin C}
+\cdot
+\sin C.
+$$
+
+所以
+
+$$
+S
+=
+\frac{c^2\sin A\sin B}{2\sin C}.
+$$
+
+再用
+
+$$
+\sin C=\sin(A+B),
+$$
+
+得到
+
+$$
+\boxed{
+S
+=
+\frac{c^2\sin A\sin B}
+{2\sin(A+B)}
+}.
+$$
+
+> 这类题不是要求背“新公式”，而是练习：
+>
+> \[
+> \text{正弦定理}
+> +
+> \text{面积公式}
+> \Rightarrow
+> \text{自己生成公式}.
+> \]
+
+</details>
 
 ---
 
