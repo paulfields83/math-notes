@@ -1,30 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="430" viewBox="0 0 900 430">
 <rect width="100%" height="100%" fill="white"/>
 <text x="24" y="30" font-size="18" font-weight="600">正四面体の表面最短経路｜3面を展開する</text>
-<!-- unfolded equilateral triangles -->
 <g stroke="#222" stroke-width="2" fill="none">
-  <polygon points="170,320 370,320 270,146"/>
-  <polygon points="170,320 370,320 270,494"/>
+  <polygon points="150,210 350,210 250,36.8"/>
+  <polygon points="150,210 350,210 250,383.2"/>
+  <polygon points="350,210 250,383.2 450,383.2"/>
 </g>
-<!-- since bottom point off canvas, instead draw BCD and ACD to right -->
-<g stroke="#222" stroke-width="2" fill="none">
-  <polygon points="370,320 570,320 470,146"/>
-  <polygon points="570,320 670,146 470,146"/>
-</g>
-<!-- shortest straight line from A to M -->
-<line x1="270" y1="146" x2="570" y2="233" stroke="#666" stroke-width="2.5"/>
-<!-- intersection points -->
-<circle cx="370" cy="175" r="5" fill="#333"/>
-<circle cx="470" cy="204" r="5" fill="#333"/>
+<line x1="250" y1="36.8" x2="350" y2="383.2" stroke="#666" stroke-width="2.5"/>
+<circle cx="300" cy="210" r="5" fill="#333"/>
+<circle cx="316.7" cy="267.7" r="5" fill="#333"/>
 <g font-family="sans-serif" font-size="14">
-  <text x="260" y="132">A</text>
-  <text x="155" y="340">B</text>
-  <text x="375" y="340">C</text>
-  <text x="575" y="340">D</text>
-  <text x="675" y="140">A'</text>
-  <text x="360" y="165">P</text>
-  <text x="478" y="197">Q</text>
-  <text x="580" y="232">M</text>
+  <text x="240" y="28">A</text>
+  <text x="135" y="230">B</text>
+  <text x="355" y="225">C</text>
+  <text x="238" y="405">D</text>
+  <text x="455" y="398">A'</text>
+  <text x="288" y="202">P</text>
+  <text x="324" y="267">Q</text>
+  <text x="357" y="383">M</text>
 </g>
-<text x="24" y="405" font-size="12" fill="#666">模式図。実際には共有辺 BC, CD で面を順に展開し、A と M を一直線で結ぶ。</text>
+<text x="520" y="105" font-size="14">BC, CD を順に展開</text>
+<text x="520" y="135" font-size="14">A と M を一直線で結ぶ</text>
+<text x="24" y="420" font-size="12" fill="#666">展開後：PはBC上、QはCD上。直線 AM が表面上の最短経路に対応する。</text>
 </svg>
