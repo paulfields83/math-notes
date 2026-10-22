@@ -37,7 +37,7 @@ $$
 在 $\triangle ABC$ 中，
 
 $$
-BC=a,qquad CA=b,qquad AB=c.
+BC=a,\qquad CA=b,\qquad AB=c.
 $$
 
 回答：
@@ -135,7 +135,7 @@ $$
 在 $\triangle ABC$ 中，
 
 $$
-BC=a,qquad CA=b,qquad AB=c.
+BC=a,\qquad CA=b,\qquad AB=c.
 $$
 
 **1.** 若
@@ -243,19 +243,57 @@ $$
 
 用正弦定理求角后，要检查补角是否同样成立。
 
+:::tip[提高判断｜SSA 条件为什么可能有两个三角形？]
+当题目给出“两边＋其中一边的对角”时，属于常见的 **SSA 型**。
+
+若正弦定理得到
+
+$$
+\sin B=k,
+$$
+
+不能立刻只取一个角。因为在
+
+$$
+0^\circ<B<180^\circ
+$$
+
+中，可能同时有
+
+$$
+B=\beta
+\qquad\text{和}\qquad
+B=180^\circ-\beta.
+$$
+
+真正的检查顺序是：
+
+$$
+\boxed{
+\text{求出角的候补}
+\rightarrow
+\text{检查 }A+B<180^\circ
+\rightarrow
+\text{再判断有0、1还是2个三角形}
+}
+$$
+
+这也是“三角形的决定”里最容易漏解的地方。
+:::
+
 :::info[High Level 讲义题｜第9講 PART2]
 在 $\triangle ABC$ 中，
 
 $$
-b=1+\sqrt3,qquad
-c=2,qquad
+b=1+\sqrt3,\qquad
+c=2,\qquad
 C=45^\circ.
 $$
 
 求
 
 $$
-a,qquad A,qquad B.
+a,\qquad A,\qquad B.
 $$
 :::
 
@@ -277,13 +315,13 @@ $$
 得到
 
 $$
-a^2-(\sqrt6+2)a+2\sqrt3=0.
+a^2-(\sqrt6+\sqrt2)a+2\sqrt3=0.
 $$
 
 因式分解：
 
 $$
-(a-\sqrt6)(a-2)=0.
+(a-\sqrt6)(a-\sqrt2)=0.
 $$
 
 所以有两种三角形。
@@ -304,7 +342,7 @@ A=60^\circ,
 B=180^\circ-45^\circ-60^\circ=75^\circ.
 $$
 
-### ② $a=2$
+### ② $a=\sqrt2$
 
 可得
 
@@ -329,7 +367,7 @@ $$
 或
 
 $$
-\boxed{(a,A,B)=(2,30^\circ,105^\circ)}.
+\boxed{(a,A,B)=(\sqrt2,30^\circ,105^\circ)}.
 $$
 
 </details>
@@ -339,15 +377,15 @@ $$
 在 $\triangle ABC$ 中，
 
 $$
-b=2,qquad
-c=\sqrt2,qquad
+b=2,\qquad
+c=\sqrt2,\qquad
 C=30^\circ.
 $$
 
 求所有可能的
 
 $$
-a,qquad A,qquad B.
+a,\qquad A,\qquad B.
 $$
 :::
 
@@ -437,8 +475,8 @@ $$
 在 $\triangle ABC$ 中，
 
 $$
-AB=7,qquad
-BC=4\sqrt2,qquad
+AB=7,\qquad
+BC=4\sqrt2,\qquad
 CA=5.
 $$
 
@@ -521,15 +559,15 @@ $$
 在 $\triangle ABC$ 中，
 
 $$
-AB=10,qquad
-BC=3\sqrt5,qquad
+AB=10,\qquad
+BC=3\sqrt5,\qquad
 CA=5.
 $$
 
 求
 
 $$
-S,qquad r,qquad R.
+S,\qquad r,\qquad R.
 $$
 :::
 
@@ -593,6 +631,86 @@ $$
 
 </details>
 
+
+---
+
+## 4　提高工具：Heron公式
+
+当三边 $a,b,c$ 已知，而角度不好求时，可以直接使用 Heron 公式。
+
+设半周长
+
+$$
+s=\frac{a+b+c}{2},
+$$
+
+则三角形面积为
+
+$$
+\boxed{
+S=\sqrt{s(s-a)(s-b)(s-c)}
+}.
+$$
+
+:::info[教材例题｜三边から面積]
+三角形三边为
+
+$$
+5,\qquad9,\qquad6.
+$$
+
+用 Heron 公式求面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+半周长为
+
+$$
+s=\frac{5+9+6}{2}=10.
+$$
+
+因此
+
+$$
+S
+=
+\sqrt{10(10-5)(10-9)(10-6)}
+=
+\boxed{10\sqrt2}.
+$$
+
+</details>
+
+:::note[確認問題｜Heron公式]
+三角形三边为
+
+$$
+3,\qquad5,\qquad6.
+$$
+
+求面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+$$
+s=\frac{3+5+6}{2}=7.
+$$
+
+所以
+
+$$
+S
+=
+\sqrt{7\cdot4\cdot2\cdot1}
+=
+\boxed{2\sqrt{14}}.
+$$
+
+</details>
 
 ---
 
