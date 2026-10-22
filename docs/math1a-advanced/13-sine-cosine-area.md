@@ -13,227 +13,7 @@ sidebar_position: 13
 
 ---
 
-## 1　三角形的形状
-
-### 知识点
-
-正弦定理给出：
-
-$$
-\frac a{\sin A}
-=
-\frac b{\sin B}
-=
-\frac c{\sin C}.
-$$
-
-因此，最大边对应最大角。
-
-### 解题技巧
-
-出现三角比关系式时，可以利用正弦定理、余弦定理把“角”消掉，转成边的关系。
-
-:::info[High Level 讲义题｜第9講 PART1]
-在 $\triangle ABC$ 中，
-
-$$
-BC=a,\qquad CA=b,\qquad AB=c.
-$$
-
-回答：
-
-1. 若
-   $$
-   \sin A:\sin B:\sin C=3:5:7,
-   $$
-   求三个内角中最大角的大小。
-2. 若
-   $$
-   (a-c\cos B)\sin B
-   =
-   (b-c\cos A)\sin A,
-   $$
-   判断 $\triangle ABC$ 的形状。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-### 1.
-
-由正弦定理，
-
-$$
-a:b:c
-=
-\sin A:\sin B:\sin C
-=
-3:5:7.
-$$
-
-设
-
-$$
-a=3k,\quad b=5k,\quad c=7k.
-$$
-
-最大边是 $c$，所以最大角为 $C$。
-
-由余弦定理：
-
-$$
-\cos C
-=
-\frac{a^2+b^2-c^2}{2ab}
-=
-\frac{9+25-49}{30}
-=-\frac12.
-$$
-
-所以
-
-$$
-\boxed{C=120^\circ}.
-$$
-
-### 2.
-
-利用正弦定理与余弦定理把角消去，原条件最终化为
-
-$$
-(a^2+b^2-c^2)(a-b)=0.
-$$
-
-因为边长均为正，所以得到两种情况：
-
-$$
-a^2+b^2=c^2
-$$
-
-或
-
-$$
-a=b.
-$$
-
-因此三角形为
-
-$$
-\boxed{C=90^\circ\text{ 的直角三角形}}
-$$
-
-或
-
-$$
-\boxed{BC=CA\text{ 的等腰三角形}}.
-$$
-
-</details>
-
-
-:::note[同类型练习｜第9講 PART1 確認問題]
-在 $\triangle ABC$ 中，
-
-$$
-BC=a,\qquad CA=b,\qquad AB=c.
-$$
-
-**1.** 若
-
-$$
-\sin A:\sin B:\sin C
-=
-1:\sqrt5:\sqrt2,
-$$
-
-求最大角及其大小。
-
-**2.** 若
-
-$$
-a^2\cos A\sin B
-=
-b^2\cos B\sin A,
-$$
-
-判断 $\triangle ABC$ 的形状。
-
-教材选项包括：
-
-- $A=90^\circ$、$B=90^\circ$、$C=90^\circ$；
-- $BC=AC$、$AC=AB$、$AB=BC$ 的等腰三角形。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-### 1.
-
-由正弦定理：
-
-$$
-a:b:c
-=
-1:\sqrt5:\sqrt2.
-$$
-
-最大边为 $b$，所以最大角为 $B$。
-
-余弦定理：
-
-$$
-\cos B
-=
-\frac{a^2+c^2-b^2}{2ac}
-=
-\frac{1+2-5}{2\sqrt2}
-=-\frac1{\sqrt2}.
-$$
-
-因此
-
-$$
-\boxed{B=135^\circ}.
-$$
-
-### 2.
-
-把正弦、余弦分别用边长表示后整理，得到
-
-$$
-(a^2+b^2-c^2)(a^2-b^2)=0.
-$$
-
-所以
-
-$$
-a^2+b^2=c^2
-$$
-
-或
-
-$$
-a=b.
-$$
-
-即
-
-$$
-\boxed{C=90^\circ}
-$$
-
-或
-
-$$
-\boxed{BC=CA}.
-$$
-
-</details>
-
-
----
-
-## 2　三角形的决定
+## 1　三角形的决定
 
 ### 知识点
 
@@ -453,7 +233,320 @@ $$
 
 ---
 
-## 3　三角形面积、内切圆与外接圆
+## 2　三角形的形状
+
+### 知识点
+
+正弦定理给出：
+
+$$
+\frac a{\sin A}
+=
+\frac b{\sin B}
+=
+\frac c{\sin C}.
+$$
+
+因此，最大边对应最大角。
+
+### 解题技巧
+
+出现三角比关系式时，可以利用正弦定理、余弦定理把“角”消掉，转成边的关系。
+
+:::info[High Level 讲义题｜第9講 PART1]
+在 $\triangle ABC$ 中，
+
+$$
+BC=a,\qquad CA=b,\qquad AB=c.
+$$
+
+回答：
+
+1. 若
+   $$
+   \sin A:\sin B:\sin C=3:5:7,
+   $$
+   求三个内角中最大角的大小。
+2. 若
+   $$
+   (a-c\cos B)\sin B
+   =
+   (b-c\cos A)\sin A,
+   $$
+   判断 $\triangle ABC$ 的形状。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+由正弦定理，
+
+$$
+a:b:c
+=
+\sin A:\sin B:\sin C
+=
+3:5:7.
+$$
+
+设
+
+$$
+a=3k,\quad b=5k,\quad c=7k.
+$$
+
+最大边是 $c$，所以最大角为 $C$。
+
+由余弦定理：
+
+$$
+\cos C
+=
+\frac{a^2+b^2-c^2}{2ab}
+=
+\frac{9+25-49}{30}
+=-\frac12.
+$$
+
+所以
+
+$$
+\boxed{C=120^\circ}.
+$$
+
+### 2.
+
+利用正弦定理与余弦定理把角消去，原条件最终化为
+
+$$
+(a^2+b^2-c^2)(a-b)=0.
+$$
+
+因为边长均为正，所以得到两种情况：
+
+$$
+a^2+b^2=c^2
+$$
+
+或
+
+$$
+a=b.
+$$
+
+因此三角形为
+
+$$
+\boxed{C=90^\circ\text{ 的直角三角形}}
+$$
+
+或
+
+$$
+\boxed{BC=CA\text{ 的等腰三角形}}.
+$$
+
+</details>
+
+
+:::note[同类型练习｜第9講 PART1 確認問題]
+在 $\triangle ABC$ 中，
+
+$$
+BC=a,\qquad CA=b,\qquad AB=c.
+$$
+
+**1.** 若
+
+$$
+\sin A:\sin B:\sin C
+=
+1:\sqrt5:\sqrt2,
+$$
+
+求最大角及其大小。
+
+**2.** 若
+
+$$
+a^2\cos A\sin B
+=
+b^2\cos B\sin A,
+$$
+
+判断 $\triangle ABC$ 的形状。
+
+教材选项包括：
+
+- $A=90^\circ$、$B=90^\circ$、$C=90^\circ$；
+- $BC=AC$、$AC=AB$、$AB=BC$ 的等腰三角形。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+由正弦定理：
+
+$$
+a:b:c
+=
+1:\sqrt5:\sqrt2.
+$$
+
+最大边为 $b$，所以最大角为 $B$。
+
+余弦定理：
+
+$$
+\cos B
+=
+\frac{a^2+c^2-b^2}{2ac}
+=
+\frac{1+2-5}{2\sqrt2}
+=-\frac1{\sqrt2}.
+$$
+
+因此
+
+$$
+\boxed{B=135^\circ}.
+$$
+
+### 2.
+
+把正弦、余弦分别用边长表示后整理，得到
+
+$$
+(a^2+b^2-c^2)(a^2-b^2)=0.
+$$
+
+所以
+
+$$
+a^2+b^2=c^2
+$$
+
+或
+
+$$
+a=b.
+$$
+
+即
+
+$$
+\boxed{C=90^\circ}
+$$
+
+或
+
+$$
+\boxed{BC=CA}.
+$$
+
+</details>
+
+
+---
+
+## 3　正弦・余弦定理的测量应用
+
+第12讲的测量主要落到直角三角形；当目标点与基线不能组成直角结构时，就要进入正弦定理、余弦定理。
+
+:::note[讲义原创应用｜非直角测量]
+地面上两点 $A,B$ 相距
+
+$$
+AB=100\text{ m}.
+$$
+
+从 $A$ 观察目标点 $P$，测得
+
+$$
+\angle PAB=60^\circ;
+$$
+
+从 $B$ 观察同一目标点 $P$，测得
+
+$$
+\angle PBA=45^\circ.
+$$
+
+求
+
+$$
+AP,\qquad BP.
+$$
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+三角形第三个角为
+
+$$
+\angle APB
+=
+180^\circ-60^\circ-45^\circ
+=
+75^\circ.
+$$
+
+由正弦定理，
+
+$$
+\frac{AP}{\sin45^\circ}
+=
+\frac{100}{\sin75^\circ}.
+$$
+
+利用第12讲得到的
+
+$$
+\sin75^\circ
+=
+\frac{\sqrt6+\sqrt2}{4},
+$$
+
+可得
+
+$$
+AP
+=
+100\frac{\sin45^\circ}{\sin75^\circ}
+=
+\boxed{100(\sqrt3-1)\text{ m}}.
+$$
+
+同理，
+
+$$
+\frac{BP}{\sin60^\circ}
+=
+\frac{100}{\sin75^\circ},
+$$
+
+所以
+
+$$
+BP
+=
+100\frac{\sin60^\circ}{\sin75^\circ}
+=
+\boxed{50(3\sqrt2-\sqrt6)\text{ m}}.
+$$
+
+> 重点不是“测量题一定用 $\tan$”，而是先看图形是否有直角。没有直角时，正弦定理往往更自然。
+
+</details>
+
+---
+
+## 4　三角形面积、内切圆与外接圆
 
 ### 知识点
 
@@ -469,7 +562,12 @@ $$
 
 ### 解题技巧
 
-三边已知时，先求面积，再顺势求 $r,R$。
+面积公式要按条件选择：
+
+- 两边与夹角已知：$S=\frac12bc\sin A$；
+- 三边已知：可先用余弦定理求角，也可用 Heron 公式；
+- 与内切圆连接：$S=rs$；
+- 与外接圆连接：$S=\frac{abc}{4R}$。
 
 :::info[High Level 讲义题｜第9講 PART3]
 在 $\triangle ABC$ 中，
@@ -634,7 +732,7 @@ $$
 
 ---
 
-## 4　提高工具：Heron公式
+### 提高工具：Heron公式
 
 当三边 $a,b,c$ 已知，而角度不好求时，可以直接使用 Heron 公式。
 
@@ -712,12 +810,11 @@ $$
 
 </details>
 
+
 ---
 
 ## 本讲整理
 
-这三类题其实是一条线：
+本讲的主线是：
 
-> 正弦定理传递“边与角”  
-> 余弦定理完成“三角形决定”  
-> 面积再连接内切圆、外接圆
+> 先判断三角形是否唯一 → 再用正弦/余弦定理处理边角 → 关系式判断形状 → 面积连接内切圆、外接圆与 Heron 公式
