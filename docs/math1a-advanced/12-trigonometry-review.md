@@ -30,11 +30,13 @@ $$
 
 ---
 
-## 1　锐角三角比
+## 1　快速确认：锐角三角比
 
-### 解题技巧
+### 本讲定位
 
-先确认角，再确认对边、邻边、斜边。
+这一部分只做快速确认，不重新从定义讲起。
+
+先确认角，再确认对边、邻边、斜边；课堂重点放在后面的角范围、符号与综合判断。
 
 :::info[High Level 讲义题｜第8講 PART1]
 **［1］** 在直角三角形 $ABC$ 中，从顶点 $A$ 向边 $BC$ 作垂线，垂足为 $D$。
@@ -53,22 +55,6 @@ $$
 
 ![第8講 PART1 講義問題 直角三角形](/img/math1a-advanced/lesson12/hl-part1-right-triangle.svg)
 
-**［2］** 在
-
-$$
-\angle ACB=90^\circ
-$$
-
-的直角三角形 $ABC$ 中，已知
-
-$$
-\sin A=\frac23.
-$$
-
-求：
-
-1. $\cos A,\tan A$
-2. $\sin B,\cos B,\tan B$
 :::
 
 <details className="solution-details">
@@ -106,41 +92,6 @@ $$
 \boxed{\cos B=\frac2{\sqrt5}=\frac{2\sqrt5}{5}}.
 $$
 
-### ［2］
-
-已知
-
-$$
-\sin A=\frac23.
-$$
-
-因为 $A$ 为锐角，
-
-$$
-\cos A=\sqrt{1-\frac49}
-=\boxed{\frac{\sqrt5}{3}},
-$$
-
-$$
-\tan A=\frac{\sin A}{\cos A}
-=\boxed{\frac{2}{\sqrt5}}
-=\boxed{\frac{2\sqrt5}{5}}.
-$$
-
-又因为 $B=90^\circ-A$，
-
-$$
-\boxed{\sin B=\frac{\sqrt5}{3}},
-$$
-
-$$
-\boxed{\cos B=\frac23},
-$$
-
-$$
-\boxed{\tan B=\frac{\sqrt5}{2}}.
-$$
-
 </details>
 
 
@@ -159,18 +110,6 @@ $$
 
 ![第8講 PART1 確認問題 直角三角形](/img/math1a-advanced/lesson12/confirm-part1-right-triangle.svg)
 
-**2.** 在 $\angle ACB=90^\circ$ 的直角三角形中，
-
-$$
-\sin A=\frac13.
-$$
-
-求
-
-$$
-\cos A,\quad \tan A,\quad
-\sin B,\quad \cos B,\quad \tan B.
-$$
 :::
 
 <details className="solution-details">
@@ -212,212 +151,12 @@ $$
 \boxed{\cos B=\frac3{\sqrt{10}}=\frac{3\sqrt{10}}{10}}.
 $$
 
-### 2.
-
-$$
-\sin A=\frac13
-$$
-
-且 $A$ 为锐角，所以
-
-$$
-\boxed{\cos A=\frac{2\sqrt2}{3}},
-$$
-
-$$
-\boxed{\tan A=\frac{\sqrt2}{4}}.
-$$
-
-由余角关系，
-
-$$
-\boxed{\sin B=\frac{2\sqrt2}{3}},
-$$
-
-$$
-\boxed{\cos B=\frac13},
-$$
-
-$$
-\boxed{\tan B=2\sqrt2}.
-$$
-
 </details>
 
 
 ---
 
-## 2　利用三角比求长度
-
-### 知识点
-
-仰角、俯角问题先把实际场景翻译成直角三角形。
-
-### 解题技巧
-
-同一物体从两个地点观测时，分别写出两个 $\tan$ 关系，再联立。
-
-:::info[High Level 讲义题｜第8講 PART2]
-**［1］** 边长为8的正五边形，求其对角线长度。
-
-必要时可使用
-
-$$
-\cos36^\circ=0.8090.
-$$
-
-**［2］** 水平地面上有一座垂直于地面的塔。
-
-从地点 $A$ 观察塔顶，仰角为 $45^\circ$；向塔方向前进30 m 到地点 $B$ 后，仰角为 $60^\circ$。
-
-忽略眼睛高度，求塔高。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-### ［1］正五边形的对角线
-
-正五边形内角为
-
-$$
-108^\circ.
-$$
-
-取由一条边和两条对角线组成的等腰三角形，将顶角平分，则底角为
-
-$$
-36^\circ.
-$$
-
-若边长为 $8$，对角线长为 $l$，则
-
-$$
-\frac l2=8\cos36^\circ.
-$$
-
-所以
-
-$$
-\boxed{l=16\cos36^\circ\approx12.944}.
-$$
-
-### ［2］塔高
-
-设从地点 $B$ 到塔脚的距离为 $x$ m，塔高为 $h$。
-
-从 $B$ 看：
-
-$$
-\tan60^\circ=\frac hx
-\Rightarrow
-h=\sqrt3\,x.
-$$
-
-从 $A$ 看：
-
-$$
-\tan45^\circ=\frac{h}{x+30}=1
-\Rightarrow
-h=x+30.
-$$
-
-联立：
-
-$$
-\sqrt3\,x=x+30.
-$$
-
-解得
-
-$$
-x=15(\sqrt3+1).
-$$
-
-因此
-
-$$
-\boxed{h=45+15\sqrt3\ \text{m}}.
-$$
-
-</details>
-
-
-:::note[同类型练习｜第8講 PART2 確認問題]
-**1.** 边长为10的正五边形，求对角线长度 $l$。
-
-必要时可使用
-
-$$
-\cos36^\circ=0.8090,
-\qquad
-\cos54^\circ=0.5878.
-$$
-
-**2.** 从地点 $A$ 观察一棵垂直于地面的树，树顶仰角为 $30^\circ$；向树方向前进16 m 到地点 $B$ 后，仰角为 $45^\circ$。
-
-忽略眼睛高度，求树高 $h$。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-### 1.
-
-同样由正五边形得到
-
-$$
-\frac l2=10\cos36^\circ.
-$$
-
-所以
-
-$$
-\boxed{l=20\cos36^\circ\approx16.18}.
-$$
-
-### 2.
-
-设从 $B$ 到树脚的距离为 $x$ m，高为 $h$。
-
-从 $B$ 看：
-
-$$
-\tan45^\circ=\frac hx
-\Rightarrow h=x.
-$$
-
-从 $A$ 看：
-
-$$
-\tan30^\circ=\frac{h}{x+16}
-=\frac1{\sqrt3}.
-$$
-
-代入 $h=x$：
-
-$$
-\sqrt3x=x+16.
-$$
-
-所以
-
-$$
-x=8(\sqrt3+1).
-$$
-
-因此
-
-$$
-\boxed{h=8\sqrt3+8\ \text{m}}.
-$$
-
-</details>
-
-
----
-
-## 3　钝角三角比与三角比相互关系
+## 2　钝角三角比与三角比相互关系
 
 ### 知识点
 
@@ -730,6 +469,213 @@ $$
 </details>
 
 
+:::tip[提高判断｜\sin A=\sin B 一定有 A=B 吗？]
+对一般的
+
+$$
+0^\circ<A,B<180^\circ,
+$$
+
+由
+
+$$
+\sin A=\sin B
+$$
+
+只能得到
+
+$$
+A=B
+\qquad\text{或}\qquad
+A+B=180^\circ.
+$$
+
+但如果 $A,B$ 是**同一个三角形的两个内角**，则第二种情况会使第三个角为 $0^\circ$，不可能成立。
+
+所以在三角形中：
+
+$$
+\boxed{
+\sin A=\sin B
+\Rightarrow
+A=B
+\Rightarrow
+a=b
+}
+$$
+:::
+
+
+---
+
+## 3　利用三角比求长度
+
+### 知识点
+
+仰角、俯角问题先把实际场景翻译成直角三角形。
+
+### 解题技巧
+
+同一物体从两个地点观测时，分别写出两个 $\tan$ 关系，再联立。
+
+:::info[High Level 讲义题｜第8講 PART2]
+**［1］** 边长为8的正五边形，求其对角线长度。
+
+必要时可使用
+
+$$
+\cos36^\circ=0.8090.
+$$
+
+**［2］** 水平地面上有一座垂直于地面的塔。
+
+从地点 $A$ 观察塔顶，仰角为 $45^\circ$；向塔方向前进30 m 到地点 $B$ 后，仰角为 $60^\circ$。
+
+忽略眼睛高度，求塔高。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### ［1］正五边形的对角线
+
+正五边形内角为
+
+$$
+108^\circ.
+$$
+
+取由一条边和两条对角线组成的等腰三角形，将顶角平分，则底角为
+
+$$
+36^\circ.
+$$
+
+若边长为 $8$，对角线长为 $l$，则
+
+$$
+\frac l2=8\cos36^\circ.
+$$
+
+所以
+
+$$
+\boxed{l=16\cos36^\circ\approx12.944}.
+$$
+
+### ［2］塔高
+
+设从地点 $B$ 到塔脚的距离为 $x$ m，塔高为 $h$。
+
+从 $B$ 看：
+
+$$
+\tan60^\circ=\frac hx
+\Rightarrow
+h=\sqrt3\,x.
+$$
+
+从 $A$ 看：
+
+$$
+\tan45^\circ=\frac{h}{x+30}=1
+\Rightarrow
+h=x+30.
+$$
+
+联立：
+
+$$
+\sqrt3\,x=x+30.
+$$
+
+解得
+
+$$
+x=15(\sqrt3+1).
+$$
+
+因此
+
+$$
+\boxed{h=45+15\sqrt3\ \text{m}}.
+$$
+
+</details>
+
+
+:::note[同类型练习｜第8講 PART2 確認問題]
+**1.** 边长为10的正五边形，求对角线长度 $l$。
+
+必要时可使用
+
+$$
+\cos36^\circ=0.8090,
+\qquad
+\cos54^\circ=0.5878.
+$$
+
+**2.** 从地点 $A$ 观察一棵垂直于地面的树，树顶仰角为 $30^\circ$；向树方向前进16 m 到地点 $B$ 后，仰角为 $45^\circ$。
+
+忽略眼睛高度，求树高 $h$。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+同样由正五边形得到
+
+$$
+\frac l2=10\cos36^\circ.
+$$
+
+所以
+
+$$
+\boxed{l=20\cos36^\circ\approx16.18}.
+$$
+
+### 2.
+
+设从 $B$ 到树脚的距离为 $x$ m，高为 $h$。
+
+从 $B$ 看：
+
+$$
+\tan45^\circ=\frac hx
+\Rightarrow h=x.
+$$
+
+从 $A$ 看：
+
+$$
+\tan30^\circ=\frac{h}{x+16}
+=\frac1{\sqrt3}.
+$$
+
+代入 $h=x$：
+
+$$
+\sqrt3x=x+16.
+$$
+
+所以
+
+$$
+x=8(\sqrt3+1).
+$$
+
+因此
+
+$$
+\boxed{h=8\sqrt3+8\ \text{m}}.
+$$
+
+</details>
+
+
 ---
 
 ## 4　补充：直线的斜率与正切
@@ -813,8 +759,85 @@ $$
 
 ---
 
+## 5　Challenge：不用加法定理求 75° 的三角比
+
+考虑等腰三角形 $ABC$：
+
+$$
+AB=AC=1,\qquad \angle A=30^\circ.
+$$
+
+因此
+
+$$
+\angle B=\angle C=75^\circ.
+$$
+
+不使用加法定理，求
+
+$$
+\sin75^\circ,\qquad \cos75^\circ.
+$$
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+先由余弦定理求底边：
+
+$$
+BC^2
+=
+1^2+1^2-2\cdot1\cdot1\cos30^\circ
+=
+2-\sqrt3.
+$$
+
+所以
+
+$$
+BC=\sqrt{2-\sqrt3}.
+$$
+
+从 $A$ 向 $BC$ 作高 $AD$。因为是等腰三角形，
+
+$$
+BD=\frac{BC}{2}
+=
+\frac{\sqrt{2-\sqrt3}}2.
+$$
+
+在直角三角形 $ABD$ 中，$AB=1$，$\angle B=75^\circ$，因此
+
+$$
+\cos75^\circ
+=
+\frac{BD}{AB}
+=
+\frac{\sqrt{2-\sqrt3}}2
+=
+\boxed{\frac{\sqrt6-\sqrt2}{4}}.
+$$
+
+再由
+
+$$
+\sin^2 75^\circ+\cos^2 75^\circ=1
+$$
+
+且 $75^\circ$ 为锐角，
+
+$$
+\sin75^\circ
+=
+\boxed{\frac{\sqrt6+\sqrt2}{4}}.
+$$
+
+</details>
+
+---
+
 ## 本讲整理
 
 三角比题优先检查：
 
-> 角的范围 → 三角比符号 → 是否能用相互关系 → 是否需要画直角三角形
+> 角的范围 → 三角比符号 → 相互关系 → 实际测量 / 斜率 → 必要时构造图形求特殊角
