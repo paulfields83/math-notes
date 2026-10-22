@@ -759,7 +759,278 @@ $$
 
 ---
 
-## 5　Challenge：不用加法定理求 75° 的三角比
+## 5　提高演习：三角比 × 二次函数
+
+三角比题不一定最后还在“算三角比”。
+
+:::info[4STEP 演習問題型｜最大・最小]
+在
+
+$$
+0^\circ\le\theta\le180^\circ
+$$
+
+中，定义
+
+$$
+y
+=
+4\sin^2\theta
++
+4\cos\theta
++
+3.
+$$
+
+求：
+
+1. $y$ 的最大值及此时的 $\theta$；
+2. $y$ 的最小值及此时的 $\theta$。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+先利用
+
+$$
+\sin^2\theta
+=
+1-\cos^2\theta.
+$$
+
+令
+
+$$
+x=\cos\theta.
+$$
+
+由于
+
+$$
+0^\circ\le\theta\le180^\circ,
+$$
+
+所以
+
+$$
+-1\le x\le1.
+$$
+
+原式变为
+
+$$
+y
+=
+4(1-x^2)+4x+3
+=
+-4x^2+4x+7.
+$$
+
+配方：
+
+$$
+y
+=
+-4\left(x-\frac12\right)^2+8.
+$$
+
+所以最大值为
+
+$$
+\boxed{8},
+$$
+
+此时
+
+$$
+x=\frac12
+\Rightarrow
+\boxed{\theta=60^\circ}.
+$$
+
+最小值要检查定义域端点：
+
+$$
+x=-1
+\Rightarrow
+y=-1,
+$$
+
+$$
+x=1
+\Rightarrow
+y=7.
+$$
+
+因此最小值为
+
+$$
+\boxed{-1},
+$$
+
+此时
+
+$$
+\boxed{\theta=180^\circ}.
+$$
+
+> 核心不是展开计算，而是看见  
+> \[
+> \sin^2\theta=1-\cos^2\theta
+> \]
+> 后，把问题转成“带定义域的二次函数”。
+
+</details>
+
+---
+
+## 6　提高演习：移动观测的实际建模
+
+:::info[4STEP 演習問題型｜道路・方位角・仰角]
+一辆汽车沿笔直道路以
+
+$$
+10\text{ m/s}
+$$
+
+的速度前进。
+
+汽车经过地点 $A$ 时，看到右前方 $30^\circ$ 方向有一栋高层建筑。10秒后到达地点 $B$，此时建筑物位于右前方 $60^\circ$ 方向；同时从 $B$ 看建筑物最上端 $Q$ 的仰角为 $45^\circ$。
+
+设建筑物脚点为 $P$。
+
+![汽车与高层建筑建模](/img/math1a-advanced/lesson12/car-building-model.svg)
+
+求：
+
+1. 建筑物高度 $PQ$；
+2. 汽车从 $B$ 出发后，几秒经过道路上距建筑物最近的点 $C$；
+3. 设 $\angle CBQ=\alpha$，求 $\cos\alpha$。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+10秒行驶
+
+$$
+AB=10\times10=100\text{ m}.
+$$
+
+先只看水平面上的 $\triangle ABP$。
+
+由于从 $A$ 看 $P$ 的方向与道路夹角为 $30^\circ$，从 $B$ 看为 $60^\circ$，可得
+
+$$
+\angle A=30^\circ,
+$$
+
+$$
+\angle B=120^\circ,
+$$
+
+所以
+
+$$
+\angle P=30^\circ.
+$$
+
+因此由正弦定理，
+
+$$
+\frac{BP}{\sin30^\circ}
+=
+\frac{AB}{\sin30^\circ},
+$$
+
+得到
+
+$$
+\boxed{BP=100\text{ m}}.
+$$
+
+### 1. 建筑物高度
+
+从 $B$ 看建筑物最上端的仰角为 $45^\circ$：
+
+$$
+\operatorname{tan}45^\circ
+=
+\frac{PQ}{BP}
+=
+1.
+$$
+
+所以
+
+$$
+\boxed{PQ=100\text{ m}}.
+$$
+
+### 2. 最近点
+
+设道路上距 $P$ 最近的点为 $C$，则
+
+$$
+PC\perp BC.
+$$
+
+在直角三角形 $BCP$ 中，
+
+$$
+BC
+=
+BP\cos60^\circ
+=
+50.
+$$
+
+汽车速度为 $10\text{ m/s}$，所以从 $B$ 到 $C$ 需要
+
+$$
+\frac{50}{10}
+=
+\boxed{5\text{ 秒}}.
+$$
+
+### 3. 求 $\cos\alpha$
+
+空间线段
+
+$$
+BQ
+=
+\sqrt{BP^2+PQ^2}
+=
+100\sqrt2.
+$$
+
+而 $BQ$ 在道路方向上的投影长度为
+
+$$
+BC=50.
+$$
+
+所以
+
+$$
+\cos\alpha
+=
+\frac{50}{100\sqrt2}
+=
+\boxed{\frac{\sqrt2}{4}}.
+$$
+
+> 这题实际上连续做了三次“降维”：
+>
+> 水平面三角形 → 竖直直角三角形 → 空间向量的投影关系。
+
+</details>
+
+---
+
+## 7　Challenge：不用加法定理求 75° 的三角比
 
 考虑等腰三角形 $ABC$：
 
