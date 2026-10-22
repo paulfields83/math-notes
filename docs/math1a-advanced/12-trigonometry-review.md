@@ -25,7 +25,7 @@ $$
 \qquad
 \cos A=\frac{\text{邻边}}{\text{斜边}},
 \qquad
-\tan A=\frac{\text{对边}}{\text{邻边}}.
+\operatorname{tan} A=\frac{\text{对边}}{\text{邻边}}.
 $$
 
 ---
@@ -195,10 +195,10 @@ $$
    $$
    \sin\theta=\frac{12}{13},
    $$
-   求 $\cos\theta,\tan\theta$。
+   求 $\cos\theta,\operatorname{tan}\theta$。
 2. 若
    $$
-   \tan\theta=\frac12,
+   \operatorname{tan}\theta=\frac12,
    $$
    求 $\sin\theta,\cos\theta$。
 
@@ -239,7 +239,7 @@ $$
 由于 $0^\circ\le\theta\le180^\circ$，$\theta$ 可能为锐角或钝角：
 
 $$
-\boxed{(\cos\theta,\tan\theta)
+\boxed{(\cos\theta,\operatorname{tan}\theta)
 =\left(\frac5{13},\frac{12}{5}\right)
 \text{ 或 }
 \left(-\frac5{13},-\frac{12}{5}\right)}.
@@ -248,7 +248,7 @@ $$
 ### ［1］2.
 
 $$
-\tan\theta=\frac12>0
+\operatorname{tan}\theta=\frac12>0
 $$
 
 在该范围内只能是锐角。
@@ -256,7 +256,7 @@ $$
 由
 
 $$
-1+\tan^2\theta=\frac1{\cos^2\theta}
+1+\operatorname{tan}^2\theta=\frac1{\cos^2\theta}
 $$
 
 得
@@ -341,12 +341,12 @@ $$
 \sin\theta=\frac{\sqrt{13}}7,
 $$
 
-判断可能的 $\cos\theta,\tan\theta$。
+判断可能的 $\cos\theta,\operatorname{tan}\theta$。
 
 **2.** 若
 
 $$
-\tan\theta=\frac5{12},
+\operatorname{tan}\theta=\frac5{12},
 $$
 
 判断可能的 $\sin\theta,\cos\theta$。
@@ -396,7 +396,7 @@ $$
 因此
 
 $$
-\boxed{(\cos\theta,\tan\theta)
+\boxed{(\cos\theta,\operatorname{tan}\theta)
 =\left(\frac67,\frac{\sqrt{13}}6\right)
 \text{ 或 }
 \left(-\frac67,-\frac{\sqrt{13}}6\right)}.
@@ -405,7 +405,7 @@ $$
 ### 2.
 
 $$
-\tan\theta=\frac5{12}>0
+\operatorname{tan}\theta=\frac5{12}>0
 $$
 
 故 $\theta$ 为锐角。由 $5$-$12$-$13$：
@@ -516,7 +516,7 @@ $$
 
 ### 解题技巧
 
-同一物体从两个地点观测时，分别写出两个 $\tan$ 关系，再联立。
+同一物体从两个地点观测时，分别写出两个 $\operatorname{tan}$ 关系，再联立。
 
 :::info[High Level 讲义题｜第8講 PART2]
 **［1］** 边长为8的正五边形，求其对角线长度。
@@ -570,7 +570,7 @@ $$
 从 $B$ 看：
 
 $$
-\tan60^\circ=\frac hx
+\operatorname{tan}60^\circ=\frac hx
 \Rightarrow
 h=\sqrt3\,x.
 $$
@@ -578,7 +578,7 @@ $$
 从 $A$ 看：
 
 $$
-\tan45^\circ=\frac{h}{x+30}=1
+\operatorname{tan}45^\circ=\frac{h}{x+30}=1
 \Rightarrow
 h=x+30.
 $$
@@ -644,14 +644,14 @@ $$
 从 $B$ 看：
 
 $$
-\tan45^\circ=\frac hx
+\operatorname{tan}45^\circ=\frac hx
 \Rightarrow h=x.
 $$
 
 从 $A$ 看：
 
 $$
-\tan30^\circ=\frac{h}{x+16}
+\operatorname{tan}30^\circ=\frac{h}{x+16}
 =\frac1{\sqrt3}.
 $$
 
@@ -691,7 +691,7 @@ $$
 若直线与 $x$ 轴正方向的夹角为 $\theta$，斜率为 $m$，则
 
 $$
-\boxed{m=\tan\theta}.
+\boxed{m=\operatorname{tan}\theta}.
 $$
 
 因此：
@@ -734,7 +734,7 @@ $$
 中，
 
 $$
-\tan\theta=-1
+\operatorname{tan}\theta=-1
 $$
 
 对应
@@ -746,7 +746,7 @@ $$
 ### 2.
 
 $$
-m=\tan120^\circ=-\sqrt3.
+m=\operatorname{tan}120^\circ=-\sqrt3.
 $$
 
 所以
