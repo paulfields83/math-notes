@@ -543,6 +543,151 @@ $$
 
 ---
 
+### 提高演习：正四面体上的分点截面
+
+边长为 $3$ 的正四面体 $ABCD$ 中，点 $P,Q$ 分别满足
+
+$$
+BP:PC=1:2,
+$$
+
+$$
+CQ:QD=1:2.
+$$
+
+![正四面体分点截面](/img/math1a-advanced/lesson15/tetrahedron-section-apq.svg)
+
+求：
+
+1. $AP,AQ,PQ$；
+2. $\cos\angle PAQ$；
+3. $\triangle APQ$ 的面积。
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1. 求三边
+
+因为每个面都是边长为 $3$ 的正三角形，
+
+$$
+BP=1,\qquad PC=2,
+$$
+
+$$
+CQ=1,\qquad QD=2.
+$$
+
+在 $\triangle ABC$ 中，
+
+$$
+\angle ABP=60^\circ.
+$$
+
+所以
+
+$$
+AP^2
+=
+3^2+1^2-2\cdot3\cdot1\cos60^\circ
+=
+7.
+$$
+
+因此
+
+$$
+\boxed{AP=\sqrt7}.
+$$
+
+同理，在 $\triangle ACD$ 中，
+
+$$
+\boxed{AQ=\sqrt7}.
+$$
+
+再看正三角形 $BCD$。
+
+已知
+
+$$
+BP=1,\qquad CQ=1.
+$$
+
+利用余弦定理或平面坐标，可得
+
+$$
+PQ^2=3,
+$$
+
+所以
+
+$$
+\boxed{PQ=\sqrt3}.
+$$
+
+至此，空间图形已经完全变成一个三边已知的平面三角形：
+
+$$
+\triangle APQ.
+$$
+
+### 2. 求角
+
+由余弦定理：
+
+$$
+\cos\angle PAQ
+=
+\frac{AP^2+AQ^2-PQ^2}
+{2\cdot AP\cdot AQ}.
+$$
+
+所以
+
+$$
+\cos\angle PAQ
+=
+\frac{7+7-3}{14}
+=
+\boxed{\frac{11}{14}}.
+$$
+
+### 3. 求面积
+
+$$
+\sin\angle PAQ
+=
+\sqrt{1-\left(\frac{11}{14}\right)^2}
+=
+\frac{5\sqrt3}{14}.
+$$
+
+因此
+
+$$
+[\triangle APQ]
+=
+\frac12\cdot\sqrt7\cdot\sqrt7
+\cdot\frac{5\sqrt3}{14}
+=
+\boxed{\frac{5\sqrt3}{4}}.
+$$
+
+> 这题的关键不是“空间计算公式”，而是：
+>
+> \[
+> \boxed{
+> \text{分别在各个面上求 }AP,AQ,PQ
+> \rightarrow
+> \text{抽出 }\triangle APQ
+> }
+> \]
+
+</details>
+
+---
+
 ## 4　换底面：用体积求点到平面的距离
 
 空间题里很重要的一个技巧是：
@@ -788,7 +933,424 @@ $$
 
 ---
 
-## 5　图形与计量综合检查
+## 5　提高演习：内切球与体积分割
+
+正四面体 $ABCD$ 的边长为
+
+$$
+3.
+$$
+
+它的内切球球心为 $O$，半径为 $r$。
+
+求：
+
+1. 正四面体体积 $V$；
+2. 内切球半径 $r$；
+3. 内切球的表面积与体积。
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1. 正四面体体积
+
+以 $\triangle BCD$ 为底面。
+
+底面积为
+
+$$
+[\triangle BCD]
+=
+\frac{\sqrt3}{4}\cdot3^2
+=
+\frac{9\sqrt3}{4}.
+$$
+
+设顶点 $A$ 到底面的垂足为 $H$。
+
+$H$ 是正三角形 $BCD$ 的中心，因此
+
+$$
+BH=\sqrt3.
+$$
+
+在直角三角形 $ABH$ 中，
+
+$$
+AH
+=
+\sqrt{3^2-(\sqrt3)^2}
+=
+\sqrt6.
+$$
+
+所以
+
+$$
+V
+=
+\frac13
+\cdot
+\frac{9\sqrt3}{4}
+\cdot
+\sqrt6
+=
+\boxed{\frac{9\sqrt2}{4}}.
+$$
+
+### 2. 内切球半径
+
+把正四面体按球心 $O$ 分成4个小四面体。
+
+每个小四面体都以一个正三角形面为底面，高都是 $r$。
+
+四个面的总面积为
+
+$$
+S_{\text{表}}
+=
+4\cdot\frac{9\sqrt3}{4}
+=
+9\sqrt3.
+$$
+
+因此
+
+$$
+V
+=
+\frac13S_{\text{表}}r.
+$$
+
+所以
+
+$$
+\frac{9\sqrt2}{4}
+=
+\frac13\cdot9\sqrt3\cdot r.
+$$
+
+解得
+
+$$
+\boxed{r=\frac{\sqrt6}{4}}.
+$$
+
+### 3. 球的表面积与体积
+
+表面积：
+
+$$
+4\pi r^2
+=
+4\pi\cdot\frac6{16}
+=
+\boxed{\frac{3\pi}{2}}.
+$$
+
+体积：
+
+$$
+\frac43\pi r^3
+=
+\boxed{\frac{\sqrt6\pi}{8}}.
+$$
+
+> 这里真正重要的关系是：
+>
+> \[
+> \boxed{
+> V
+> =
+> \frac13
+> \times
+> (\text{表面积})
+> \times
+> r
+> }
+> \]
+>
+> 它来自“把整体按内心分成多个小角锥”，不是需要死背的新公式。
+
+</details>
+
+---
+
+## 6　Challenge：展开图与表面最短路径
+
+### 6-1　圆锥侧面最短距离
+
+一个直圆锥的底面半径为
+
+$$
+1,
+$$
+
+母线长为
+
+$$
+3.
+$$
+
+从底面圆周上的一点 $A$ 出发，沿圆锥侧面绕一周回到 $A$。
+
+求侧面上的最短路径长度。
+
+![圆锥展开图最短路径](/img/math1a-advanced/lesson15/cone-unfold-shortest.svg)
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+把圆锥侧面展开成半径为 $3$ 的扇形。
+
+扇形弧长等于底面圆周长：
+
+$$
+2\pi\cdot1
+=
+2\pi\cdot3\cdot\frac{\theta}{360^\circ}.
+$$
+
+所以
+
+$$
+\theta=120^\circ.
+$$
+
+展开以后，“绕一周回到 $A$”对应扇形两端的点
+
+$$
+A,\qquad A'.
+$$
+
+侧面最短路径变成平面中的线段
+
+$$
+AA'.
+$$
+
+在 $\triangle OAA'$ 中，
+
+$$
+OA=OA'=3,
+$$
+
+$$
+\angle AOA'=120^\circ.
+$$
+
+由余弦定理：
+
+$$
+AA'^2
+=
+3^2+3^2
+-
+2\cdot3\cdot3\cos120^\circ
+=
+27.
+$$
+
+所以
+
+$$
+\boxed{AA'=3\sqrt3}.
+$$
+
+</details>
+
+### 6-2　Final Challenge：正四面体表面最短路径
+
+边长为 $4$ 的正四面体 $ABCD$ 中，$M$ 是边 $AD$ 的中点。
+
+从 $A$ 出发，沿四面体表面移动，依次穿过边 $BC$、边 $CD$，最后到达 $M$。
+
+设最短路径与 $BC,CD$ 的交点分别为 $P,Q$。
+
+![正四面体展开图最短路径](/img/math1a-advanced/lesson15/tetrahedron-unfold-shortest.svg)
+
+求：
+
+1. $[\triangle ABP]$；
+2. 最短路径 $APQM$ 的长度；
+3. $\cos\angle BAP$。
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+把经过的三个面
+
+$$
+ABC,\qquad BCD,\qquad ACD
+$$
+
+依次沿
+
+$$
+BC,\qquad CD
+$$
+
+展开到同一平面。
+
+展开后，最短路径一定是一条直线。
+
+取平面坐标：
+
+$$
+B=(0,0),\qquad
+C=(4,0),
+$$
+
+$$
+A=(2,2\sqrt3).
+$$
+
+把 $\triangle BCD$ 展到 $BC$ 的另一侧：
+
+$$
+D=(2,-2\sqrt3).
+$$
+
+再把 $\triangle ACD$ 沿 $CD$ 展开，$A$ 的对应点为
+
+$$
+A'=(6,-2\sqrt3).
+$$
+
+因为 $M$ 是 $AD$ 中点，所以展开后的 $M$ 为
+
+$$
+M'=(4,-2\sqrt3).
+$$
+
+最短路线就是线段
+
+$$
+AM'.
+$$
+
+### 1. 求 $[\triangle ABP]$
+
+直线 $AM'$ 与 $BC$ 相交时，纵坐标正好从
+
+$$
+2\sqrt3
+$$
+
+变化到
+
+$$
+-2\sqrt3,
+$$
+
+所以交点位于线段 $AM'$ 的中点。
+
+因此
+
+$$
+P=(3,0),
+$$
+
+所以
+
+$$
+BP=3.
+$$
+
+$\triangle ABC$ 的高为
+
+$$
+2\sqrt3.
+$$
+
+于是
+
+$$
+[\triangle ABP]
+=
+\frac12\cdot3\cdot2\sqrt3
+=
+\boxed{3\sqrt3}.
+$$
+
+### 2. 最短路径
+
+$$
+AM'
+=
+\sqrt{(4-2)^2+(-2\sqrt3-2\sqrt3)^2}.
+$$
+
+因此
+
+$$
+AM'
+=
+\sqrt{4+48}
+=
+\boxed{2\sqrt{13}}.
+$$
+
+### 3. 求 $\cos\angle BAP$
+
+在原来的正三角形 $ABC$ 中，
+
+$$
+AB=4,
+$$
+
+而
+
+$$
+AP
+=
+\sqrt{(3-2)^2+(0-2\sqrt3)^2}
+=
+\sqrt{13}.
+$$
+
+又
+
+$$
+BP=3.
+$$
+
+在 $\triangle ABP$ 中由余弦定理：
+
+$$
+\cos\angle BAP
+=
+\frac{AB^2+AP^2-BP^2}
+{2\cdot AB\cdot AP}.
+$$
+
+所以
+
+$$
+\cos\angle BAP
+=
+\frac{16+13-9}{8\sqrt{13}}
+=
+\boxed{\frac{5\sqrt{13}}{26}}.
+$$
+
+> 表面最短路径题的固定入口：
+>
+> \[
+> \boxed{
+> \text{展开}
+> \rightarrow
+> \text{直线}
+> \rightarrow
+> \text{回到平面几何}
+> }
+> \]
+
+</details>
+
+---
+
+## 7　图形与计量综合检查
 
 做第8～10講综合题时，依次确认：
 
@@ -798,7 +1360,8 @@ $$
 4. 是否可以用面积建立额外关系；
 5. 能否先抽出一个平面截面三角形；
 6. 空间图形是否能先求底面中心或底面外心；
-7. 是否可以通过“换底面”反求点到平面的距离。
+7. 是否可以通过“换底面”反求点到平面的距离；
+8. 表面最短距离是否应该先展开。
 
 :::note[综合练习｜先判断方法，不急着计算]
 看到空间图形时，先回答下面三个问题：
