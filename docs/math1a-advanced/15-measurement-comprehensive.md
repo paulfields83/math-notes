@@ -15,13 +15,25 @@ sidebar_position: 15
 
 ---
 
-## 1　三条侧棱相等的四面体
+## 1　$PA=PB=PC$：垂足是底面外心
 
-### 知识点
+### 核心结论
 
-若顶点 $P$ 到底面三顶点 $A,B,C$ 的距离相等，则从 $P$ 到底面的垂足位于 $\triangle ABC$ 的外心。
+条件 $PA=PB=PC$ 的本质不是“底面是正三角形”。
 
-底面为正三角形时，外心、重心一致。
+若从 $P$ 向平面 $ABC$ 作垂线，垂足为 $H$，则
+
+$$
+HA=HB=HC.
+$$
+
+因此
+
+$$
+\boxed{H\text{ 是 }\triangle ABC\text{ 的外心}}.
+$$
+
+底面为正三角形时，外心、重心重合；底面不是正三角形时，也仍然先找外心。
 
 ### 解题技巧
 
@@ -184,9 +196,352 @@ $$
 </details>
 
 
+
+### Challenge：底面不是正三角形
+
+上面的结论不依赖底面是正三角形。下面把底面改成直角三角形。
+
+:::note[讲义原创综合｜非正三角形底面]
+四面体 $PABC$ 满足
+
+$$
+PA=PB=PC=\sqrt{10},
+$$
+
+底面三边为
+
+$$
+AB=3,\qquad
+BC=4,\qquad
+CA=5.
+$$
+
+求四面体体积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+底面是 $3$-$4$-$5$ 直角三角形，因此其外接圆半径为斜边的一半：
+
+$$
+R=\frac52.
+$$
+
+设高的垂足为 $H$，则
+
+$$
+HA=HB=HC=\frac52.
+$$
+
+在直角三角形 $PHA$ 中，
+
+$$
+PH
+=
+\sqrt{10-\frac{25}{4}}
+=
+\frac{\sqrt{15}}2.
+$$
+
+底面积为
+
+$$
+[ABC]
+=
+\frac12\cdot3\cdot4
+=
+6.
+$$
+
+因此
+
+$$
+V
+=
+\frac13\cdot6\cdot\frac{\sqrt{15}}2
+=
+\boxed{\sqrt{15}}.
+$$
+
+</details>
+
+
+
+---## 2　正四角锥：参数也要先降到直角三角形
+
+正四角锥中，顶点向底面作垂线时，垂足是正方形底面的中心。
+
+因此真正需要处理的仍然只是一个直角三角形。
+
+:::info[4STEP 教材题型｜正四角錐]
+正四角锥 $PABCD$ 中，$PH$ 垂直于底面正方形 $ABCD$，$H$ 为底面中心。
+
+已知
+
+$$
+PA=a,\qquad
+\angle APH=\theta.
+$$
+
+用 $a,\theta$ 表示体积 $V$。
+
+![正四角锥参数题](/img/math1a-advanced/lesson15/square-pyramid-parameter.svg)
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+在直角三角形 $PAH$ 中，
+
+$$
+PH=a\cos\theta,
+$$
+
+$$
+AH=a\sin\theta.
+$$
+
+因为 $H$ 是正方形中心，
+
+$$
+AC=2AH=2a\sin\theta.
+$$
+
+若正方形边长为 $x$，则
+
+$$
+x=\frac{AC}{\sqrt2}
+=
+\sqrt2\,a\sin\theta.
+$$
+
+所以底面积为
+
+$$
+x^2=2a^2\sin^2\theta.
+$$
+
+因此
+
+$$
+V
+=
+\frac13\cdot2a^2\sin^2\theta\cdot a\cos\theta
+=
+\boxed{\frac23a^3\sin^2\theta\cos\theta}.
+$$
+
+</details>
+
+:::note[確認問題｜数値を入れて確認]
+在同样的正四角锥中，
+
+$$
+PA=6,\qquad
+\angle APH=60^\circ.
+$$
+
+求：
+
+1. 高 $PH$；
+2. 正方形底面的边长；
+3. 四角锥体积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+$$
+PH
+=
+6\cos60^\circ
+=
+\boxed{3}.
+$$
+
+$$
+AH
+=
+6\sin60^\circ
+=
+3\sqrt3.
+$$
+
+底面对角线为
+
+$$
+AC=2AH=6\sqrt3.
+$$
+
+所以边长
+
+$$
+AB
+=
+\frac{6\sqrt3}{\sqrt2}
+=
+\boxed{3\sqrt6}.
+$$
+
+底面积为
+
+$$
+(3\sqrt6)^2=54.
+$$
+
+因此
+
+$$
+V
+=
+\frac13\cdot54\cdot3
+=
+\boxed{54}.
+$$
+
+</details>
+
 ---
 
-## 2　换底面：用体积求点到平面的距离
+## 3　空间截面：先把立体图变成一个三角形
+
+空间题不一定都围绕“高”和“体积”。
+
+另一类常见问题，是先从立体图中抽出一个平面三角形，再回到三平方、余弦定理和面积。
+
+:::info[4STEP 教材题型｜直方体の断面三角形]
+直方体 $ABCD-EFGH$ 中，
+
+$$
+AB=\sqrt6,\qquad
+AD=\sqrt3,\qquad
+AE=1.
+$$
+
+求：
+
+1. $\angle ACF$；
+2. $\triangle ACF$ 的面积。
+
+![直方体中的截面三角形](/img/math1a-advanced/lesson15/cuboid-section-acf.svg)
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+先分别在三个矩形面上求截面三角形的三边。
+
+$$
+AC
+=
+\sqrt{AB^2+AD^2}
+=
+\sqrt{6+3}
+=
+3.
+$$
+
+$$
+AF
+=
+\sqrt{AB^2+AE^2}
+=
+\sqrt{6+1}
+=
+\sqrt7.
+$$
+
+$$
+CF
+=
+\sqrt{AD^2+AE^2}
+=
+\sqrt{3+1}
+=
+2.
+$$
+
+于是空间问题已经变成边长
+
+$$
+3,\qquad \sqrt7,\qquad 2
+$$
+
+的平面三角形。
+
+由余弦定理，
+
+$$
+\cos\angle ACF
+=
+\frac{AC^2+CF^2-AF^2}{2\cdot AC\cdot CF}
+=
+\frac{9+4-7}{12}
+=
+\frac12.
+$$
+
+因此
+
+$$
+\boxed{\angle ACF=60^\circ}.
+$$
+
+面积为
+
+$$
+[\triangle ACF]
+=
+\frac12\cdot3\cdot2\sin60^\circ
+=
+\boxed{\frac{3\sqrt3}{2}}.
+$$
+
+</details>
+
+:::note[確認問題｜正方体の截面]
+边长为 $2$ 的正方体 $ABCD-EFGH$ 中，求
+
+$$
+\angle ACF
+$$
+
+以及
+
+$$
+[\triangle ACF].
+$$
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+正方体中，
+
+$$
+AC=AF=CF=2\sqrt2.
+$$
+
+所以 $\triangle ACF$ 是正三角形：
+
+$$
+\boxed{\angle ACF=60^\circ}.
+$$
+
+面积为
+
+$$
+\frac{\sqrt3}{4}(2\sqrt2)^2
+=
+\boxed{2\sqrt3}.
+$$
+
+</details>
+
+---
+
+## 4　换底面：用体积求点到平面的距离
 
 空间题里很重要的一个技巧是：
 
@@ -431,227 +786,6 @@ $$
 
 ---
 
-## 3　正四角锥：参数也要先降到直角三角形
-
-正四角锥中，顶点向底面作垂线时，垂足是正方形底面的中心。
-
-因此真正需要处理的仍然只是一个直角三角形。
-
-:::info[4STEP 教材题型｜正四角錐]
-正四角锥 $PABCD$ 中，$PH$ 垂直于底面正方形 $ABCD$，$H$ 为底面中心。
-
-已知
-
-$$
-PA=a,\qquad
-\angle APH=\theta.
-$$
-
-用 $a,\theta$ 表示体积 $V$。
-
-![正四角锥参数题](/img/math1a-advanced/lesson15/square-pyramid-parameter.svg)
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-在直角三角形 $PAH$ 中，
-
-$$
-PH=a\cos\theta,
-$$
-
-$$
-AH=a\sin\theta.
-$$
-
-因为 $H$ 是正方形中心，
-
-$$
-AC=2AH=2a\sin\theta.
-$$
-
-若正方形边长为 $x$，则
-
-$$
-x=\frac{AC}{\sqrt2}
-=
-\sqrt2\,a\sin\theta.
-$$
-
-所以底面积为
-
-$$
-x^2=2a^2\sin^2\theta.
-$$
-
-因此
-
-$$
-V
-=
-\frac13\cdot2a^2\sin^2\theta\cdot a\cos\theta
-=
-\boxed{\frac23a^3\sin^2\theta\cos\theta}.
-$$
-
-</details>
-
-:::note[確認問題｜数値を入れて確認]
-在同样的正四角锥中，
-
-$$
-PA=6,\qquad
-\angle APH=60^\circ.
-$$
-
-求：
-
-1. 高 $PH$；
-2. 正方形底面的边长；
-3. 四角锥体积。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-$$
-PH
-=
-6\cos60^\circ
-=
-\boxed{3}.
-$$
-
-$$
-AH
-=
-6\sin60^\circ
-=
-3\sqrt3.
-$$
-
-底面对角线为
-
-$$
-AC=2AH=6\sqrt3.
-$$
-
-所以边长
-
-$$
-AB
-=
-\frac{6\sqrt3}{\sqrt2}
-=
-\boxed{3\sqrt6}.
-$$
-
-底面积为
-
-$$
-(3\sqrt6)^2=54.
-$$
-
-因此
-
-$$
-V
-=
-\frac13\cdot54\cdot3
-=
-\boxed{54}.
-$$
-
-</details>
-
----
-
-## 4　底面不是正三角形时怎么办？
-
-条件
-
-$$
-PA=PB=PC
-$$
-
-并不意味着底面一定是正三角形。
-
-真正能推出的是：从 $P$ 向底面作垂线，垂足 $H$ 满足
-
-$$
-HA=HB=HC,
-$$
-
-即 $H$ 是 $\triangle ABC$ 的外心。
-
-:::note[讲义原创综合｜非正三角形底面]
-四面体 $PABC$ 满足
-
-$$
-PA=PB=PC=\sqrt{10},
-$$
-
-底面三边为
-
-$$
-AB=3,\qquad
-BC=4,\qquad
-CA=5.
-$$
-
-求四面体体积。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-底面是 $3$-$4$-$5$ 直角三角形，因此其外接圆半径为斜边的一半：
-
-$$
-R=\frac52.
-$$
-
-设高的垂足为 $H$，则
-
-$$
-HA=HB=HC=\frac52.
-$$
-
-在直角三角形 $PHA$ 中，
-
-$$
-PH
-=
-\sqrt{10-\frac{25}{4}}
-=
-\frac{\sqrt{15}}2.
-$$
-
-底面积为
-
-$$
-[ABC]
-=
-\frac12\cdot3\cdot4
-=
-6.
-$$
-
-因此
-
-$$
-V
-=
-\frac13\cdot6\cdot\frac{\sqrt{15}}2
-=
-\boxed{\sqrt{15}}.
-$$
-
-</details>
-
----
-
 ## 5　图形与计量综合检查
 
 做第8～10講综合题时，依次确认：
@@ -660,8 +794,9 @@ $$
 2. 是否需要正弦定理；
 3. 是否需要余弦定理；
 4. 是否可以用面积建立额外关系；
-5. 空间图形是否能先求底面中心或底面外心；
-6. 是否可以通过“换底面”反求点到平面的距离。
+5. 能否先抽出一个平面截面三角形；
+6. 空间图形是否能先求底面中心或底面外心；
+7. 是否可以通过“换底面”反求点到平面的距离。
 
 :::note[综合练习｜先判断方法，不急着计算]
 看到空间图形时，先回答下面三个问题：
@@ -679,4 +814,4 @@ $$
 
 空间题的核心不是“三维计算”，而是：
 
-> 找到合适的平面截面，把三维问题降回二维。
+> 找外心/中心 → 抽出平面三角形 → 求高或截面 → 必要时换底面；空间题最终仍要降回二维。
