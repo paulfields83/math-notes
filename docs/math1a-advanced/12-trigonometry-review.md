@@ -67,8 +67,8 @@ $$
 
 求：
 
-1. $\cos A,	an A$
-2. $\sin B,\cos B,	an B$
+1. $\cos A,\tan A$
+2. $\sin B,\cos B,\tan B$
 :::
 
 <details className="solution-details">
@@ -168,8 +168,8 @@ $$
 求
 
 $$
-\cos A,quad \tan A,quad
-\sin B,quad \cos B,quad \tan B.
+\cos A,\quad \tan A,\quad
+\sin B,\quad \cos B,\quad \tan B.
 $$
 :::
 
@@ -255,7 +255,7 @@ $$
 
 ### 解题技巧
 
-同一物体从两个地点观测时，分别写出两个 $	an$ 关系，再联立。
+同一物体从两个地点观测时，分别写出两个 $\tan$ 关系，再联立。
 
 :::info[High Level 讲义题｜第8講 PART2]
 **［1］** 边长为8的正五边形，求其对角线长度。
@@ -456,7 +456,7 @@ $$
    $$
    \sin\theta=\frac{12}{13},
    $$
-   求 $\cos\theta,	an\theta$。
+   求 $\cos\theta,\tan\theta$。
 2. 若
    $$
    \tan\theta=\frac12,
@@ -602,7 +602,7 @@ $$
 \sin\theta=\frac{\sqrt{13}}7,
 $$
 
-判断可能的 $\cos\theta,	an\theta$。
+判断可能的 $\cos\theta,\tan\theta$。
 
 **2.** 若
 
@@ -729,6 +729,87 @@ $$
 
 </details>
 
+
+---
+
+## 4　补充：直线的斜率与正切
+
+三角比扩张到
+
+$$
+0^\circ\le\theta<180^\circ
+$$
+
+以后，可以把直线方向和正切联系起来。
+
+若直线与 $x$ 轴正方向的夹角为 $\theta$，斜率为 $m$，则
+
+$$
+\boxed{m=\tan\theta}.
+$$
+
+因此：
+
+- $m>0$ 时，$0^\circ<\theta<90^\circ$；
+- $m<0$ 时，$90^\circ<\theta<180^\circ$；
+- 不要因为“斜率为负”就把角写成负角。
+
+:::note[確認問題｜斜率と角度]
+1. 直线
+   $$
+   y=-x+2
+   $$
+   与 $x$ 轴正方向的夹角 $\theta$ 是多少？
+
+2. 一条直线与 $x$ 轴正方向的夹角为
+   $$
+   120^\circ
+   $$
+   求它的斜率。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+### 1.
+
+斜率为
+
+$$
+m=-1.
+$$
+
+在
+
+$$
+0^\circ\le\theta<180^\circ
+$$
+
+中，
+
+$$
+\tan\theta=-1
+$$
+
+对应
+
+$$
+\boxed{\theta=135^\circ}.
+$$
+
+### 2.
+
+$$
+m=\tan120^\circ=-\sqrt3.
+$$
+
+所以
+
+$$
+\boxed{m=-\sqrt3}.
+$$
+
+</details>
 
 ---
 
