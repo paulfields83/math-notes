@@ -412,6 +412,128 @@ $$
 
 ---
 
+### 提高演习：题目不告诉你画哪条辅助线
+
+凸四边形 $ABCD$ 满足
+
+$$
+AB=3,\qquad
+BC=5,\qquad
+CD=5,\qquad
+DA=4,
+$$
+
+并且
+
+$$
+\angle ABC=120^\circ.
+$$
+
+求四边形 $ABCD$ 的面积。
+
+![一般四边形分割](/img/math1a-advanced/lesson14/quadrilateral-split.svg)
+
+> 先不要找“某个四边形公式”。  
+> 想一想：补哪一条对角线以后，已知条件最多？
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+连接
+
+$$
+AC.
+$$
+
+这样四边形被分成
+
+$$
+\triangle ABC
+\quad\text{和}\quad
+\triangle ACD.
+$$
+
+### 1. 先求 $AC$
+
+在 $\triangle ABC$ 中，由余弦定理：
+
+$$
+AC^2
+=
+3^2+5^2-2\cdot3\cdot5\cos120^\circ.
+$$
+
+由于
+
+$$
+\cos120^\circ=-\frac12,
+$$
+
+所以
+
+$$
+AC^2
+=
+9+25+15
+=
+49.
+$$
+
+因此
+
+$$
+\boxed{AC=7}.
+$$
+
+### 2. 求 $\triangle ABC$ 面积
+
+$$
+[\triangle ABC]
+=
+\frac12\cdot3\cdot5\sin120^\circ
+=
+\boxed{\frac{15\sqrt3}{4}}.
+$$
+
+### 3. 求 $\triangle ACD$ 面积
+
+$\triangle ACD$ 的三边为
+
+$$
+4,\qquad5,\qquad7.
+$$
+
+用 Heron 公式：
+
+$$
+s=\frac{4+5+7}{2}=8.
+$$
+
+因此
+
+$$
+[\triangle ACD]
+=
+\sqrt{8\cdot4\cdot3\cdot1}
+=
+\boxed{4\sqrt6}.
+$$
+
+所以四边形面积为
+
+$$
+\boxed{
+4\sqrt6+\frac{15\sqrt3}{4}
+}.
+$$
+
+> 这题真正考的是“先画哪条辅助线”。  
+> 一旦选对 $AC$，后面只是第13讲已经学过的余弦定理＋Heron公式。
+
+</details>
+
+---
+
 ## 3　Challenge：圆内接四边形的计量
 
 这一节不重新讲圆的性质；第17讲会系统处理圆周角、方幂与接弦定理。
