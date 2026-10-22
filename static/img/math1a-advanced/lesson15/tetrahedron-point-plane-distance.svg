@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="30" font-size="18" font-weight="600">四面体 ABCD｜点到平面的距离</text>
+<!-- base triangle BCD -->
+<g stroke="#222" stroke-width="2" fill="none">
+  <line x1="170" y1="330" x2="560" y2="335"/>
+  <line x1="560" y1="335" x2="430" y2="180"/>
+  <line x1="430" y1="180" x2="170" y2="330"/>
+  <line x1="310" y1="80" x2="170" y2="330"/>
+  <line x1="310" y1="80" x2="560" y2="335"/>
+  <line x1="310" y1="80" x2="430" y2="180"/>
+</g>
+<!-- dashed projection hint -->
+<line x1="310" y1="80" x2="360" y2="275" stroke="#777" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="365" y="270" font-size="12" fill="#555">DH ⟂ 平面ABC</text>
+<!-- labels -->
+<g font-family="sans-serif" font-size="15" fill="#111">
+  <text x="300" y="67">D</text>
+  <text x="150" y="350">A</text>
+  <text x="565" y="354">B</text>
+  <text x="433" y="170">C</text>
+  <text x="347" y="292">H</text>
+</g>
+<!-- edge data -->
+<g font-family="sans-serif" font-size="13" fill="#444">
+  <text x="215" y="195">AD</text>
+  <text x="430" y="230">CD</text>
+  <text x="445" y="222"> </text>
+  <text x="445" y="120">CD</text>
+  <text x="420" y="355">AB=3</text>
+  <text x="500" y="255">BD=1</text>
+  <text x="250" y="265">AC=2√5</text>
+  <text x="505" y="245">BC=3</text>
+</g>
+<!-- right-angle markers near D notionally for ADB and ADC -->
+<path d="M 295 104 L 315 116 L 327 97" stroke="#555" stroke-width="1.5" fill="none"/>
+<text x="24" y="408" font-size="12" fill="#666">示意图不按比例绘制；直角条件以题目 ∠ADB=∠ADC=90° 为准。</text>
+</svg>
