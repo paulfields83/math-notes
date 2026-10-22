@@ -12,15 +12,113 @@ sidebar_position: 14
 复杂图形先分成若干个三角形，找：
 
 - 公共边；
+- 中点与一般分点；
 - 角平分线；
-- 内接四边形；
-- 互补角。
+- 四边形的对角线；
+- 特殊图形提供的额外条件。
 
 ---
 
-## 1　角平分线长度
+## 1　三角形内部线段的长度
 
-### 知识点
+### 中线与一般分点
+
+已知三边以后，不只可以求角，还可以继续求中线、分点连线等内部线段。
+
+:::info[4STEP 教材题型｜中点・分点までの距離]
+在 $\triangle ABC$ 中，
+
+$$
+BC=6,\qquad CA=5,\qquad AB=7.
+$$
+
+设 $M$ 为 $BC$ 的中点；点 $D$ 将 $BC$ 按
+
+$$
+BD:DC=1:2
+$$
+
+分割。
+
+求
+
+$$
+AM,\qquad AD.
+$$
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+先由余弦定理求 $\angle B$：
+
+$$
+\cos B
+=
+\frac{AB^2+BC^2-CA^2}{2\cdot AB\cdot BC}
+=
+\frac{49+36-25}{84}
+=
+\frac57.
+$$
+
+因为 $M$ 是中点，
+
+$$
+BM=3.
+$$
+
+在 $\triangle ABM$ 中：
+
+$$
+AM^2
+=
+7^2+3^2-2\cdot7\cdot3\cdot\frac57
+=
+28.
+$$
+
+所以
+
+$$
+\boxed{AM=2\sqrt7}.
+$$
+
+又由
+
+$$
+BD:DC=1:2,\qquad BC=6
+$$
+
+得到
+
+$$
+BD=2.
+$$
+
+在 $\triangle ABD$ 中：
+
+$$
+AD^2
+=
+7^2+2^2-2\cdot7\cdot2\cdot\frac57
+=
+33.
+$$
+
+因此
+
+$$
+\boxed{AD=\sqrt{33}}.
+$$
+
+> 这一类题的统一思路是：先由大三角形求出所需角，再进入含目标线段的小三角形。
+
+</details>
+
+### 角平分线作为计量工具
+
+这里不重新展开第16讲会系统学习的角平分线性质，只把它作为“内部线段计量”的工具。
 
 角平分线可以同时连接：
 
@@ -228,15 +326,103 @@ $$
 
 ---
 
-## 2　圆内接四边形的面积
+## 2　一般四边形：两条对角线直接求面积
 
-### 知识点
+复合图形不一定每次都要分别求四个小三角形。
 
-圆内接四边形的对角互补：
+若四边形两条对角线长度为
 
 $$
-A+C=180^\circ.
+p,\qquad q,
 $$
+
+夹角为 $\theta$，则面积为
+
+$$
+\boxed{
+S=\frac12pq\sin\theta
+}.
+$$
+
+本质仍然是把四边形沿两条对角线分成四个三角形，再把面积相加。
+
+:::info[4STEP 教材题型｜対角線と面積]
+四边形 $ABCD$ 的对角线 $AC,BD$ 交于 $O$。
+
+已知
+
+$$
+AC=4,\qquad
+BD=7,\qquad
+\angle AOB=45^\circ.
+$$
+
+求四边形面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+直接使用
+
+$$
+S=\frac12AC\cdot BD\sin\angle AOB.
+$$
+
+因此
+
+$$
+S
+=
+\frac12\cdot4\cdot7\cdot\frac{\sqrt2}{2}
+=
+\boxed{7\sqrt2}.
+$$
+
+</details>
+
+:::note[確認問題｜対角線の面積公式]
+某四边形两条对角线长分别为
+
+$$
+6,\qquad8,
+$$
+
+夹角为
+
+$$
+30^\circ.
+$$
+
+求面积。
+:::
+
+<details className="solution-details">
+<summary>查看答案</summary>
+
+$$
+S
+=
+\frac12\cdot6\cdot8\cdot\sin30^\circ
+=
+\boxed{12}.
+$$
+
+</details>
+
+---
+
+## 3　Challenge：圆内接四边形的计量
+
+这一节不重新讲圆的性质；第17讲会系统处理圆周角、方幂与接弦定理。
+
+这里只把已经知道的
+
+$$
+\boxed{\text{圆内接四边形的对角互补}}
+$$
+
+作为一个**计量条件**使用。
 
 ### 解题技巧
 
@@ -431,94 +617,8 @@ $$
 
 ---
 
-## 3　两条对角线直接求四边形面积
-
-复合图形不一定每次都要分别求四个小三角形。
-
-若四边形两条对角线长度为
-
-$$
-p,\qquad q,
-$$
-
-夹角为 $\theta$，则面积为
-
-$$
-\boxed{
-S=\frac12pq\sin\theta
-}.
-$$
-
-本质仍然是把四边形沿两条对角线分成四个三角形，再把面积相加。
-
-:::info[4STEP 教材题型｜対角線と面積]
-四边形 $ABCD$ 的对角线 $AC,BD$ 交于 $O$。
-
-已知
-
-$$
-AC=4,\qquad
-BD=7,\qquad
-\angle AOB=45^\circ.
-$$
-
-求四边形面积。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-直接使用
-
-$$
-S=\frac12AC\cdot BD\sin\angle AOB.
-$$
-
-因此
-
-$$
-S
-=
-\frac12\cdot4\cdot7\cdot\frac{\sqrt2}{2}
-=
-\boxed{7\sqrt2}.
-$$
-
-</details>
-
-:::note[確認問題｜対角線の面積公式]
-某四边形两条对角线长分别为
-
-$$
-6,\qquad8,
-$$
-
-夹角为
-
-$$
-30^\circ.
-$$
-
-求面积。
-:::
-
-<details className="solution-details">
-<summary>查看答案</summary>
-
-$$
-S
-=
-\frac12\cdot6\cdot8\cdot\sin30^\circ
-=
-\boxed{12}.
-$$
-
-</details>
-
----
-
 ## 本讲整理
 
 复合图形题不要整体硬算。
 
-> 先分割 → 找共享条件 → 各三角形分别计算 → 再合并
+> 先找内部线段/对角线 → 把图形分成三角形 → 利用共享角、共享边或特殊条件 → 再合并
