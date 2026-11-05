@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 570" width="940" height="570" role="img" aria-label="球面上六点和从同一外点P出发的三条割线P-A-D、P-B-E、P-C-F">
+<rect width="940" height="570" fill="#fff"/>
+<path d="M120 354 L480 482 L790 392 Z" fill="#f2f4f5" stroke="#333d48" stroke-width="2.6"/>
+<path d="M270 238 L475 251 L615 224 Z" fill="#e6ecef" stroke="#556b79" stroke-width="2.1"/>
+<g stroke="#2e3943" stroke-width="2.6" fill="none" stroke-linejoin="round">
+<path d="M470 92 L120 354"/>
+<path d="M470 92 L480 482"/>
+<path d="M470 92 L790 392"/>
+</g>
+<g stroke="#899ba7" stroke-dasharray="6 6" stroke-width="1.5" fill="none">
+<path d="M270 238 L480 482"/>
+<path d="M475 251 L790 392"/>
+<path d="M615 224 L120 354"/>
+</g>
+<g fill="#263849"><circle cx="470" cy="92" r="5"/><circle cx="270" cy="238" r="5"/><circle cx="475" cy="251" r="5"/><circle cx="615" cy="224" r="5"/><circle cx="120" cy="354" r="5"/><circle cx="480" cy="482" r="5"/><circle cx="790" cy="392" r="5"/></g>
+<g fill="#263849" font-family="Georgia,serif" font-style="italic" font-size="23">
+<text x="474" y="72">P</text><text x="248" y="242">A</text><text x="466" y="276">B</text><text x="626" y="218">C</text>
+<text x="95" y="371">D</text><text x="475" y="510">E</text><text x="800" y="403">F</text>
+</g>
+<g font-size="16" font-family="sans-serif" fill="#526879">
+<text x="281" y="158">PA=6</text><text x="166" y="319">AD=6</text>
+<text x="486" y="361">BE=14</text><text x="686" y="324">CF=21</text>
+<text x="36" y="44">6点 A～F 在同一球面上；各组三点共线</text>
+</g>
+<text x="31" y="545" fill="#71808b" font-size="14" font-family="sans-serif">从空间图中抽取经过 P 的两个割线所在平面，再应用圆的方幂定理。投影不按比例。</text>
+</svg>
