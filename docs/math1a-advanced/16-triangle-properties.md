@@ -120,7 +120,7 @@ $$
 第三问为 $\boxed{1:7}$。
 </details>
 
-## 3　三角形的四心
+## 3　三角形的四心与傍心
 
 | 中心 | 主要性质 |
 |---|---|
@@ -128,6 +128,55 @@ $$
 | 外心 | 到三顶点距离相等；垂直平分线 |
 | 重心 | 中线交点；顶点到重心与重心到中点之比为2:1 |
 | 垂心 | 三条高所在直线共点；注意钝角三角形中的延长线 |
+| 傍心 | 一条内角平分线与另外两条外角平分线的交点；到三边所在直线等距 |
+
+### 补充：傍心与角平分线
+
+$I$ 为三角形的内心，$I_A$ 为顶点 $A$ 对应的傍心。
+
+- 内心：三条**内角**平分线的交点。
+- 傍心：$\angle A$ 的内角平分线，与 $\angle B,\angle C$ 的**外角**平分线交于一点。
+
+![三角形的内心与傍心](/img/math1a-advanced/lesson16/excenter-application.svg)
+
+:::note[短练习｜内心与傍心的角]
+在 $\triangle ABC$ 中，
+
+$$
+\angle A=60^\circ,\quad\angle B=50^\circ,\quad\angle C=70^\circ.
+$$
+
+求 $\angle BIC$ 与 $\angle BI_AC$。
+:::
+
+<details className="solution-details">
+<summary>查看解答</summary>
+
+内心满足 $\angle IBC=B/2$、$\angle ICB=C/2$，所以
+
+$$
+\angle BIC=180^\circ-\frac{B+C}{2}
+=90^\circ+\frac A2
+=\boxed{120^\circ}.
+$$
+
+傍心满足
+
+$$
+\angle I_ABC=\frac{180^\circ-B}{2},\quad
+\angle I_ACB=\frac{180^\circ-C}{2}.
+$$
+
+因此
+
+$$
+\angle BI_AC
+=180^\circ-\frac{180^\circ-B}{2}-\frac{180^\circ-C}{2}
+=\frac{B+C}{2}
+=\boxed{60^\circ}.
+$$
+
+</details>
 
 ### 例题2｜证明三条高共点
 
