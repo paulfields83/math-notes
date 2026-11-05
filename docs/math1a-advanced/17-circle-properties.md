@@ -160,6 +160,43 @@ $$
 
 </details>
 
+### 补充练习｜圆外切四边形
+
+四边形 $ABCD$ 的四条边都与同一个圆相切。求证：
+
+$$
+\boxed{AB+CD=BC+DA}.
+$$
+
+![圆外切四边形](/img/math1a-advanced/lesson17/tangential-quadrilateral.svg)
+
+<details className="solution-details">
+<summary>查看解答</summary>
+
+设圆与 $DA,AB,BC,CD$ 分别切于 $E,F,G,H$。
+
+同一点引出的两条切线段相等：
+
+$$
+AE=AF,\quad BF=BG,\quad CG=CH,\quad DH=DE.
+$$
+
+所以
+
+$$
+AB+CD=(AF+FB)+(CH+HD)
+$$
+
+$$
+=(AE+BG)+(CG+DE)=DA+BC.
+$$
+
+因此得证。
+
+</details>
+
+---
+
 ## 3　方幂定理及其逆
 
 ### 知识点：切线的性质｜三种图，注意“从同一点量起”
