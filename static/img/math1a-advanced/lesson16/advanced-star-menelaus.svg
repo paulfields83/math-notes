@@ -4,7 +4,6 @@
 <path d="M90 340 H615"/>
 <path d="M90 340 V115"/>
 <path d="M90 115 L690 475"/>
-<path d="M230 340 L690 475"/>
 <path d="M90 295 L690 475"/>
 <path d="M615 340 L90 250"/>
 </g>
@@ -12,7 +11,7 @@
 <path d="M465 340 L90 115"/>
 </g>
 <g fill="#263849" font-size="19" font-family="Georgia,serif" font-style="italic">
-<text x="66" y="361">A</text><text x="222" y="364">P</text><text x="455" y="366">Q</text><text x="620" y="366">C</text>
+<text x="66" y="361">A</text><text x="234" y="364">P</text><text x="455" y="366">Q</text><text x="620" y="366">C</text>
 <text x="65" y="307">T</text><text x="67" y="245">S</text><text x="67" y="105">D</text>
 <text x="701" y="489">B</text><text x="418" y="324">R</text>
 </g>
