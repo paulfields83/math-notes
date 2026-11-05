@@ -89,6 +89,57 @@ $$
 左边是直线 $AB$ 与小圆的弦 $BD$ 所成的角，右边是小圆上对应圆周角。由接弦定理的逆，$\boxed{AB\text{ 与圆BDE在B点相切}}$。
 </details>
 
+### 提高练习｜图上没有画出的切线
+
+:::note[4STEP 199｜2023年共通テスト同类证明思路]
+在锐角三角形 $ABC$ 中，以 $BC$ 为直径作圆 $O$。圆 $O$ 与 $AB,AC$ 除 $B,C$ 外，分别交于 $P,Q$。
+
+证明：**直线 $OP$ 与 $\triangle APQ$ 的外接圆在 $P$ 点相切。**
+
+![隐藏切线题目图](/img/math1a-advanced/lesson17/hidden-tangent-question.svg)
+:::
+
+<details className="solution-details">
+<summary>查看证明与辅助圆</summary>
+
+**① 利用直径所对的圆周角。**
+
+因为 $BC$ 是直径，
+
+$$
+\angle BPC=\angle BQC=90^\circ.
+$$
+
+由 $B,C,P,Q$ 共圆，且 $A,Q,C$ 共线，可得
+
+$$
+\angle PQA=\angle PBC=\angle ABC.
+$$
+
+**② 利用圆心到圆上点的距离相等。**
+
+$OP=OB$，所以 $\triangle OPB$ 为等腰三角形：
+
+$$
+\angle OPB=\angle PBO=\angle ABC.
+$$
+
+于是
+
+$$
+\angle OPB=\angle PQA.
+$$
+
+因为 $A,P,B$ 共线且 $P$ 在 $AB$ 上，由接弦定理的逆，
+
+$$
+\boxed{OP\text{ 是 }\triangle APQ\text{ 外接圆在 }P\text{ 处的切线}}.
+$$
+
+![辅助圆与切线证明](/img/math1a-advanced/lesson17/hidden-tangent-answer.svg)
+
+</details>
+
 :::note[练习1｜切线段的长度]
 三角形的内切圆与 $BC,CA,AB$ 分别相切于 $D,E,F$。已知 $BC=a,CA=b,AB=c$，用三边表示 $BD,CE,AF$。
 
