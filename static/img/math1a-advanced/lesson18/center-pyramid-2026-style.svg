@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 640" width="880" height="640" role="img" aria-label="内心I与三角形IBC的重心G，以及从G向底面垂直升起的顶点P">
+<rect width="880" height="640" fill="#fff"/>
+<path d="M170 540 L460 160 L740 540 Z" fill="#f4f6f7" stroke="#293744" stroke-width="2.5"/>
+<path d="M170 540 L460 397.5 L740 540 Z" fill="#e8edf0" stroke="#a8b4be" stroke-width="1.4"/>
+<g stroke="#293744" stroke-width="2.2" fill="none">
+<path d="M550 52 L170 540"/>
+<path d="M550 52 L740 540"/>
+<path d="M550 52 L460 160"/>
+<path d="M460 160 L460 540"/>
+</g>
+<g stroke="#657b8b" stroke-dasharray="7 6" stroke-width="2" fill="none"><path d="M550 52 L460 492.5"/></g>
+<g fill="#263849"><circle cx="460" cy="160" r="4.5"/><circle cx="170" cy="540" r="4.5"/><circle cx="740" cy="540" r="4.5"/><circle cx="460" cy="540" r="4.5"/><circle cx="460" cy="397.5" r="4.5"/><circle cx="460" cy="492.5" r="4.5"/><circle cx="550" cy="52" r="4.5"/></g>
+<g fill="#263849" font-family="Georgia,serif" font-style="italic" font-size="22">
+<text x="442" y="149">A</text><text x="145" y="567">B</text><text x="747" y="567">C</text><text x="450" y="570">D</text>
+<text x="435" y="407">I</text><text x="435" y="499">G</text><text x="555" y="40">P</text>
+</g>
+<g font-family="sans-serif" font-size="16" fill="#516474"><text x="295" y="288">AB=10</text><text x="565" y="285">AC=10</text><text x="376" y="581">BC=12</text><text x="534" y="298">PG ⟂ 平面ABC</text></g>
+<text x="31" y="615" fill="#71808b" font-size="14" font-family="sans-serif">空间示意图：G 在 ID 上，是 △IBC 的重心；线段 PG 为立体的高。</text>
+</svg>
