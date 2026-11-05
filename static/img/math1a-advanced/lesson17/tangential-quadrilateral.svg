@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+<rect width="800" height="600" fill="#fff"/>
+<polygon points="369.01,187.28 487.77,270.44 429.20,431.36 293.73,317.68" fill="none" stroke="#293a46" stroke-width="2.8" stroke-linejoin="round"/>
+<circle cx="394" cy="300" r="78" stroke="#566d7c" stroke-width="2" fill="none"/>
+<g stroke="#a0afb7" stroke-width="1.5" stroke-dasharray="5 5">
+<path d="M394 300 L326.5 261.0"/><path d="M394 300 L438.7 236.1"/><path d="M394 300 L467.3 326.7"/><path d="M394 300 L343.9 359.8"/>
+</g>
+<g fill="#293a46"><circle cx="369.0" cy="187.3" r="4.2"/><circle cx="487.8" cy="270.4" r="4.2"/><circle cx="429.2" cy="431.4" r="4.2"/><circle cx="293.7" cy="317.7" r="4.2"/><circle cx="326.5" cy="261.0" r="4.2"/><circle cx="438.7" cy="236.1" r="4.2"/><circle cx="467.3" cy="326.7" r="4.2"/><circle cx="343.9" cy="359.8" r="4.2"/></g>
+<g font-family="Georgia,serif" font-style="italic" font-size="21" fill="#263849">
+<text x="356.3" y="174.9">A</text><text x="488.1" y="267.2">B</text><text x="423.1" y="445.8">C</text><text x="272.7" y="319.6">D</text>
+<text x="308.6" y="254.8">E</text><text x="438.9" y="225.9">F</text><text x="472.0" y="330.9">G</text><text x="328.8" y="369.3">H</text>
+<text x="403" y="291">O</text>
+</g>
+<text x="30" y="559" font-family="sans-serif" font-size="15" fill="#627889">四边形的四条边与同一圆相切；从每个顶点引出的两条切线段等长。</text>
+</svg>
