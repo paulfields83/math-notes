@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="三角形中的隐藏切线证明，圆以BC为直径，OP待证相切">
+<rect width="800" height="600" fill="#fff"/>
+<circle cx="400" cy="380" r="220" stroke="#333b43" stroke-width="2.6" fill="none"/>
+
+<g stroke="#263440" stroke-width="2.5" fill="none" stroke-linecap="round">
+<path d="M312 72 L180 380 L620 380 L312 72"/>
+<path d="M400 380 L248.3 220.7"/>
+</g>
+<g stroke="#75899a" stroke-width="1.6" stroke-dasharray="6 5" fill="none">
+<path d="M620 380 L248.3 220.7"/><path d="M180 380 L400 160"/>
+</g>
+<g fill="#27323d"><circle cx="312" cy="72" r="4.2"/><circle cx="180" cy="380" r="4.2"/><circle cx="620" cy="380" r="4.2"/><circle cx="400" cy="380" r="4.2"/><circle cx="248.3" cy="220.7" r="4.2"/><circle cx="400" cy="160" r="4.2"/></g>
+<g font-size="21" font-style="italic" font-family="Georgia,serif" fill="#233746">
+<text x="304" y="54">A</text><text x="156" y="405">B</text><text x="626" y="404">C</text><text x="396" y="404">O</text><text x="227" y="218">P</text><text x="410" y="156">Q</text>
+</g>
+<text x="33" y="547" fill="#596b79" font-family="sans-serif" font-size="16">实线圆：直径 BC；P、Q 是 AB、AC 上的交点</text>
+<text x="33" y="574" fill="#596b79" font-family="sans-serif" font-size="14">目标：证明直线 OP 与三角形 APQ 的外接圆相切</text>
+</svg>
