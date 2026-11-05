@@ -246,6 +246,74 @@ $$
 
 </details>
 
+### 提高练习｜复杂截线中的两次Menelaus
+
+:::note[共通テスト2024型｜讲义改编]
+从点 $A$ 引两条射线 $AC,AD$，依次取点 $A-P-Q-C$ 和 $A-T-S-D$，满足
+
+$$
+AP:PQ:QC=2:3:2,\qquad AT:TS:SD=1:1:3.
+$$
+
+直线 $PT$ 与 $DQ$ 交于 $B$，直线 $CS$ 与 $DQ$ 交于 $R$。点序为 $B-Q-R-D$。
+
+求
+
+$$
+\boxed{BQ:QR:RD}.
+$$
+
+![复杂截线与比例](/img/math1a-advanced/lesson16/advanced-star-menelaus.svg)
+:::
+
+<details className="solution-details">
+<summary>查看解答</summary>
+
+**① 先求 $BQ:QD$。**
+
+在 $\triangle AQD$ 中，对横截线 $P-T-B$ 使用Menelaus：
+
+$$
+\frac{AP}{PQ}\cdot\frac{QB}{BD}\cdot\frac{DT}{TA}=1.
+$$
+
+其中 $AP:PQ=2:3$，$DT:TA=(TS+SD):AT=4:1$，所以
+
+$$
+\frac23\cdot\frac{BQ}{BD}\cdot4=1
+\quad\Rightarrow\quad \frac{BQ}{BD}=\frac38.
+$$
+
+由 $BD=BQ+QD$，得
+
+$$
+\boxed{BQ:QD=3:5}.
+$$
+
+**② 再求 $QR:RD$。**
+
+仍在 $\triangle AQD$ 中，改用横截线 $C-R-S$：
+
+$$
+\frac{QR}{RD}\cdot\frac{DS}{SA}\cdot\frac{AC}{CQ}=1.
+$$
+
+因为 $DS:SA=3:2$，$AC:CQ=7:2$，所以
+
+$$
+\frac{QR}{RD}\cdot\frac32\cdot\frac72=1
+\quad\Rightarrow\quad
+\boxed{QR:RD=4:21}.
+$$
+
+因此 $QR:QD=4:25$，$RD:QD=21:25$。再利用 $BQ:QD=3:5=15:25$，得到
+
+$$
+\boxed{BQ:QR:RD=15:4:21}.
+$$
+
+</details>
+
 :::note[确认题2｜Ceva与面积比]
 $AR:RB=2:3$，$AQ:QC=5:6$。$BQ,CR$ 交于 $O$，$AO$ 与 $BC$ 交于 $P$。求 $BP:PC$ 与 $[OBC]:[ABC]$。
 
