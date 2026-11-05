@@ -199,7 +199,245 @@ $$
 所以面积乘积为 $\boxed{36}$。
 </details>
 
-## 5　提高练习1：方幂与Menelaus
+## 5　空间综合1：内心、重心与体积比
+
+:::note[共通テスト2026型｜讲义改编]
+在等腰三角形 $ABC$ 中，
+
+$$
+AB=AC=10,\qquad BC=12.
+$$
+
+$I$ 为 $\triangle ABC$ 的内心，$D$ 为直线 $AI$ 与 $BC$ 的交点，$G$ 为 $\triangle IBC$ 的重心。
+
+从 $G$ 作平面 $ABC$ 的垂线，取点 $P$，使 $PG=6$。
+
+![内心、重心与三角锥](/img/math1a-advanced/lesson18/center-pyramid-2026-style.svg)
+
+求：
+
+1. $AI,ID,AG$；
+2. $PA,PI$；
+3. 三角锥 $PABC$ 与 $PIBC$ 的体积比 $V_{PABC}:V_{PIBC}$。
+:::
+
+<details className="solution-details">
+<summary>查看解答</summary>
+
+**① 先在底面中求比例。**
+
+$AB=AC$，所以 $D$ 是 $BC$ 的中点：
+
+$$
+BD=DC=6,\qquad
+AD=\sqrt{10^2-6^2}=8.
+$$
+
+在 $\triangle ABD$ 中，由角平分线定理，
+
+$$
+AI:ID=AB:BD=10:6=5:3.
+$$
+
+因此
+
+$$
+\boxed{AI=5,\qquad ID=3}.
+$$
+
+$G$ 是 $\triangle IBC$ 的重心，位于中线 $ID$ 上，且
+
+$$
+IG:GD=2:1.
+$$
+
+于是 $IG=2$、$GD=1$，得到
+
+$$
+\boxed{AG=AD-GD=7}.
+$$
+
+**② 再处理空间中的直角三角形。**
+
+因为 $PG\perp$ 平面 $ABC$，
+
+$$
+PA^2=PG^2+AG^2=6^2+7^2=85,
+$$
+
+$$
+PI^2=PG^2+IG^2=6^2+2^2=40.
+$$
+
+所以
+
+$$
+\boxed{PA=\sqrt{85},\qquad PI=2\sqrt{10}}.
+$$
+
+**③ 最后比较两个体积。**
+
+两三角锥的底面都在平面 $ABC$ 上，高均为 $PG$。
+
+$$
+[ABC]=\frac12\cdot12\cdot8=48,
+\qquad
+[IBC]=\frac12\cdot12\cdot3=18.
+$$
+
+因此
+
+$$
+V_{PABC}=\frac13\cdot48\cdot6=96,
+\qquad
+V_{PIBC}=\frac13\cdot18\cdot6=36.
+$$
+
+故
+
+$$
+\boxed{V_{PABC}:V_{PIBC}=8:3}.
+$$
+
+空间题先求底面内的长度与面积，再比较体积。
+
+</details>
+
+---
+
+## 6　空间综合2：共球与方幂（选做提高）
+
+:::note[共通テスト2025型｜讲义原创变式]
+空间中，点 $A,B,C,D,E,F$ 位于同一球面上。球外一点 $P$ 满足：
+
+- $P,A,D$ 依次共线；
+- $P,B,E$ 依次共线；
+- $P,C,F$ 依次共线。
+
+已知
+
+$$
+PA=6,\quad AD=6,\quad BE=14,\quad CF=21,
+$$
+
+$$
+AB=4,\quad BC=5,\quad AC=6.
+$$
+
+![空间中的三条割线](/img/math1a-advanced/lesson18/spherical-secants-2025-style.svg)
+
+求：
+
+1. $PB,PC$；
+2. $DE,EF,DF$；
+3. $\cos\angle DEF$。
+:::
+
+<details className="solution-details">
+<summary>查看解答</summary>
+
+**① 从球面上抽出一个圆。**
+
+平面 $PAB$ 与球面相交于一个圆，$A,B,D,E$ 都在这个圆上。因为
+
+$$
+PD=PA+AD=12,
+\qquad
+PE=PB+14,
+$$
+
+由方幂定理：
+
+$$
+PA\cdot PD=PB\cdot PE.
+$$
+
+设 $PB=x>0$，则
+
+$$
+6\cdot12=x(x+14)
+\quad\Rightarrow\quad
+(x-4)(x+18)=0.
+$$
+
+所以
+
+$$
+\boxed{PB=4,\qquad PE=18}.
+$$
+
+同理，在平面 $PAC$ 与球面相交形成的圆上，
+
+$$
+PA\cdot PD=PC\cdot PF.
+$$
+
+设 $PC=y>0$，则 $PF=y+21$，故
+
+$$
+72=y(y+21)
+\quad\Rightarrow\quad
+(y-3)(y+24)=0.
+$$
+
+所以
+
+$$
+\boxed{PC=3,\qquad PF=24}.
+$$
+
+**② 利用相似关系求外侧三角形的三边。**
+
+由于三对点分别位于从 $P$ 出发的同一射线上，且
+
+$$
+\frac{PA}{PE}=\frac{PB}{PD}=\frac13,
+$$
+
+可得
+
+$$
+\triangle PAB\sim\triangle PED,
+\qquad DE=3AB=\boxed{12}.
+$$
+
+同理，
+
+$$
+\frac{PB}{PF}=\frac{PC}{PE}=\frac16
+\quad\Rightarrow\quad
+EF=6BC=\boxed{30},
+$$
+
+$$
+\frac{PA}{PF}=\frac{PC}{PD}=\frac14
+\quad\Rightarrow\quad
+DF=4AC=\boxed{24}.
+$$
+
+**③ 在平面三角形 $DEF$ 中求角。**
+
+由余弦定理，
+
+$$
+\cos\angle DEF
+=\frac{DE^2+EF^2-DF^2}{2\cdot DE\cdot EF}
+=\frac{12^2+30^2-24^2}{2\cdot12\cdot30}.
+$$
+
+因此
+
+$$
+\boxed{\cos\angle DEF=\frac{13}{20}}.
+$$
+
+这题最关键的一步，是发现**同一球面与一个平面的交线是圆**，之后就可以使用已经学过的方幂定理。
+
+</details>
+
+---
+
+## 7　提高练习1：方幂与Menelaus
 
 :::note[提高练习1｜求线段比与长度]
 在 $\triangle ABC$ 中，
@@ -258,7 +496,7 @@ $$
 $t>0$，所以 $t=\sqrt5/4$，最终 $\boxed{EP=5\sqrt5/4}$。
 </details>
 
-## 6　提高练习2：切线与共圆
+## 8　提高练习2：切线与共圆
 
 :::note[提高练习2｜证明共圆]
 从圆 $O$ 外一点 $P$ 引两条切线，切点为 $A,B$。$C=AB\cap PO$。过 $C$ 作一条不与 $PO$ 重合的直线，交圆于 $D,E$。证明 $P,O,D,E$ 四点共圆。
@@ -291,7 +529,7 @@ $$
 $O,C,P$ 共线，$D,C,E$ 共线，应用方幂逆定理，得到 $\boxed{P,O,D,E\text{ 共圆}}$。
 </details>
 
-## 7　课后练习：圆的综合
+## 9　课后练习：圆的综合
 
 :::note[课后练习｜圆的综合]
 图形和点的定义与综合3相同，但改为
@@ -366,7 +604,7 @@ $$
 
 解题时先决定使用哪个三角形或圆，再列出对应的角度、比例或长度关系。
 
-**课堂：**综合1～4。**独立练习：**提高练习1、2。**课后：**第7节；空间题选做。
+**课堂重点：**综合1、3、5。**独立练习：**综合2、4及提高练习1、2，可根据课堂进度选择。**选做提高：**空间综合2。**课后：**第9节及空间备用题。
 
 <details>
 <summary>题目来源</summary>
