@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 630" width="780" height="630">
+<rect width="780" height="630" fill="#fff"/>
+<path d="M330 70 L200 325 L460 325 Z" fill="none" stroke="#2e3943" stroke-width="2.4"/>
+<path d="M330 70 L330 560" stroke="#536879" stroke-width="2"/>
+<path d="M200 325 L330 537 M460 325 L330 537" stroke="#6d8090" stroke-width="2" stroke-dasharray="8 6" fill="none"/>
+<path d="M155 325 L505 325" stroke="#8393a0" stroke-width="1.1" stroke-dasharray="4 5"/>
+<g fill="#253947"><circle cx="330" cy="70" r="4.5"/><circle cx="200" cy="325" r="4.5"/><circle cx="460" cy="325" r="4.5"/><circle cx="330" cy="245" r="4.5"/><circle cx="330" cy="537" r="4.5"/><circle cx="330" cy="325" r="4.5"/></g>
+<g font-family="Georgia,serif" font-style="italic" font-size="21" fill="#263849">
+<text x="334" y="56">A</text><text x="177" y="344">B</text><text x="470" y="344">C</text>
+<text x="343" y="247">I</text><text x="343" y="544">Iₐ</text><text x="337" y="320">D</text>
+</g>
+<g font-family="sans-serif" font-size="16" fill="#546878"><text x="29" y="43">实线：A 的内角平分线</text><text x="29" y="66">虚线：B、C 的外角平分线</text></g>
+<text x="28" y="608" font-size="14" font-family="sans-serif" fill="#71818c">I 是内心；Iₐ 是与顶点 A 对应的傍心。示意图不按长度比例。</text>
+</svg>
