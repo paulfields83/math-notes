@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="970" height="340" viewBox="0 0 970 340" role="img" aria-label="编号为1至4的节点的链形，环形，增加对角线的环形图">
+<rect width="970" height="340" fill="white"/>
+<g font-family="sans-serif" fill="#253b4c">
+<text x="36" y="37" font-weight="600" font-size="18">① 链形</text>
+<text x="355" y="37" font-weight="600" font-size="18">② 环形</text>
+<text x="670" y="37" font-weight="600" font-size="18">③ 环形＋对角线</text>
+</g>
+<g fill="none" stroke="#536d7e" stroke-width="3">
+<path d="M65 146 H280"/>
+<path d="M401 85 H530 V198 H401 Z"/>
+<path d="M735 85 H866 V198 H735 Z"/>
+<path d="M735 85 L866 198"/>
+</g>
+<g fill="white" stroke="#314c61" stroke-width="2.5">
+<circle cx="65" cy="146" r="23"/><circle cx="137" cy="146" r="23"/><circle cx="208" cy="146" r="23"/><circle cx="280" cy="146" r="23"/><circle cx="401" cy="85" r="23"/><circle cx="530" cy="85" r="23"/><circle cx="530" cy="198" r="23"/><circle cx="401" cy="198" r="23"/><circle cx="735" cy="85" r="23"/><circle cx="866" cy="85" r="23"/><circle cx="866" cy="198" r="23"/><circle cx="735" cy="198" r="23"/>
+</g>
+<g font-size="17" font-family="Georgia,serif" fill="#263b4d" text-anchor="middle">
+<text x="65" y="152">1</text><text x="137" y="152">2</text><text x="208" y="152">3</text><text x="280" y="152">4</text><text x="401" y="91">1</text><text x="530" y="91">2</text><text x="530" y="204">3</text><text x="401" y="204">4</text><text x="735" y="91">1</text><text x="866" y="91">2</text><text x="866" y="204">3</text><text x="735" y="204">4</text>
+</g>
+<g font-family="sans-serif" fill="#536a7b" font-size="16">
+<text x="36" y="264">相邻两个节点颜色不同</text>
+<text x="355" y="264">首尾也需要不同色</text>
+<text x="670" y="264">还必须满足 1 与 3 不同色</text>
+</g>
+<text x="32" y="316" font-size="14" fill="#667888" font-family="sans-serif">所有节点均有编号；不得通过旋转或翻转合并涂色方案。</text>
+</svg>
