@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="890" height="290" viewBox="0 0 890 290" role="img" aria-label="三个有编号的房间，A容量2、B容量3、C容量4，九名人员包括两名老师和七名学生">
+<rect width="890" height="290" fill="white"/>
+<text x="30" y="36" font-size="22" font-weight="600" font-family="sans-serif" fill="#243746">容量不同的三间房</text>
+<g stroke="#314c62" stroke-width="2.5" fill="none">
+<rect x="34" y="70" width="236" height="160" rx="12"/>
+<rect x="328" y="70" width="236" height="160" rx="12"/>
+<rect x="622" y="70" width="236" height="160" rx="12"/>
+</g>
+<g font-family="sans-serif" fill="#314c62" font-size="20" font-weight="600">
+<text x="137" y="103">A</text><text x="431" y="103">B</text><text x="725" y="103">C</text>
+</g>
+<g font-family="sans-serif" fill="#546b7b" font-size="16">
+<text x="115" y="128">定员 2</text><text x="408" y="128">定员 3</text><text x="701" y="128">定员 4</text>
+</g>
+<g stroke="#71899b" stroke-width="2" fill="#eef3f6">
+<rect x="70" y="157" width="58" height="48" rx="7"/><rect x="152" y="157" width="58" height="48" rx="7"/>
+<rect x="348" y="157" width="50" height="48" rx="7"/><rect x="422" y="157" width="50" height="48" rx="7"/><rect x="496" y="157" width="50" height="48" rx="7"/>
+<rect x="636" y="157" width="43" height="48" rx="7"/><rect x="691" y="157" width="43" height="48" rx="7"/><rect x="746" y="157" width="43" height="48" rx="7"/><rect x="801" y="157" width="43" height="48" rx="7"/>
+</g>
+<text x="35" y="269" fill="#617788" font-size="15" font-family="sans-serif">2名老师＋7名学生共9人；房间有名字，且每间必须恰好达到定员。</text>
+</svg>
